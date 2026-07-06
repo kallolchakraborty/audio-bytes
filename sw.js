@@ -1,4 +1,4 @@
-const CACHE = 'audiobytes-v3';
+const CACHE = 'audiobytes-v4';
 const STATIC = [
   '/',
   '/index.html',
@@ -8,6 +8,7 @@ const STATIC = [
   '/js/store.js',
   '/js/router.js',
   '/js/player.js',
+  '/js/audio-engine.js',
   '/js/ui.js',
   '/js/utils.js',
   '/js/equalizer.js',

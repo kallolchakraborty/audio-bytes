@@ -32,6 +32,7 @@ class EqualizerEngine {
     this._filters = [];
     this._analyser = null;
     this._source = null;
+    this._sourceCtx = null;
     this._vizSource = null;
     this._running = false;
     this._presets = PRESETS;
@@ -46,6 +47,7 @@ class EqualizerEngine {
   get bands() { return BANDS; }
   get filters() { return this._filters; }
   get analyser() { return this._analyser; }
+  get context() { return this._ctx; }
 
   _ensureContext() {
     if (this._ctx) return this._ctx;
@@ -70,7 +72,7 @@ class EqualizerEngine {
     this._analyser = ctx.createAnalyser();
     this._analyser.fftSize = 64;
 
-    this._connectFilters();
+    this._connectFilters(false);
     this._startVizSource();
 
     this._running = true;
@@ -100,22 +102,58 @@ class EqualizerEngine {
     this._vizSource.start();
   }
 
-  _connectFilters() {
+  _connectFilters(connectDest = false) {
     if (this._filters.length < 2) return;
     for (let i = 1; i < this._filters.length; i++) {
       this._filters[i - 1].connect(this._filters[i]);
     }
     this._filters[this._filters.length - 1].connect(this._analyser);
+    if (connectDest && this._ctx) {
+      this._filters[this._filters.length - 1].connect(this._ctx.destination);
+    }
   }
 
-  connectSource(sourceNode) {
+  connectSource(sourceNode, audioCtx) {
     this._source = sourceNode;
+    this._sourceCtx = audioCtx;
     const bypassed = store.get('eq').bypassed;
     if (bypassed) {
+      this._disconnectVizSource();
       sourceNode.connect(this._analyser);
+      if (audioCtx) sourceNode.connect(audioCtx.destination);
     } else if (this._filters.length) {
+      this._disconnectVizSource();
       sourceNode.connect(this._filters[0]);
+      if (this._ctx && audioCtx) this._filters[this._filters.length - 1].connect(audioCtx.destination);
     }
+  }
+
+  disconnectSource() {
+    if (this._sourceCtx) {
+      this._sourceCtx = null;
+    }
+    if (this._source) {
+      try { this._source.disconnect(); } catch {}
+      this._source = null;
+    }
+    this._restoreVizRouting();
+  }
+
+  _disconnectVizSource() {
+    if (this._vizSource) {
+      try { this._vizSource.stop(); } catch {}
+      this._vizSource.disconnect();
+      this._vizSource = null;
+    }
+  }
+
+  _restoreVizRouting() {
+    this._filters.forEach(f => {
+      try { f.disconnect(); } catch {}
+    });
+    try { this._analyser.disconnect(); } catch {}
+    this._connectFilters(false);
+    this._startVizSource();
   }
 
   setBandGain(index, value) {
@@ -157,7 +195,10 @@ class EqualizerEngine {
     const bypassed = store.get('eq').bypassed;
     this._filters.forEach(f => f.disconnect());
     this._analyser.disconnect();
-    this._connectFilters();
+    if (this._ctx) {
+      try { this._ctx.destination && this._filters.forEach(f => f.disconnect(this._ctx.destination)); } catch {}
+    }
+    this._connectFilters(true);
     if (this._vizSource) {
       try { this._vizSource.stop(); } catch {}
       this._vizSource.disconnect();
@@ -167,8 +208,10 @@ class EqualizerEngine {
       this._source.disconnect();
       if (bypassed) {
         this._source.connect(this._analyser);
+        if (this._sourceCtx) this._source.connect(this._sourceCtx.destination);
       } else if (this._filters.length) {
         this._source.connect(this._filters[0]);
+        if (this._sourceCtx) this._filters[this._filters.length - 1].connect(this._sourceCtx.destination);
       }
     }
   }

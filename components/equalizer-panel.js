@@ -70,6 +70,7 @@ export function initEqualizerPanel() {
 let _onKeyDown = null;
 let _lastFocus = null;
 let _cleanupTrap = null;
+let _panelOpenedOnce = false;
 
 function bindEqEvents(panel) {
   const backdrop = panel.querySelector('.eq-backdrop');
@@ -147,6 +148,12 @@ export function openEqPanel() {
   if (!panel) return;
   eqEngine.init();
   eqEngine.resume();
+  if (!_panelOpenedOnce) {
+    _panelOpenedOnce = true;
+    import('./toast.js').then(m => {
+      m.showToast('Equalizer filters audio when streamed directly. YouTube tracks fall back to visual-only mode.', 'info', 6000);
+    });
+  }
   _lastFocus = document.activeElement;
   document.querySelectorAll('#header, #sidebar, #page-view, #player-bar, #toast-container').forEach(el => el?.setAttribute('aria-hidden', 'true'));
   panel.classList.add('open');
