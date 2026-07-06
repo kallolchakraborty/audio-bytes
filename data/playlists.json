@@ -1,0 +1,1637 @@
+[
+  {
+    "id": "blues-classics",
+    "name": "Blues Classics",
+    "description": "Timeless blues standards that define the genre. From the Mississippi Delta to Chicago's South Side, these essential tracks shaped the foundation of modern music and continue to inspire generations of musicians across every style.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "bc2",
+        "title": "The Sky Is Crying",
+        "artist": "Gary B.B. Coleman",
+        "album": "The Sky Is Crying",
+        "year": 1987,
+        "duration": "3:41",
+        "youtube_id": "eBlfrTGjujk",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "bc5",
+        "title": "The Thrill Is Gone",
+        "artist": "B.B. King",
+        "album": "Completely Well",
+        "year": 1969,
+        "duration": "5:25",
+        "youtube_id": "kpC69qIe02E",
+        "genre": "Blues"
+      },
+      {
+        "id": "bc6",
+        "title": "Call It Stormy Monday (But Tuesday Is Just as Bad)",
+        "artist": "T-Bone Walker",
+        "album": "The Ultimate Collection 1929-57",
+        "year": 1947,
+        "duration": "3:01",
+        "youtube_id": "xQEEWC4ZxYQ",
+        "genre": "Blues"
+      },
+      {
+        "id": "bc7",
+        "title": "Dust My Broom",
+        "artist": "Elmore James",
+        "album": "Shake Your Moneymaker: The Best of the Fire Sessions",
+        "year": 1951,
+        "duration": "2:54",
+        "youtube_id": "5jcGY7NbaQw",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "bc8",
+        "title": "Hide Away",
+        "artist": "Freddie King",
+        "album": "Let's Dance Away and Hide Away",
+        "year": 1961,
+        "duration": "2:44",
+        "youtube_id": "XjJQ-9QisL4",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "bc9",
+        "title": "Born Under a Bad Sign",
+        "artist": "Albert King",
+        "album": "Born Under a Bad Sign",
+        "year": 1967,
+        "duration": "2:47",
+        "youtube_id": "LHRkVZpcvAQ",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "bc10",
+        "title": "Spoonful",
+        "artist": "Howlin' Wolf",
+        "album": "Howlin' Wolf",
+        "year": 1960,
+        "duration": "2:46",
+        "youtube_id": "s0aIjyX7vwI",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "bc11",
+        "title": "Hoochie Coochie Man",
+        "artist": "Muddy Waters",
+        "album": "The Best of Muddy Waters",
+        "year": 1954,
+        "duration": "2:48",
+        "youtube_id": "PtqzDuoKhpI",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "bc12",
+        "title": "Cross Road Blues",
+        "artist": "Robert Johnson",
+        "album": "King of the Delta Blues Singers",
+        "year": 1936,
+        "duration": "2:39",
+        "youtube_id": "Kxi4XkIVWLQ",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "bc13",
+        "title": "Juke",
+        "artist": "Little Walter",
+        "album": "The Essential Little Walter",
+        "year": 1952,
+        "duration": "2:44",
+        "youtube_id": "3J3eGUATzaY",
+        "genre": "Chicago Blues"
+      }
+    ]
+  },
+  {
+    "id": "chicago-blues",
+    "name": "Chicago Blues",
+    "description": "Electric urban blues born in the Windy City. With its driving rhythms, amplified guitars, and powerful harmonica, Chicago blues brought the Delta sound north and electrified it for a new era, creating a blueprint for rock and roll.",
+    "cover": "assets/images/chicago-blues.svg",
+    "color": "#1D4ED8",
+    "songs": [
+      {
+        "id": "ch1",
+        "title": "Mannish Boy",
+        "artist": "Muddy Waters",
+        "album": "Folk Singer",
+        "year": 1955,
+        "duration": "2:58",
+        "youtube_id": "bSfqNEvykv0",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch2",
+        "title": "Smokestack Lightning (Live)",
+        "artist": "Howlin' Wolf",
+        "album": "American Folk Blues Festival",
+        "year": 1964,
+        "duration": "5:50",
+        "youtube_id": "HTDjD_UdJYs",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch4",
+        "title": "Got My Mojo Workin'",
+        "artist": "Muddy Waters",
+        "album": "Folk Singer",
+        "year": 1957,
+        "duration": "2:52",
+        "youtube_id": "ThD9xswxxtk",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch7",
+        "title": "Sometimes I'm Right",
+        "artist": "Hubert Sumlin",
+        "album": "About Them Shoes",
+        "year": 2005,
+        "duration": "3:34",
+        "youtube_id": "-aRnzKDiIS0",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch8",
+        "title": "I Just Want to Make Love to You",
+        "artist": "Muddy Waters",
+        "album": "The Best of Muddy Waters",
+        "year": 1954,
+        "duration": "2:50",
+        "youtube_id": "UCLp5cIsqWE",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch11",
+        "title": "My Babe",
+        "artist": "Little Walter",
+        "album": "The Best of Little Walter",
+        "year": 1955,
+        "duration": "2:41",
+        "youtube_id": "duRp_avXtMM",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch24",
+        "title": "Juke",
+        "artist": "Little Walter",
+        "album": "Juke",
+        "year": 1952,
+        "duration": "2:44",
+        "youtube_id": "uiGpv-UeiDI",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch25",
+        "title": "My Babe",
+        "artist": "Little Walter",
+        "album": "The Best of Little Walter",
+        "year": 1955,
+        "duration": "2:42",
+        "youtube_id": "dkbfvLYxgXc",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch28",
+        "title": "I Just Want to Make Love to You",
+        "artist": "Muddy Waters",
+        "album": "The Best of Muddy Waters",
+        "year": 1954,
+        "duration": "2:52",
+        "youtube_id": "OuWNbEtVYIc",
+        "genre": "Chicago Blues"
+      },
+      {
+        "id": "ch32",
+        "title": "I'm a Man",
+        "artist": "Bo Diddley",
+        "album": "Bo Diddley",
+        "year": 1955,
+        "duration": "2:44",
+        "youtube_id": "ByYyk8eMG6c",
+        "genre": "Chicago Blues"
+      }
+    ]
+  },
+  {
+    "id": "delta-blues",
+    "name": "Delta Blues",
+    "description": "Raw acoustic blues from the Mississippi Delta. Born from the cotton fields and juke joints of the Deep South, these haunting slide guitar and fingerpicked songs tell stories of hardship, love, and redemption with unflinching honesty.",
+    "cover": "assets/images/delta-blues.svg",
+    "color": "#B45309",
+    "songs": [
+      {
+        "id": "db1",
+        "title": "Boom Boom",
+        "artist": "John Lee Hooker",
+        "album": "Burnin'",
+        "year": 1962,
+        "duration": "2:33",
+        "youtube_id": "jZv04xAejrc",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db2",
+        "title": "Smokestack Lightnin'",
+        "artist": "Howlin' Wolf",
+        "album": "Moanin' in the Moonlight",
+        "year": 1956,
+        "duration": "3:08",
+        "youtube_id": "VMUt8KdDtTY",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db4",
+        "title": "Death Letter",
+        "artist": "Son House",
+        "album": "Forever On My Mind",
+        "year": 1965,
+        "duration": "4:19",
+        "youtube_id": "BFPcQuLXwWE",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db5",
+        "title": "Hard Time Killing Floor Blues",
+        "artist": "Skip James",
+        "album": "Blues From The Delta",
+        "year": 1931,
+        "duration": "3:25",
+        "youtube_id": "0cyGmLF8FpE",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db6",
+        "title": "Pony Blues",
+        "artist": "Charley Patton",
+        "album": "Founder of the Delta Blues",
+        "year": 1929,
+        "duration": "3:02",
+        "youtube_id": "zoKKJjf-oQA",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db12",
+        "title": "Devil Got My Woman",
+        "artist": "Skip James",
+        "album": "The Complete 1931 Session",
+        "year": 1931,
+        "duration": "3:03",
+        "youtube_id": "lo3vEehd-dE",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db13",
+        "title": "Fixin' to Die Blues",
+        "artist": "Bukka White",
+        "album": "Mississippi Blues Giant",
+        "year": 1940,
+        "duration": "3:12",
+        "youtube_id": "u8RolY4_fo0",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db14",
+        "title": "High Water Everywhere (Part 1)",
+        "artist": "Charley Patton",
+        "album": "Founder of the Delta Blues",
+        "year": 1929,
+        "duration": "3:05",
+        "youtube_id": "xL6UgyKItSo",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db21",
+        "title": "Sweet Home Chicago",
+        "artist": "Robert Johnson",
+        "album": "The Centennial Collection",
+        "year": 1936,
+        "duration": "2:59",
+        "youtube_id": "p0rjDAeApZQ",
+        "genre": "Delta Blues"
+      },
+      {
+        "id": "db22",
+        "title": "Hellhound on My Trail",
+        "artist": "Robert Johnson",
+        "album": "King of the Delta Blues Singers",
+        "year": 1937,
+        "duration": "2:38",
+        "youtube_id": "Yd60nI4sa9A",
+        "genre": "Delta Blues"
+      }
+    ]
+  },
+  {
+    "id": "texas-blues",
+    "name": "Texas Blues",
+    "description": "Lone Star blues with jazz-influenced guitar work. Texas blues pioneers blended swing, jazz, and jump blues into a sophisticated sound defined by clean single-note runs, behind-the-beat phrasing, and a soulful swagger that's unmistakably Southern.",
+    "cover": "assets/images/texas-blues.svg",
+    "color": "#DC2626",
+    "songs": [
+      {
+        "id": "tx1",
+        "title": "Little Wing",
+        "artist": "Stevie Ray Vaughan",
+        "album": "The Sky Is Crying",
+        "year": 1991,
+        "duration": "6:48",
+        "youtube_id": "Rj_NUS9hwxA",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx2",
+        "title": "Pride and Joy",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Texas Flood",
+        "year": 1983,
+        "duration": "3:40",
+        "youtube_id": "I3MTGhRC82s",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx3",
+        "title": "Texas Flood",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Texas Flood",
+        "year": 1983,
+        "duration": "5:21",
+        "youtube_id": "OQuY7dHfWrM",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx4",
+        "title": "Cold Shot",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Couldn't Stand the Weather",
+        "year": 1984,
+        "duration": "4:00",
+        "youtube_id": "m2ou-WIxfLY",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx5",
+        "title": "Tin Pan Alley",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Couldn't Stand the Weather",
+        "year": 1984,
+        "duration": "9:11",
+        "youtube_id": "__yipt201F8",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx6",
+        "title": "Couldn't Stand the Weather",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Couldn't Stand the Weather",
+        "year": 1984,
+        "duration": "4:41",
+        "youtube_id": "nO23B5C_Mcw",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx7",
+        "title": "The Sky Is Crying",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "The Sky Is Crying",
+        "year": 1991,
+        "duration": "4:37",
+        "youtube_id": "zVwP1bprvDo",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx8",
+        "title": "Love Struck Baby",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Texas Flood",
+        "year": 1983,
+        "duration": "2:22",
+        "youtube_id": "HYUy9CBDCE4",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx9",
+        "title": "Mary Had a Little Lamb",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Texas Flood",
+        "year": 1983,
+        "duration": "2:47",
+        "youtube_id": "Fq-QUr5Wr3E",
+        "genre": "Texas Blues"
+      },
+      {
+        "id": "tx10",
+        "title": "Lenny",
+        "artist": "Stevie Ray Vaughan",
+        "album": "Texas Flood",
+        "year": 1983,
+        "duration": "4:57",
+        "youtube_id": "HapwJFo1pSc",
+        "genre": "Texas Blues"
+      }
+    ]
+  },
+  {
+    "id": "electric-blues",
+    "name": "Electric Blues",
+    "description": "Amplified blues with powerful guitar and full band arrangements. Electric blues brought raw emotion and blistering solos to the forefront, paving the way for everything from British Invasion rock to modern blues-rock with its energetic, larger-than-life sound.",
+    "cover": "assets/images/electric-blues.svg",
+    "color": "#7C3AED",
+    "songs": [
+      {
+        "id": "el6",
+        "title": "What Kind Of Woman Is This?",
+        "artist": "Buddy Guy",
+        "album": "Sweet Tea",
+        "year": 2001,
+        "duration": "5:19",
+        "youtube_id": "9mFrpsyh_JU",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el16",
+        "title": "Damn Right, I've Got the Blues",
+        "artist": "Buddy Guy",
+        "album": "Damn Right, I've Got the Blues",
+        "year": 1991,
+        "duration": "4:31",
+        "youtube_id": "9_piuL2kwA0",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el20",
+        "title": "Born Under a Bad Sign",
+        "artist": "Albert King",
+        "album": "Born Under a Bad Sign",
+        "year": 1967,
+        "duration": "2:47",
+        "youtube_id": "qyqXDM3mFhM",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el22",
+        "title": "I'm Tore Down",
+        "artist": "Freddie King",
+        "album": "Freddie King Is a Blues Master",
+        "year": 1969,
+        "duration": "2:39",
+        "youtube_id": "QJvpWZeg_NM",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el24",
+        "title": "The Stumble",
+        "artist": "Freddie King",
+        "album": "My Feeling for the Blues",
+        "year": 1970,
+        "duration": "3:37",
+        "youtube_id": "xkENUWBCizI",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el25",
+        "title": "I'd Rather Go Blind",
+        "artist": "Etta James",
+        "album": "Tell Mama",
+        "year": 1968,
+        "duration": "2:36",
+        "youtube_id": "Bcus42ihkTI",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el26",
+        "title": "Hoochie Coochie Man",
+        "artist": "Muddy Waters",
+        "album": "The Best of Muddy Waters",
+        "year": 1958,
+        "duration": "2:54",
+        "youtube_id": "e_l6A7krjrQ",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el27",
+        "title": "I'm a Man",
+        "artist": "Bo Diddley",
+        "album": "Bo Diddley",
+        "year": 1958,
+        "duration": "2:44",
+        "youtube_id": "OKlAiuaYdoI",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el29",
+        "title": "Double Trouble",
+        "artist": "Otis Rush",
+        "album": "Double Trouble",
+        "year": 1959,
+        "duration": "2:48",
+        "youtube_id": "KuUClqsMnVA",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "el38",
+        "title": "I'll Play the Blues for You (Parts 1 & 2)",
+        "artist": "Albert King",
+        "album": "I'll Play the Blues for You",
+        "year": 1972,
+        "duration": "7:17",
+        "youtube_id": "6SP5JHLqXM8",
+        "genre": "Electric Blues"
+      }
+    ]
+  },
+  {
+    "id": "acoustic-blues",
+    "name": "Acoustic Blues",
+    "description": "Unplugged blues with raw vocal and guitar intimacy. Stripped down to the essentials, acoustic blues showcases the pure soul of the genre — just a voice, a guitar, and a story. These tracks highlight the delicate fingerwork and heartfelt delivery that started it all.",
+    "cover": "assets/images/acoustic-blues.svg",
+    "color": "#92400E",
+    "songs": [
+      {
+        "id": "ab1",
+        "title": "Layla",
+        "artist": "Eric Clapton",
+        "album": "Layla and Other Assorted Love Songs",
+        "year": 1970,
+        "duration": "7:11",
+        "youtube_id": "5dCSUD37qxQ",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab2",
+        "title": "Make It Rain",
+        "artist": "Foy Vance",
+        "album": "Joy of Nothing",
+        "year": 2013,
+        "duration": "3:55",
+        "youtube_id": "P62uduvbUfc",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab3",
+        "title": "Before You Accuse Me (Acoustic Live)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged (Live)",
+        "year": 1992,
+        "duration": "3:59",
+        "youtube_id": "0XYaJ5D0FEU",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab4",
+        "title": "Hey Hey (Acoustic Live)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged (Live)",
+        "year": 1992,
+        "duration": "3:46",
+        "youtube_id": "Idgjz9eIVbs",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab5",
+        "title": "Alberta (Acoustic Live)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged (Live)",
+        "year": 1992,
+        "duration": "3:44",
+        "youtube_id": "6mR86Ul_g3Y",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab6",
+        "title": "San Francisco Bay Blues (Acoustic Live)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged (Live)",
+        "year": 1992,
+        "duration": "3:29",
+        "youtube_id": "l8zoUpfnFFE",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab7",
+        "title": "Malted Milk (Acoustic Live)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged (Deluxe Edition) (Live)",
+        "year": 1992,
+        "duration": "3:38",
+        "youtube_id": "ngNUNi94gVA",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab9",
+        "title": "Stack O'Lee Blues",
+        "artist": "Mississippi John Hurt",
+        "album": "Stack O'Lee / Louis Collins",
+        "year": 1928,
+        "duration": "3:21",
+        "youtube_id": "BUJIKErqhr4",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab10",
+        "title": "Make Me a Pallet on Your Floor",
+        "artist": "Mississippi John Hurt",
+        "album": "Today!",
+        "year": 1966,
+        "duration": "3:41",
+        "youtube_id": "HHE_E14vpgE",
+        "genre": "Acoustic Blues"
+      },
+      {
+        "id": "ab11",
+        "title": "Key To The Highway",
+        "artist": "Big Bill Broonzy",
+        "album": "The Big Bill Broonzy Story",
+        "year": 1957,
+        "duration": "2:33",
+        "youtube_id": "So5mQ_8h1PE",
+        "genre": "Acoustic Blues"
+      }
+    ]
+  },
+  {
+    "id": "british-blues",
+    "name": "British Blues",
+    "description": "The UK's take on the blues tradition. When British musicians discovered American blues records in the 1960s, they ignited a transatlantic revolution. With grittier amplification and a raw energy, they reinterpreted the classics and introduced blues to a whole new generation.",
+    "cover": "assets/images/british-blues.svg",
+    "color": "#0891B2",
+    "songs": [
+      {
+        "id": "br3",
+        "title": "So Many Roads",
+        "artist": "John Mayall & The Bluesbreakers with Gary Moore",
+        "album": "Blues Alive",
+        "year": 2003,
+        "duration": "9:08",
+        "youtube_id": "rJ0U8DxlzNY",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br4",
+        "title": "Black Magic Woman",
+        "artist": "Fleetwood Mac",
+        "album": "English Rose",
+        "year": 1968,
+        "duration": "2:50",
+        "youtube_id": "hRu7Pt42x6Y",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br5",
+        "title": "Albatross",
+        "artist": "Fleetwood Mac",
+        "album": "The Pious Bird of Good Omen",
+        "year": 1968,
+        "duration": "3:10",
+        "youtube_id": "gjOGaDseKgw",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br6",
+        "title": "Oh Well (Part 1)",
+        "artist": "Fleetwood Mac",
+        "album": "Then Play On",
+        "year": 1969,
+        "duration": "3:30",
+        "youtube_id": "0yq-Fw7C26Y",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br7",
+        "title": "The Stumble",
+        "artist": "John Mayall & The Bluesbreakers",
+        "album": "Thru the Years",
+        "year": 1967,
+        "duration": "2:55",
+        "youtube_id": "NLpziHTO-Nc",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br8",
+        "title": "Room To Move",
+        "artist": "John Mayall",
+        "album": "The Turning Point",
+        "year": 1969,
+        "duration": "4:34",
+        "youtube_id": "dwc7ZEYfWYc",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br9",
+        "title": "For Your Love",
+        "artist": "The Yardbirds",
+        "album": "For Your Love",
+        "year": 1965,
+        "duration": "2:38",
+        "youtube_id": "Ky486ZZmZ6k",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br11",
+        "title": "Crossroads",
+        "artist": "Eric Clapton",
+        "album": "Crossroads Guitar Festival 2019",
+        "year": 2019,
+        "duration": "4:17",
+        "youtube_id": "ewFiqngynNk",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br14",
+        "title": "The Green Manalishi (With the Two Prong Crown)",
+        "artist": "Fleetwood Mac",
+        "album": "Then Play On",
+        "year": 1970,
+        "duration": "4:36",
+        "youtube_id": "EKRfCkx8KCM",
+        "genre": "British Blues"
+      },
+      {
+        "id": "br20",
+        "title": "I'd Love to Change the World",
+        "artist": "Ten Years After",
+        "album": "A Space in Time",
+        "year": 1971,
+        "duration": "3:44",
+        "youtube_id": "zEQNb17BSd0",
+        "genre": "British Blues"
+      }
+    ]
+  },
+  {
+    "id": "blues-rock",
+    "name": "Blues Rock",
+    "description": "Where blues meets rock and roll with explosive results. Blues rock fuses the soulful bends and shuffle rhythms of classic blues with the power chords, driving drums, and high-energy attitude of rock, creating an electrifying sound that fills stadiums.",
+    "cover": "assets/images/blues-rock.svg",
+    "color": "#DB2777",
+    "songs": [
+      {
+        "id": "brk2",
+        "title": "Bad To The Bone",
+        "artist": "George Thorogood & The Destroyers",
+        "album": "Bad to the Bone",
+        "year": 1982,
+        "duration": "4:52",
+        "youtube_id": "IyhJ69mD7xI",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk5",
+        "title": "Cocaine",
+        "artist": "Eric Clapton",
+        "album": "Slowhand",
+        "year": 1977,
+        "duration": "3:38",
+        "youtube_id": "O6yeLNNVa4A",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk8",
+        "title": "Run-Around",
+        "artist": "Blues Traveler",
+        "album": "Four",
+        "year": 1994,
+        "duration": "4:40",
+        "youtube_id": "ousaiByU1ko",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk11",
+        "title": "On The Road Again",
+        "artist": "Canned Heat",
+        "album": "Boogie with Canned Heat",
+        "year": 1968,
+        "duration": "4:57",
+        "youtube_id": "KcIk4JYFd5w",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk18",
+        "title": "Caught Out In The Rain",
+        "artist": "Beth Hart",
+        "album": "Fire on the Floor",
+        "year": 2016,
+        "duration": "3:56",
+        "youtube_id": "lzdJf7Hqttk",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk19",
+        "title": "You And Your Friend",
+        "artist": "Dire Straits",
+        "album": "On Every Street",
+        "year": 1991,
+        "duration": "5:59",
+        "youtube_id": "kox6DUtSdAM",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk10",
+        "title": "Don't Wanna Fight (Live)",
+        "artist": "Alabama Shakes",
+        "album": "Sound & Color",
+        "year": 2015,
+        "duration": "3:52",
+        "youtube_id": "x-5OX7CO26c",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk20",
+        "title": "La Grange",
+        "artist": "ZZ Top",
+        "album": "Tres Hombres",
+        "year": 1973,
+        "duration": "3:52",
+        "youtube_id": "Gg9cNGHl-bg",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk22",
+        "title": "Sharp Dressed Man",
+        "artist": "ZZ Top",
+        "album": "Eliminator",
+        "year": 1983,
+        "duration": "4:13",
+        "youtube_id": "Ae829mFAGGE",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "brk25",
+        "title": "Bright Lights",
+        "artist": "Gary Clark Jr.",
+        "album": "The Bright Lights EP",
+        "year": 2011,
+        "duration": "5:25",
+        "youtube_id": "CFjMeOnqAPI",
+        "genre": "Blues Rock"
+      }
+    ]
+  },
+  {
+    "id": "soul-blues",
+    "name": "Soul Blues",
+    "description": "Blues with a deep soul and R&B influence that reaches the heart. Rich horn sections, gospel-tinged vocals, and lush arrangements define soul blues, where the emotional weight of the lyrics is carried by warm, full-bodied instrumentation and passionate delivery.",
+    "cover": "assets/images/soul-blues.svg",
+    "color": "#D97706",
+    "songs": [
+      {
+        "id": "sb1",
+        "title": "Tennessee Whiskey",
+        "artist": "Chris Stapleton",
+        "album": "Traveller",
+        "year": 2015,
+        "duration": "4:53",
+        "youtube_id": "4zAThXFOy2c",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb3",
+        "title": "I'll Play The Blues For You",
+        "artist": "Daniel Castro",
+        "album": "No Surrender",
+        "year": 2005,
+        "duration": "5:23",
+        "youtube_id": "ioOzsi9aHQQ",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb4",
+        "title": "I Put A Spell On You (Live)",
+        "artist": "Annie Lennox",
+        "album": "Nostalgia (Live)",
+        "year": 2015,
+        "duration": "3:56",
+        "youtube_id": "3TrSMaOZm3Y",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb5",
+        "title": "Last Two Dollars",
+        "artist": "Johnnie Taylor",
+        "album": "Eargasm",
+        "year": 1976,
+        "duration": "3:50",
+        "youtube_id": "Yh8oZ3VD1pw",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb7",
+        "title": "Walk A Mile In My Shoes",
+        "artist": "Big Daddy Wilson",
+        "album": "Walk a Mile in My Shoes",
+        "year": 2013,
+        "duration": "4:18",
+        "youtube_id": "gUm_VC3vBt4",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb8",
+        "title": "The Right Time",
+        "artist": "Ray Charles",
+        "album": "The Genius of Ray Charles",
+        "year": 1959,
+        "duration": "3:30",
+        "youtube_id": "BTruv-lVoLk",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb9",
+        "title": "Ain't No Love In The Heart Of The City",
+        "artist": "Bobby \"Blue\" Bland",
+        "album": "Dreamer",
+        "year": 1974,
+        "duration": "3:52",
+        "youtube_id": "38OOUDTsqM0",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb13",
+        "title": "(Sittin' On) The Dock of the Bay",
+        "artist": "Otis Redding",
+        "album": "The Dock of the Bay",
+        "year": 1968,
+        "duration": "2:43",
+        "youtube_id": "rTVjnBo96Ug",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb14",
+        "title": "Chain of Fools",
+        "artist": "Aretha Franklin",
+        "album": "Lady Soul",
+        "year": 1967,
+        "duration": "2:48",
+        "youtube_id": "5C4FnlftQt4",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "sb15",
+        "title": "At Last",
+        "artist": "Etta James",
+        "album": "At Last!",
+        "year": 1960,
+        "duration": "3:00",
+        "youtube_id": "S-cbOl96RFM",
+        "genre": "Soul Blues"
+      }
+    ]
+  },
+  {
+    "id": "contemporary-blues",
+    "name": "Contemporary Blues",
+    "description": "Modern blues for today's audience — fresh, relevant, and forward-looking. Contemporary blues artists honor the traditions while pushing boundaries with modern production, cross-genre collaborations, and lyrics that speak to current times, keeping the blues alive and evolving.",
+    "cover": "assets/images/contemporary-blues.svg",
+    "color": "#0D9488",
+    "songs": [
+      {
+        "id": "cb6",
+        "title": "Only For You",
+        "artist": "Heartless Bastards",
+        "album": "Arrow",
+        "year": 2012,
+        "duration": "4:31",
+        "youtube_id": "spcLUu6702I",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb10",
+        "title": "New Age Blues",
+        "artist": "Cam Cole",
+        "album": "New Age Blues",
+        "year": 2018,
+        "duration": "3:30",
+        "youtube_id": "hrwRAjCr_lA",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb18",
+        "title": "This Land",
+        "artist": "Gary Clark Jr.",
+        "album": "This Land",
+        "year": 2019,
+        "duration": "5:42",
+        "youtube_id": "9KgNaRQ_J-c",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb19",
+        "title": "Outside Of This Town",
+        "artist": "Christone \"Kingfish\" Ingram",
+        "album": "Kingfish",
+        "year": 2019,
+        "duration": "4:26",
+        "youtube_id": "kUXzZWBEJFE",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb20",
+        "title": "Kill or Be Kind",
+        "artist": "Samantha Fish",
+        "album": "Kill or Be Kind",
+        "year": 2019,
+        "duration": "3:45",
+        "youtube_id": "XEDgMsI7fd8",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb21",
+        "title": "Bulletproof",
+        "artist": "Samantha Fish",
+        "album": "Kill or Be Kind",
+        "year": 2019,
+        "duration": "5:19",
+        "youtube_id": "5rbPZSM8R-o",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb22",
+        "title": "Bad Spell",
+        "artist": "Larkin Poe",
+        "album": "Blood Harmony",
+        "year": 2022,
+        "duration": "3:15",
+        "youtube_id": "mBNEMtFgk08",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb25",
+        "title": "Living In A Burning House",
+        "artist": "Selwyn Birchwood",
+        "album": "Living In A Burning House",
+        "year": 2021,
+        "duration": "4:30",
+        "youtube_id": "NcxdptrFQCc",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb27",
+        "title": "Right Next Door (Because Of Me)",
+        "artist": "Robert Cray",
+        "album": "Strong Persuader",
+        "year": 1986,
+        "duration": "4:16",
+        "youtube_id": "jP2EvSNHqh0",
+        "genre": "Contemporary Blues"
+      },
+      {
+        "id": "cb30",
+        "title": "When My Train Pulls In",
+        "artist": "Gary Clark Jr.",
+        "album": "Blak and Blu",
+        "year": 2012,
+        "duration": "7:10",
+        "youtube_id": "2XITBuWNROk",
+        "genre": "Contemporary Blues"
+      }
+    ]
+  },
+  {
+    "id": "blues-ballads",
+    "name": "Blues Ballads",
+    "description": "Slow, emotional, soul-stirring blues that linger long after the last note. Built around aching vocals, weeping guitar lines, and powerful minor-key progressions, blues ballads capture life's deepest emotions — heartbreak, longing, and quiet resilience.",
+    "cover": "assets/images/blues-ballads.svg",
+    "color": "#BE185D",
+    "songs": [
+      {
+        "id": "bb4",
+        "title": "Wonderful Tonight",
+        "artist": "Eric Clapton",
+        "album": "Slowhand",
+        "year": 1977,
+        "duration": "3:42",
+        "youtube_id": "UprwkbzUX6g",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb5",
+        "title": "Don't Explain",
+        "artist": "Chantal Chamberland",
+        "album": "The Other Woman",
+        "year": 2011,
+        "duration": "4:51",
+        "youtube_id": "yGk34zEtcMg",
+        "genre": "Soul Blues"
+      },
+      {
+        "id": "bb6",
+        "title": "Love Is A Lie",
+        "artist": "Beth Hart",
+        "album": "Bang Bang Boom Boom",
+        "year": 2013,
+        "duration": "4:38",
+        "youtube_id": "PMIZEol5Zkk",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "bb7",
+        "title": "Tears In Heaven",
+        "artist": "Eric Clapton",
+        "album": "Rush (Soundtrack)",
+        "year": 1992,
+        "duration": "4:31",
+        "youtube_id": "JxPj3GAYYZ0",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb8",
+        "title": "Old Love",
+        "artist": "Eric Clapton",
+        "album": "Journeyman",
+        "year": 1989,
+        "duration": "6:26",
+        "youtube_id": "thDDr-3HiYU",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb9",
+        "title": "I Can't Make You Love Me",
+        "artist": "Bonnie Raitt",
+        "album": "Luck of the Draw",
+        "year": 1991,
+        "duration": "5:33",
+        "youtube_id": "nW9Cu6GYqxo",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb10",
+        "title": "Angel from Montgomery",
+        "artist": "Bonnie Raitt",
+        "album": "Streetlights",
+        "year": 1974,
+        "duration": "3:47",
+        "youtube_id": "toJ3ZYWRh24",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb11",
+        "title": "Still Got The Blues",
+        "artist": "Gary Moore",
+        "album": "Still Got the Blues",
+        "year": 1990,
+        "duration": "6:14",
+        "youtube_id": "QKZU4GxmQfU",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb12",
+        "title": "Parisienne Walkways",
+        "artist": "Gary Moore",
+        "album": "Back on the Streets",
+        "year": 1979,
+        "duration": "6:53",
+        "youtube_id": "vkUpfw4Hf3w",
+        "genre": "Blues Ballad"
+      },
+      {
+        "id": "bb13",
+        "title": "Sweet Little Angel",
+        "artist": "B.B. King",
+        "album": "Live at the Regal",
+        "year": 1965,
+        "duration": "4:09",
+        "youtube_id": "RYKYMUFestk",
+        "genre": "Blues Ballad"
+      }
+    ]
+  },
+  {
+    "id": "blues-guitar-legends",
+    "name": "Blues Guitar Legends",
+    "description": "Master guitarists who defined the blues sound with six strings and pure soul. From the bent-note crying of B.B. King to the fiery fretwork of Stevie Ray Vaughan, these virtuosos turned the guitar into a voice and set the standard for generations of players to come.",
+    "cover": "assets/images/blues-guitar-legends.svg",
+    "color": "#7E22CE",
+    "songs": [
+      {
+        "id": "gl10",
+        "title": "Lucille",
+        "artist": "B.B. King",
+        "album": "Lucille",
+        "year": 1968,
+        "duration": "3:38",
+        "youtube_id": "L8hOvsg_AiY",
+        "genre": "Electric Blues"
+      },
+      {
+        "id": "gl8",
+        "title": "The Bluest Blues",
+        "artist": "Alvin Lee",
+        "album": "Ninety-Nine and One Half",
+        "year": 1994,
+        "duration": "5:38",
+        "youtube_id": "rB6OlJqV1rQ",
+        "genre": "Blues Rock"
+      },
+      {
+        "id": "gl12",
+        "title": "Crosscut Saw",
+        "artist": "Albert King",
+        "album": "Born Under a Bad Sign",
+        "year": 1967,
+        "duration": "2:33",
+        "youtube_id": "ue9oHYGEKlU",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl13",
+        "title": "Hideaway",
+        "artist": "Freddie King",
+        "album": "Freddie King Sings",
+        "year": 1961,
+        "duration": "2:37",
+        "youtube_id": "oDQQlyCpcIw",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl14",
+        "title": "Going Down",
+        "artist": "Freddie King",
+        "album": "Getting Ready...",
+        "year": 1971,
+        "duration": "3:21",
+        "youtube_id": "KjFjaAbYizs",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl15",
+        "title": "Damn Right I've Got the Blues",
+        "artist": "Buddy Guy",
+        "album": "Damn Right I've Got the Blues",
+        "year": 1991,
+        "duration": "4:31",
+        "youtube_id": "NU5xA6ty0a4",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl16",
+        "title": "Feels Like Rain",
+        "artist": "Buddy Guy",
+        "album": "Feels Like Rain",
+        "year": 1993,
+        "duration": "4:39",
+        "youtube_id": "ClpR3fOKPRA",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl17",
+        "title": "The Thrill Is Gone",
+        "artist": "B.B. King",
+        "album": "Completely Well",
+        "year": 1969,
+        "duration": "5:26",
+        "youtube_id": "4fk2prKnYnI",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl18",
+        "title": "Paying the Cost to Be the Boss",
+        "artist": "B.B. King",
+        "album": "Lucille",
+        "year": 1968,
+        "duration": "2:36",
+        "youtube_id": "oUTwVtS_-NA",
+        "genre": "Blues Guitar Legends"
+      },
+      {
+        "id": "gl19",
+        "title": "Frosty",
+        "artist": "Albert Collins",
+        "album": "Frostbite",
+        "year": 1980,
+        "duration": "4:38",
+        "youtube_id": "_E6gsuek-5g",
+        "genre": "Blues Guitar Legends"
+      }
+    ]
+  },
+  {
+    "id": "live-blues",
+    "name": "Live Blues",
+    "description": "Blues captured in concert — raw and electrifying. There's nothing quite like the energy of live blues: the crowd's roar, the extended solos, the spontaneous interplay between musicians. These performances capture the magic that happens when blues takes the stage.",
+    "cover": "assets/images/live-blues.svg",
+    "color": "#C2410C",
+    "songs": [
+      {
+        "id": "lb2",
+        "title": "Iron Sky",
+        "artist": "Paolo Nutini",
+        "album": "Caustic Love",
+        "year": 2014,
+        "youtube_id": "ELKbtFljucQ",
+        "genre": "Blue-Eyed Soul",
+        "duration": "6:22"
+      },
+      {
+        "id": "lb6",
+        "title": "Baby Please Don't Go (Live)",
+        "artist": "Muddy Waters & The Rolling Stones",
+        "album": "Live at Checkerboard Lounge",
+        "year": 2012,
+        "youtube_id": "z3Or7huOK7o",
+        "genre": "Chicago Blues",
+        "duration": "10:42"
+      },
+      {
+        "id": "lb8",
+        "title": "Summertime (Live)",
+        "artist": "Janis Joplin",
+        "album": "Woodstock",
+        "year": 1969,
+        "youtube_id": "cI75VAn8JMM",
+        "genre": "Blues Rock",
+        "duration": "4:38"
+      },
+      {
+        "id": "lb11",
+        "title": "Pride And Joy (Live at Montreux 1982)",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Live at Montreux",
+        "year": 1982,
+        "youtube_id": "kfjXp4KTTY8",
+        "genre": "Texas Blues",
+        "duration": "4:01"
+      },
+      {
+        "id": "lb12",
+        "title": "Texas Flood (Live at the El Mocambo)",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Live at the El Mocambo",
+        "year": 1983,
+        "youtube_id": "KC5H9P4F5Uk",
+        "genre": "Texas Blues",
+        "duration": "9:31"
+      },
+      {
+        "id": "lb13",
+        "title": "Cold Shot (Live From Austin, TX)",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Live from Austin, TX",
+        "year": 1983,
+        "youtube_id": "-CixtG_bF28",
+        "genre": "Texas Blues",
+        "duration": "7:04"
+      },
+      {
+        "id": "lb14",
+        "title": "Crossfire (Live From Austin, TX)",
+        "artist": "Stevie Ray Vaughan & Double Trouble",
+        "album": "Live from Austin, TX",
+        "year": 1989,
+        "youtube_id": "t54xyIcgbks",
+        "genre": "Texas Blues",
+        "duration": "4:05"
+      },
+      {
+        "id": "lb15",
+        "title": "Groaning the Blues (Official Live Video)",
+        "artist": "Eric Clapton",
+        "album": "Nothing but the Blues",
+        "year": 2022,
+        "youtube_id": "vKFN78ksSa8",
+        "genre": "Blues Rock",
+        "duration": "6:41"
+      },
+      {
+        "id": "lb17",
+        "title": "Layla (Live at Royal Albert Hall 1991)",
+        "artist": "Eric Clapton",
+        "album": "24 Nights: Live at Royal Albert Hall",
+        "year": 1991,
+        "youtube_id": "-KG2O5PSCSs",
+        "genre": "Blues Rock",
+        "duration": "8:08"
+      },
+      {
+        "id": "lb18",
+        "title": "The Thrill Is Gone (Crossroads 2010)",
+        "artist": "B.B. King",
+        "album": "Crossroads Guitar Festival 2010",
+        "year": 2010,
+        "youtube_id": "SgXSomPE_FY",
+        "genre": "Blues",
+        "duration": "11:06"
+      }
+    ]
+  },
+  {
+    "id": "americana-blues",
+    "name": "Americana Blues",
+    "description": "Blues woven into the fabric of American roots music. Where blues meets folk, country, and Americana, this playlist celebrates the storytelling tradition of the heartland — acoustic-driven songs that echo from the Appalachian Mountains to the dusty roads of the rural South.",
+    "cover": "assets/images/americana-blues.svg",
+    "color": "#78716C",
+    "songs": [
+      {
+        "id": "am2",
+        "title": "Soulshine",
+        "artist": "Allman Brothers Band",
+        "album": "Hittin' the Note",
+        "year": 2003,
+        "youtube_id": "DdGyRMsBH6w",
+        "genre": "Southern Rock",
+        "duration": "6:45"
+      },
+      {
+        "id": "am5",
+        "title": "Cold",
+        "artist": "Chris Stapleton",
+        "album": "Starting Over",
+        "year": 2020,
+        "youtube_id": "fq15HXc6pmw",
+        "genre": "Country Blues",
+        "duration": "5:10"
+      },
+      {
+        "id": "am6",
+        "title": "Broken Halos",
+        "artist": "Chris Stapleton",
+        "album": "From A Room: Volume 1",
+        "year": 2017,
+        "youtube_id": "sI0TeFf6uD8",
+        "genre": "Country Blues",
+        "duration": "3:01"
+      },
+      {
+        "id": "am7",
+        "title": "Midnight Train To Memphis",
+        "artist": "Chris Stapleton",
+        "album": "From A Room: Volume 2",
+        "year": 2017,
+        "youtube_id": "Dg3lXoCo7HU",
+        "genre": "Country Blues",
+        "duration": "3:44"
+      },
+      {
+        "id": "am8",
+        "title": "A Simple Song",
+        "artist": "Chris Stapleton",
+        "album": "From A Room: Volume 2",
+        "year": 2017,
+        "youtube_id": "osc1DbNpNXE",
+        "genre": "Country Blues",
+        "duration": "3:37"
+      },
+      {
+        "id": "am9",
+        "title": "Millionaire",
+        "artist": "Chris Stapleton",
+        "album": "From A Room: Volume 2",
+        "year": 2017,
+        "youtube_id": "MPoN-FNB2V8",
+        "genre": "Country Blues",
+        "duration": "3:30"
+      },
+      {
+        "id": "am10",
+        "title": "You Should Probably Leave",
+        "artist": "Chris Stapleton",
+        "album": "Starting Over",
+        "year": 2020,
+        "youtube_id": "8e7S8l4s1OM",
+        "genre": "Country Blues",
+        "duration": "3:34"
+      },
+      {
+        "id": "am11",
+        "title": "Cover Me Up",
+        "artist": "Jason Isbell",
+        "album": "Southeastern",
+        "year": 2013,
+        "youtube_id": "S-s3vuXopS4",
+        "genre": "Americana",
+        "duration": "4:54"
+      },
+      {
+        "id": "am12",
+        "title": "The Well",
+        "artist": "Marcus King",
+        "album": "El Dorado",
+        "year": 2020,
+        "youtube_id": "VWmgFwozjxo",
+        "genre": "Blues Rock",
+        "duration": "2:57"
+      },
+      {
+        "id": "am13",
+        "title": "Wildflowers & Wine",
+        "artist": "Marcus King",
+        "album": "El Dorado",
+        "year": 2020,
+        "youtube_id": "gqZLlXI6fFg",
+        "genre": "Blues Rock",
+        "duration": "4:49"
+      }
+    ]
+  },
+  {
+    "id": "blues-jam-sessions",
+    "name": "Blues Jam Sessions",
+    "description": "Extended improvisations by blues masters stretching out and exploring. Jam sessions are where the magic happens — no setlists, no constraints, just phenomenal musicians trading licks, building tension, and taking the music to unexpected places in real time.",
+    "cover": "assets/images/blues-jam-sessions.svg",
+    "color": "#4F46E5",
+    "songs": [
+      {
+        "id": "js2",
+        "title": "Future Soul",
+        "artist": "Tedeschi Trucks Band",
+        "album": "I Am the Moon: II. Ascension",
+        "year": 2022,
+        "youtube_id": "NmZO5MVsSOw",
+        "genre": "Blues Rock",
+        "duration": "3:19"
+      },
+      {
+        "id": "js3",
+        "title": "Anyhow",
+        "artist": "Tedeschi Trucks Band",
+        "album": "Let Me Get By",
+        "year": 2016,
+        "youtube_id": "Q8n0ZmakqCg",
+        "genre": "Blues Rock",
+        "duration": "6:34"
+      },
+      {
+        "id": "js4",
+        "title": "Statesboro Blues",
+        "artist": "Allman Brothers Band",
+        "album": "At Fillmore East",
+        "year": 1971,
+        "youtube_id": "w1V5XNLLwFU",
+        "genre": "Southern Rock",
+        "duration": "4:06"
+      },
+      {
+        "id": "js5",
+        "title": "Soulshine",
+        "artist": "Gov't Mule",
+        "album": "The Deep End, Volume 2",
+        "year": 2002,
+        "youtube_id": "DUn6kYSnt3E",
+        "genre": "Blues Rock",
+        "duration": "7:48"
+      },
+      {
+        "id": "js6",
+        "title": "Heavy Load",
+        "artist": "Gov't Mule",
+        "album": "Heavy Load Blues",
+        "year": 2021,
+        "youtube_id": "lWXtPpmx8is",
+        "genre": "Blues Rock",
+        "duration": "7:19"
+      },
+      {
+        "id": "js7",
+        "title": "Beautifully Broken",
+        "artist": "Gov't Mule",
+        "album": "Peace... Like a River",
+        "year": 2023,
+        "youtube_id": "O7h1sqatFPs",
+        "genre": "Blues Rock",
+        "duration": "6:02"
+      },
+      {
+        "id": "js8",
+        "title": "I Think You Know What I Mean",
+        "artist": "Gov't Mule",
+        "album": "Peace... Like a River",
+        "year": 2023,
+        "youtube_id": "yFHw13KnFJc",
+        "genre": "Blues Rock",
+        "duration": "4:55"
+      },
+      {
+        "id": "js9",
+        "title": "Banks Of The Deep End",
+        "artist": "Gov't Mule",
+        "album": "The Deep End, Volume 1",
+        "year": 2001,
+        "youtube_id": "MiIlZRCatY4",
+        "genre": "Blues Rock",
+        "duration": "5:57"
+      },
+      {
+        "id": "js10",
+        "title": "A Good Look",
+        "artist": "Sturgill Simpson",
+        "album": "Metamodern Sounds",
+        "year": 2014,
+        "youtube_id": "n7AKexwEWIo",
+        "genre": "Country Blues",
+        "duration": "4:02"
+      },
+      {
+        "id": "js11",
+        "title": "Mercury In Retrograde",
+        "artist": "Sturgill Simpson",
+        "album": "The Ballad of Dood & Juanita",
+        "year": 2021,
+        "youtube_id": "e5nOxc-p-eM",
+        "genre": "Country Blues",
+        "duration": "4:32"
+      }
+    ]
+  }
+]

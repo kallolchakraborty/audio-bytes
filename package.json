@@ -1,0 +1,13 @@
+{
+  "name": "audiobytes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind.src.css -o ./css/tailwind.css",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
