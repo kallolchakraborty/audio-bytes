@@ -44,7 +44,7 @@ export function initSearchModal() {
   const results = $('#search-results');
 
   overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeSearch();
+    if (e.target === overlay || e.target.closest('.search-result-item')) closeSearch();
   });
 
   document.addEventListener('keydown', (e) => {
@@ -146,7 +146,7 @@ function performSearch(query, resultsContainer) {
   const playlistItems = matchingPlaylists.map(p => `
     <a href="#/playlist/${p.id}" class="search-result-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 transition-colors cursor-pointer" data-type="playlist" data-id="${p.id}">
       <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-surface-elevated">
-        <img src="${p.cover}" alt="" class="w-full h-full object-cover" onerror="this.src='assets/images/fallback-album.svg'">
+        <img src="${p.cover}" alt="${p.name || ''}" class="w-full h-full object-cover" onerror="this.src='assets/images/fallback-album.svg'">
       </div>
       <div class="min-w-0 flex-1">
         <p class="text-sm font-medium text-white truncate">${highlight(p.name, query)}</p>
@@ -159,7 +159,7 @@ function performSearch(query, resultsContainer) {
   const songItems = matchingSongs.map((s, i) => `
     <a href="#/playlist/${s.playlistId}" class="search-result-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 transition-colors cursor-pointer" data-type="song" data-index="${i}" data-song-id="${s.id}" data-playlist-id="${s.playlistId}">
       <div class="w-10 h-10 rounded overflow-hidden flex-shrink-0 bg-surface-elevated">
-        <img src="${getYouTubeThumbnail(s.youtube_id, 'default')}" alt="" class="w-full h-full object-cover" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
+        <img src="${getYouTubeThumbnail(s.youtube_id, 'default')}" alt="${s.title || ''}" class="w-full h-full object-cover" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
       </div>
       <div class="min-w-0 flex-1">
         <p class="text-sm font-medium text-white truncate">${highlight(s.title, query)}</p>
@@ -236,9 +236,17 @@ function highlightItem(el) {
   el.classList.add('bg-white/5', 'ring-1', 'ring-brand-500/30');
 }
 
+function escapeHTML(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 function highlight(text, query) {
-  if (!query) return text;
-  const idx = text.toLowerCase().indexOf(query.toLowerCase());
-  if (idx === -1) return text;
-  return text.slice(0, idx) + '<span class="search-highlight">' + text.slice(idx, idx + query.length) + '</span>' + text.slice(idx + query.length);
+  if (!query) return escapeHTML(text);
+  const safe = escapeHTML(text);
+  const lower = safe.toLowerCase();
+  const idx = lower.indexOf(query.toLowerCase());
+  if (idx === -1) return safe;
+  return safe.slice(0, idx) + '<span class="search-highlight">' + safe.slice(idx, idx + query.length) + '</span>' + safe.slice(idx + query.length);
 }

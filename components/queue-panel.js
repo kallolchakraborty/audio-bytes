@@ -99,49 +99,25 @@ function createQueuePanel() {
 
   const itemsContainer = $('#queue-items');
   if (itemsContainer) {
-    let dragSrcIdx = null;
-    itemsContainer.addEventListener('dragstart', (e) => {
-      const item = e.target.closest('.queue-item');
+    itemsContainer.addEventListener('click', (e) => {
+      const upBtn = e.target.closest('.queue-move-up');
+      const downBtn = e.target.closest('.queue-move-down');
+      if (!upBtn && !downBtn) return;
+      const item = (upBtn || downBtn).closest('.queue-item');
       if (!item) return;
-      dragSrcIdx = parseInt(item.dataset.index);
-      item.classList.add('opacity-40');
-      e.dataTransfer.effectAllowed = 'move';
-    });
-    itemsContainer.addEventListener('dragend', (e) => {
-      const item = e.target.closest('.queue-item');
-      if (item) item.classList.remove('opacity-40');
-      document.querySelectorAll('.queue-item').forEach(el => el.classList.remove('border-t-brand-500', 'border-t-2', 'border-b-brand-500', 'border-b-2'));
-      dragSrcIdx = null;
-    });
-    itemsContainer.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      const item = e.target.closest('.queue-item');
-      if (!item || dragSrcIdx === null) return;
-      document.querySelectorAll('.queue-item').forEach(el => el.classList.remove('border-t-brand-500', 'border-t-2', 'border-b-brand-500', 'border-b-2'));
-      if (parseInt(item.dataset.index) === dragSrcIdx) return;
-      const rect = item.getBoundingClientRect();
-      const mid = rect.top + rect.height / 2;
-      if (e.clientY > mid) item.classList.add('border-b-brand-500', 'border-b-2');
-      else item.classList.add('border-t-brand-500', 'border-t-2');
-    });
-    itemsContainer.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const item = e.target.closest('.queue-item');
-      if (!item || dragSrcIdx === null) return;
-      const targetIdx = parseInt(item.dataset.index);
-      if (dragSrcIdx !== targetIdx) {
-        const queue = [...store.get('queue')];
-        const qi = store.get('queueIndex');
-        const [moved] = queue.splice(dragSrcIdx, 1);
-        const insertAt = targetIdx > dragSrcIdx ? targetIdx - 1 : targetIdx;
-        queue.splice(insertAt, 0, moved);
-        if (dragSrcIdx === qi) store.setState('queueIndex', insertAt);
-        else if (dragSrcIdx < qi && insertAt >= qi) store.setState('queueIndex', qi - 1);
-        else if (dragSrcIdx > qi && insertAt <= qi) store.setState('queueIndex', qi + 1);
-        store.setState('queue', queue);
-      }
-      document.querySelectorAll('.queue-item').forEach(el => el.classList.remove('border-t-brand-500', 'border-t-2', 'border-b-brand-500', 'border-b-2'));
-      dragSrcIdx = null;
+      const idx = parseInt(item.dataset.index);
+      const queue = [...store.get('queue')];
+      const qi = store.get('queueIndex');
+      if (upBtn && idx > 0) {
+        [queue[idx - 1], queue[idx]] = [queue[idx], queue[idx - 1]];
+        if (idx === qi) store.setState('queueIndex', qi - 1);
+        else if (idx - 1 === qi) store.setState('queueIndex', qi + 1);
+      } else if (downBtn && idx < queue.length - 1) {
+        [queue[idx], queue[idx + 1]] = [queue[idx + 1], queue[idx]];
+        if (idx === qi) store.setState('queueIndex', qi + 1);
+        else if (idx + 1 === qi) store.setState('queueIndex', qi - 1);
+      } else return;
+      store.setState('queue', queue);
     });
   }
 
@@ -182,9 +158,13 @@ function renderQueueItems() {
 function renderItem(song, index, isCurrent) {
   const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'default') : 'assets/images/fallback-album.svg';
   return `
-    <div class="queue-item flex items-center gap-3 px-4 py-2 hover:bg-white/5 transition-colors cursor-pointer ${isCurrent ? 'bg-brand-500/5' : ''}" data-index="${index}" draggable="true">
+    <div class="queue-item flex items-center gap-2 px-4 py-2 hover:bg-white/5 transition-colors cursor-pointer ${isCurrent ? 'bg-brand-500/5' : ''}" data-index="${index}">
+      <div class="flex flex-col gap-px flex-shrink-0 ${isCurrent ? 'invisible' : ''}">
+        <button class="queue-move-up btn-icon w-5 h-4 text-slate-500 hover:text-white" aria-label="Move up"><span class="material-symbols-outlined text-[10px]">expand_less</span></button>
+        <button class="queue-move-down btn-icon w-5 h-4 text-slate-500 hover:text-white" aria-label="Move down"><span class="material-symbols-outlined text-[10px]">expand_more</span></button>
+      </div>
       <span class="text-xs text-slate-500 w-5 text-right flex-shrink-0">${isCurrent ? '<span class="flex items-end gap-[2px] h-3 justify-center">' + '<div class="w-[2px] rounded-full bg-brand-500 animate-pulse" style="height:8px"></div>'.repeat(3) + '</span>' : index + 1}</span>
-      <img src="${thumb}" alt="" class="w-9 h-9 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
+      <img src="${thumb}" alt="${song.title || ''}" class="w-9 h-9 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
       <div class="min-w-0 flex-1">
         <p class="text-xs font-medium text-white truncate">${song.title}</p>
         <p class="text-[11px] text-slate-400 truncate">${song.artist}</p>

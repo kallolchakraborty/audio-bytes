@@ -14,7 +14,8 @@
         "year": 1987,
         "duration": "3:41",
         "youtube_id": "eBlfrTGjujk",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "bc5",
@@ -24,7 +25,8 @@
         "year": 1969,
         "duration": "5:25",
         "youtube_id": "kpC69qIe02E",
-        "genre": "Blues"
+        "genre": "Blues",
+        "is_hd": true
       },
       {
         "id": "bc6",
@@ -34,7 +36,8 @@
         "year": 1947,
         "duration": "3:01",
         "youtube_id": "xQEEWC4ZxYQ",
-        "genre": "Blues"
+        "genre": "Blues",
+        "is_hd": true
       },
       {
         "id": "bc7",
@@ -44,7 +47,8 @@
         "year": 1951,
         "duration": "2:54",
         "youtube_id": "5jcGY7NbaQw",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": false
       },
       {
         "id": "bc8",
@@ -54,7 +58,8 @@
         "year": 1961,
         "duration": "2:44",
         "youtube_id": "XjJQ-9QisL4",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "bc9",
@@ -64,7 +69,8 @@
         "year": 1967,
         "duration": "2:47",
         "youtube_id": "LHRkVZpcvAQ",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": false
       },
       {
         "id": "bc10",
@@ -74,7 +80,8 @@
         "year": 1960,
         "duration": "2:46",
         "youtube_id": "s0aIjyX7vwI",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "bc11",
@@ -84,7 +91,8 @@
         "year": 1954,
         "duration": "2:48",
         "youtube_id": "PtqzDuoKhpI",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": false
       },
       {
         "id": "bc12",
@@ -94,7 +102,8 @@
         "year": 1936,
         "duration": "2:39",
         "youtube_id": "Kxi4XkIVWLQ",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "bc13",
@@ -104,7 +113,8 @@
         "year": 1952,
         "duration": "2:44",
         "youtube_id": "3J3eGUATzaY",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": false
       }
     ]
   },
@@ -123,7 +133,8 @@
         "year": 1955,
         "duration": "2:58",
         "youtube_id": "bSfqNEvykv0",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch2",
@@ -133,7 +144,8 @@
         "year": 1964,
         "duration": "5:50",
         "youtube_id": "HTDjD_UdJYs",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch4",
@@ -143,7 +155,8 @@
         "year": 1957,
         "duration": "2:52",
         "youtube_id": "ThD9xswxxtk",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch7",
@@ -153,7 +166,8 @@
         "year": 2005,
         "duration": "3:34",
         "youtube_id": "-aRnzKDiIS0",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch8",
@@ -163,7 +177,8 @@
         "year": 1954,
         "duration": "2:50",
         "youtube_id": "UCLp5cIsqWE",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch11",
@@ -173,7 +188,8 @@
         "year": 1955,
         "duration": "2:41",
         "youtube_id": "duRp_avXtMM",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": false
       },
       {
         "id": "ch24",
@@ -183,7 +199,8 @@
         "year": 1952,
         "duration": "2:44",
         "youtube_id": "uiGpv-UeiDI",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch25",
@@ -193,7 +210,8 @@
         "year": 1955,
         "duration": "2:42",
         "youtube_id": "dkbfvLYxgXc",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": false
       },
       {
         "id": "ch28",
@@ -203,7 +221,8 @@
         "year": 1954,
         "duration": "2:52",
         "youtube_id": "OuWNbEtVYIc",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": true
       },
       {
         "id": "ch32",
@@ -213,7 +232,8 @@
         "year": 1955,
         "duration": "2:44",
         "youtube_id": "ByYyk8eMG6c",
-        "genre": "Chicago Blues"
+        "genre": "Chicago Blues",
+        "is_hd": false
       }
     ]
   },
@@ -232,7 +252,8 @@
         "year": 1962,
         "duration": "2:33",
         "youtube_id": "jZv04xAejrc",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "db2",
@@ -242,7 +263,8 @@
         "year": 1956,
         "duration": "3:08",
         "youtube_id": "VMUt8KdDtTY",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": false
       },
       {
         "id": "db4",
@@ -252,7 +274,8 @@
         "year": 1965,
         "duration": "4:19",
         "youtube_id": "BFPcQuLXwWE",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "db5",
@@ -262,7 +285,8 @@
         "year": 1931,
         "duration": "3:25",
         "youtube_id": "0cyGmLF8FpE",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": false
       },
       {
         "id": "db6",
@@ -272,7 +296,8 @@
         "year": 1929,
         "duration": "3:02",
         "youtube_id": "zoKKJjf-oQA",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "db12",
@@ -282,7 +307,8 @@
         "year": 1931,
         "duration": "3:03",
         "youtube_id": "lo3vEehd-dE",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": false
       },
       {
         "id": "db13",
@@ -292,7 +318,8 @@
         "year": 1940,
         "duration": "3:12",
         "youtube_id": "u8RolY4_fo0",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "db14",
@@ -302,7 +329,8 @@
         "year": 1929,
         "duration": "3:05",
         "youtube_id": "xL6UgyKItSo",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": false
       },
       {
         "id": "db21",
@@ -312,7 +340,8 @@
         "year": 1936,
         "duration": "2:59",
         "youtube_id": "p0rjDAeApZQ",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": true
       },
       {
         "id": "db22",
@@ -322,7 +351,8 @@
         "year": 1937,
         "duration": "2:38",
         "youtube_id": "Yd60nI4sa9A",
-        "genre": "Delta Blues"
+        "genre": "Delta Blues",
+        "is_hd": false
       }
     ]
   },
@@ -341,7 +371,8 @@
         "year": 1991,
         "duration": "6:48",
         "youtube_id": "Rj_NUS9hwxA",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx2",
@@ -351,7 +382,8 @@
         "year": 1983,
         "duration": "3:40",
         "youtube_id": "I3MTGhRC82s",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx3",
@@ -361,7 +393,8 @@
         "year": 1983,
         "duration": "5:21",
         "youtube_id": "OQuY7dHfWrM",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx4",
@@ -371,7 +404,8 @@
         "year": 1984,
         "duration": "4:00",
         "youtube_id": "m2ou-WIxfLY",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx5",
@@ -381,7 +415,8 @@
         "year": 1984,
         "duration": "9:11",
         "youtube_id": "__yipt201F8",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx6",
@@ -391,7 +426,8 @@
         "year": 1984,
         "duration": "4:41",
         "youtube_id": "nO23B5C_Mcw",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx7",
@@ -401,7 +437,8 @@
         "year": 1991,
         "duration": "4:37",
         "youtube_id": "zVwP1bprvDo",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx8",
@@ -411,7 +448,8 @@
         "year": 1983,
         "duration": "2:22",
         "youtube_id": "HYUy9CBDCE4",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx9",
@@ -421,7 +459,8 @@
         "year": 1983,
         "duration": "2:47",
         "youtube_id": "Fq-QUr5Wr3E",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       },
       {
         "id": "tx10",
@@ -431,7 +470,8 @@
         "year": 1983,
         "duration": "4:57",
         "youtube_id": "HapwJFo1pSc",
-        "genre": "Texas Blues"
+        "genre": "Texas Blues",
+        "is_hd": true
       }
     ]
   },
@@ -450,7 +490,8 @@
         "year": 2001,
         "duration": "5:19",
         "youtube_id": "9mFrpsyh_JU",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el16",
@@ -460,7 +501,8 @@
         "year": 1991,
         "duration": "4:31",
         "youtube_id": "9_piuL2kwA0",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el20",
@@ -470,7 +512,8 @@
         "year": 1967,
         "duration": "2:47",
         "youtube_id": "qyqXDM3mFhM",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el22",
@@ -480,7 +523,8 @@
         "year": 1969,
         "duration": "2:39",
         "youtube_id": "QJvpWZeg_NM",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": false
       },
       {
         "id": "el24",
@@ -490,7 +534,8 @@
         "year": 1970,
         "duration": "3:37",
         "youtube_id": "xkENUWBCizI",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el25",
@@ -500,7 +545,8 @@
         "year": 1968,
         "duration": "2:36",
         "youtube_id": "Bcus42ihkTI",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": false
       },
       {
         "id": "el26",
@@ -510,7 +556,8 @@
         "year": 1958,
         "duration": "2:54",
         "youtube_id": "e_l6A7krjrQ",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el27",
@@ -520,7 +567,8 @@
         "year": 1958,
         "duration": "2:44",
         "youtube_id": "OKlAiuaYdoI",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": false
       },
       {
         "id": "el29",
@@ -530,7 +578,8 @@
         "year": 1959,
         "duration": "2:48",
         "youtube_id": "KuUClqsMnVA",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "el38",
@@ -540,7 +589,8 @@
         "year": 1972,
         "duration": "7:17",
         "youtube_id": "6SP5JHLqXM8",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       }
     ]
   },
@@ -559,7 +609,8 @@
         "year": 1970,
         "duration": "7:11",
         "youtube_id": "5dCSUD37qxQ",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab2",
@@ -569,7 +620,8 @@
         "year": 2013,
         "duration": "3:55",
         "youtube_id": "P62uduvbUfc",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab3",
@@ -579,7 +631,8 @@
         "year": 1992,
         "duration": "3:59",
         "youtube_id": "0XYaJ5D0FEU",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab4",
@@ -589,7 +642,8 @@
         "year": 1992,
         "duration": "3:46",
         "youtube_id": "Idgjz9eIVbs",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab5",
@@ -599,7 +653,8 @@
         "year": 1992,
         "duration": "3:44",
         "youtube_id": "6mR86Ul_g3Y",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab6",
@@ -609,7 +664,8 @@
         "year": 1992,
         "duration": "3:29",
         "youtube_id": "l8zoUpfnFFE",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab7",
@@ -619,7 +675,8 @@
         "year": 1992,
         "duration": "3:38",
         "youtube_id": "ngNUNi94gVA",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab9",
@@ -629,7 +686,8 @@
         "year": 1928,
         "duration": "3:21",
         "youtube_id": "BUJIKErqhr4",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": false
       },
       {
         "id": "ab10",
@@ -639,7 +697,8 @@
         "year": 1966,
         "duration": "3:41",
         "youtube_id": "HHE_E14vpgE",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": true
       },
       {
         "id": "ab11",
@@ -649,7 +708,8 @@
         "year": 1957,
         "duration": "2:33",
         "youtube_id": "So5mQ_8h1PE",
-        "genre": "Acoustic Blues"
+        "genre": "Acoustic Blues",
+        "is_hd": false
       }
     ]
   },
@@ -668,7 +728,8 @@
         "year": 2003,
         "duration": "9:08",
         "youtube_id": "rJ0U8DxlzNY",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br4",
@@ -678,7 +739,8 @@
         "year": 1968,
         "duration": "2:50",
         "youtube_id": "hRu7Pt42x6Y",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": false
       },
       {
         "id": "br5",
@@ -687,8 +749,9 @@
         "album": "The Pious Bird of Good Omen",
         "year": 1968,
         "duration": "3:10",
-        "youtube_id": "gjOGaDseKgw",
-        "genre": "British Blues"
+        "youtube_id": "T69Vzl4Cnl8",
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br6",
@@ -698,7 +761,8 @@
         "year": 1969,
         "duration": "3:30",
         "youtube_id": "0yq-Fw7C26Y",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": false
       },
       {
         "id": "br7",
@@ -708,7 +772,8 @@
         "year": 1967,
         "duration": "2:55",
         "youtube_id": "NLpziHTO-Nc",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br8",
@@ -718,7 +783,8 @@
         "year": 1969,
         "duration": "4:34",
         "youtube_id": "dwc7ZEYfWYc",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br9",
@@ -728,7 +794,8 @@
         "year": 1965,
         "duration": "2:38",
         "youtube_id": "Ky486ZZmZ6k",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br11",
@@ -738,7 +805,8 @@
         "year": 2019,
         "duration": "4:17",
         "youtube_id": "ewFiqngynNk",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br14",
@@ -748,7 +816,8 @@
         "year": 1970,
         "duration": "4:36",
         "youtube_id": "EKRfCkx8KCM",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       },
       {
         "id": "br20",
@@ -758,7 +827,8 @@
         "year": 1971,
         "duration": "3:44",
         "youtube_id": "zEQNb17BSd0",
-        "genre": "British Blues"
+        "genre": "British Blues",
+        "is_hd": true
       }
     ]
   },
@@ -777,7 +847,8 @@
         "year": 1982,
         "duration": "4:52",
         "youtube_id": "IyhJ69mD7xI",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk5",
@@ -787,7 +858,8 @@
         "year": 1977,
         "duration": "3:38",
         "youtube_id": "O6yeLNNVa4A",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk8",
@@ -797,7 +869,8 @@
         "year": 1994,
         "duration": "4:40",
         "youtube_id": "ousaiByU1ko",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk11",
@@ -807,7 +880,8 @@
         "year": 1968,
         "duration": "4:57",
         "youtube_id": "KcIk4JYFd5w",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk18",
@@ -817,7 +891,8 @@
         "year": 2016,
         "duration": "3:56",
         "youtube_id": "lzdJf7Hqttk",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk19",
@@ -827,7 +902,8 @@
         "year": 1991,
         "duration": "5:59",
         "youtube_id": "kox6DUtSdAM",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk10",
@@ -837,7 +913,8 @@
         "year": 2015,
         "duration": "3:52",
         "youtube_id": "x-5OX7CO26c",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk20",
@@ -847,7 +924,8 @@
         "year": 1973,
         "duration": "3:52",
         "youtube_id": "Gg9cNGHl-bg",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk22",
@@ -857,7 +935,8 @@
         "year": 1983,
         "duration": "4:13",
         "youtube_id": "Ae829mFAGGE",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "brk25",
@@ -867,7 +946,8 @@
         "year": 2011,
         "duration": "5:25",
         "youtube_id": "CFjMeOnqAPI",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       }
     ]
   },
@@ -886,7 +966,8 @@
         "year": 2015,
         "duration": "4:53",
         "youtube_id": "4zAThXFOy2c",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb3",
@@ -896,7 +977,8 @@
         "year": 2005,
         "duration": "5:23",
         "youtube_id": "ioOzsi9aHQQ",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb4",
@@ -906,7 +988,8 @@
         "year": 2015,
         "duration": "3:56",
         "youtube_id": "3TrSMaOZm3Y",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb5",
@@ -916,7 +999,8 @@
         "year": 1976,
         "duration": "3:50",
         "youtube_id": "Yh8oZ3VD1pw",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb7",
@@ -926,7 +1010,8 @@
         "year": 2013,
         "duration": "4:18",
         "youtube_id": "gUm_VC3vBt4",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb8",
@@ -936,7 +1021,8 @@
         "year": 1959,
         "duration": "3:30",
         "youtube_id": "BTruv-lVoLk",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": false
       },
       {
         "id": "sb9",
@@ -946,7 +1032,8 @@
         "year": 1974,
         "duration": "3:52",
         "youtube_id": "38OOUDTsqM0",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb13",
@@ -956,7 +1043,8 @@
         "year": 1968,
         "duration": "2:43",
         "youtube_id": "rTVjnBo96Ug",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": false
       },
       {
         "id": "sb14",
@@ -966,7 +1054,8 @@
         "year": 1967,
         "duration": "2:48",
         "youtube_id": "5C4FnlftQt4",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "sb15",
@@ -976,7 +1065,8 @@
         "year": 1960,
         "duration": "3:00",
         "youtube_id": "S-cbOl96RFM",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": false
       }
     ]
   },
@@ -995,7 +1085,8 @@
         "year": 2012,
         "duration": "4:31",
         "youtube_id": "spcLUu6702I",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb10",
@@ -1005,7 +1096,8 @@
         "year": 2018,
         "duration": "3:30",
         "youtube_id": "hrwRAjCr_lA",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb18",
@@ -1015,7 +1107,8 @@
         "year": 2019,
         "duration": "5:42",
         "youtube_id": "9KgNaRQ_J-c",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb19",
@@ -1025,7 +1118,8 @@
         "year": 2019,
         "duration": "4:26",
         "youtube_id": "kUXzZWBEJFE",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb20",
@@ -1035,7 +1129,8 @@
         "year": 2019,
         "duration": "3:45",
         "youtube_id": "XEDgMsI7fd8",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb21",
@@ -1045,7 +1140,8 @@
         "year": 2019,
         "duration": "5:19",
         "youtube_id": "5rbPZSM8R-o",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb22",
@@ -1055,7 +1151,8 @@
         "year": 2022,
         "duration": "3:15",
         "youtube_id": "mBNEMtFgk08",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb25",
@@ -1065,7 +1162,8 @@
         "year": 2021,
         "duration": "4:30",
         "youtube_id": "NcxdptrFQCc",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb27",
@@ -1075,7 +1173,8 @@
         "year": 1986,
         "duration": "4:16",
         "youtube_id": "jP2EvSNHqh0",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       },
       {
         "id": "cb30",
@@ -1085,7 +1184,8 @@
         "year": 2012,
         "duration": "7:10",
         "youtube_id": "2XITBuWNROk",
-        "genre": "Contemporary Blues"
+        "genre": "Contemporary Blues",
+        "is_hd": true
       }
     ]
   },
@@ -1104,7 +1204,8 @@
         "year": 1977,
         "duration": "3:42",
         "youtube_id": "UprwkbzUX6g",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb5",
@@ -1114,7 +1215,8 @@
         "year": 2011,
         "duration": "4:51",
         "youtube_id": "yGk34zEtcMg",
-        "genre": "Soul Blues"
+        "genre": "Soul Blues",
+        "is_hd": true
       },
       {
         "id": "bb6",
@@ -1124,7 +1226,8 @@
         "year": 2013,
         "duration": "4:38",
         "youtube_id": "PMIZEol5Zkk",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "bb7",
@@ -1134,7 +1237,8 @@
         "year": 1992,
         "duration": "4:31",
         "youtube_id": "JxPj3GAYYZ0",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb8",
@@ -1144,7 +1248,8 @@
         "year": 1989,
         "duration": "6:26",
         "youtube_id": "thDDr-3HiYU",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb9",
@@ -1154,7 +1259,8 @@
         "year": 1991,
         "duration": "5:33",
         "youtube_id": "nW9Cu6GYqxo",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb10",
@@ -1164,7 +1270,8 @@
         "year": 1974,
         "duration": "3:47",
         "youtube_id": "toJ3ZYWRh24",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb11",
@@ -1174,7 +1281,8 @@
         "year": 1990,
         "duration": "6:14",
         "youtube_id": "QKZU4GxmQfU",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb12",
@@ -1184,7 +1292,8 @@
         "year": 1979,
         "duration": "6:53",
         "youtube_id": "vkUpfw4Hf3w",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       },
       {
         "id": "bb13",
@@ -1194,7 +1303,8 @@
         "year": 1965,
         "duration": "4:09",
         "youtube_id": "RYKYMUFestk",
-        "genre": "Blues Ballad"
+        "genre": "Blues Ballad",
+        "is_hd": true
       }
     ]
   },
@@ -1213,7 +1323,8 @@
         "year": 1968,
         "duration": "3:38",
         "youtube_id": "L8hOvsg_AiY",
-        "genre": "Electric Blues"
+        "genre": "Electric Blues",
+        "is_hd": true
       },
       {
         "id": "gl8",
@@ -1223,7 +1334,8 @@
         "year": 1994,
         "duration": "5:38",
         "youtube_id": "rB6OlJqV1rQ",
-        "genre": "Blues Rock"
+        "genre": "Blues Rock",
+        "is_hd": true
       },
       {
         "id": "gl12",
@@ -1233,7 +1345,8 @@
         "year": 1967,
         "duration": "2:33",
         "youtube_id": "ue9oHYGEKlU",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl13",
@@ -1243,7 +1356,8 @@
         "year": 1961,
         "duration": "2:37",
         "youtube_id": "oDQQlyCpcIw",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": false
       },
       {
         "id": "gl14",
@@ -1253,7 +1367,8 @@
         "year": 1971,
         "duration": "3:21",
         "youtube_id": "KjFjaAbYizs",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl15",
@@ -1263,7 +1378,8 @@
         "year": 1991,
         "duration": "4:31",
         "youtube_id": "NU5xA6ty0a4",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl16",
@@ -1273,7 +1389,8 @@
         "year": 1993,
         "duration": "4:39",
         "youtube_id": "ClpR3fOKPRA",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl17",
@@ -1283,7 +1400,8 @@
         "year": 1969,
         "duration": "5:26",
         "youtube_id": "4fk2prKnYnI",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl18",
@@ -1293,7 +1411,8 @@
         "year": 1968,
         "duration": "2:36",
         "youtube_id": "oUTwVtS_-NA",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       },
       {
         "id": "gl19",
@@ -1303,7 +1422,8 @@
         "year": 1980,
         "duration": "4:38",
         "youtube_id": "_E6gsuek-5g",
-        "genre": "Blues Guitar Legends"
+        "genre": "Blues Guitar Legends",
+        "is_hd": true
       }
     ]
   },
@@ -1322,7 +1442,8 @@
         "year": 2014,
         "youtube_id": "ELKbtFljucQ",
         "genre": "Blue-Eyed Soul",
-        "duration": "6:22"
+        "duration": "6:22",
+        "is_hd": true
       },
       {
         "id": "lb6",
@@ -1332,7 +1453,8 @@
         "year": 2012,
         "youtube_id": "z3Or7huOK7o",
         "genre": "Chicago Blues",
-        "duration": "10:42"
+        "duration": "10:42",
+        "is_hd": true
       },
       {
         "id": "lb8",
@@ -1342,7 +1464,8 @@
         "year": 1969,
         "youtube_id": "cI75VAn8JMM",
         "genre": "Blues Rock",
-        "duration": "4:38"
+        "duration": "4:38",
+        "is_hd": true
       },
       {
         "id": "lb11",
@@ -1352,7 +1475,8 @@
         "year": 1982,
         "youtube_id": "kfjXp4KTTY8",
         "genre": "Texas Blues",
-        "duration": "4:01"
+        "duration": "4:01",
+        "is_hd": true
       },
       {
         "id": "lb12",
@@ -1362,7 +1486,8 @@
         "year": 1983,
         "youtube_id": "KC5H9P4F5Uk",
         "genre": "Texas Blues",
-        "duration": "9:31"
+        "duration": "9:31",
+        "is_hd": true
       },
       {
         "id": "lb13",
@@ -1372,7 +1497,8 @@
         "year": 1983,
         "youtube_id": "-CixtG_bF28",
         "genre": "Texas Blues",
-        "duration": "7:04"
+        "duration": "7:04",
+        "is_hd": true
       },
       {
         "id": "lb14",
@@ -1382,7 +1508,8 @@
         "year": 1989,
         "youtube_id": "t54xyIcgbks",
         "genre": "Texas Blues",
-        "duration": "4:05"
+        "duration": "4:05",
+        "is_hd": true
       },
       {
         "id": "lb15",
@@ -1392,7 +1519,8 @@
         "year": 2022,
         "youtube_id": "vKFN78ksSa8",
         "genre": "Blues Rock",
-        "duration": "6:41"
+        "duration": "6:41",
+        "is_hd": true
       },
       {
         "id": "lb17",
@@ -1402,7 +1530,8 @@
         "year": 1991,
         "youtube_id": "-KG2O5PSCSs",
         "genre": "Blues Rock",
-        "duration": "8:08"
+        "duration": "8:08",
+        "is_hd": true
       },
       {
         "id": "lb18",
@@ -1412,7 +1541,8 @@
         "year": 2010,
         "youtube_id": "SgXSomPE_FY",
         "genre": "Blues",
-        "duration": "11:06"
+        "duration": "11:06",
+        "is_hd": true
       }
     ]
   },
@@ -1431,7 +1561,8 @@
         "year": 2003,
         "youtube_id": "DdGyRMsBH6w",
         "genre": "Southern Rock",
-        "duration": "6:45"
+        "duration": "6:45",
+        "is_hd": true
       },
       {
         "id": "am5",
@@ -1441,7 +1572,8 @@
         "year": 2020,
         "youtube_id": "fq15HXc6pmw",
         "genre": "Country Blues",
-        "duration": "5:10"
+        "duration": "5:10",
+        "is_hd": true
       },
       {
         "id": "am6",
@@ -1451,7 +1583,8 @@
         "year": 2017,
         "youtube_id": "sI0TeFf6uD8",
         "genre": "Country Blues",
-        "duration": "3:01"
+        "duration": "3:01",
+        "is_hd": true
       },
       {
         "id": "am7",
@@ -1461,7 +1594,8 @@
         "year": 2017,
         "youtube_id": "Dg3lXoCo7HU",
         "genre": "Country Blues",
-        "duration": "3:44"
+        "duration": "3:44",
+        "is_hd": true
       },
       {
         "id": "am8",
@@ -1471,7 +1605,8 @@
         "year": 2017,
         "youtube_id": "osc1DbNpNXE",
         "genre": "Country Blues",
-        "duration": "3:37"
+        "duration": "3:37",
+        "is_hd": true
       },
       {
         "id": "am9",
@@ -1481,7 +1616,8 @@
         "year": 2017,
         "youtube_id": "MPoN-FNB2V8",
         "genre": "Country Blues",
-        "duration": "3:30"
+        "duration": "3:30",
+        "is_hd": true
       },
       {
         "id": "am10",
@@ -1491,7 +1627,8 @@
         "year": 2020,
         "youtube_id": "8e7S8l4s1OM",
         "genre": "Country Blues",
-        "duration": "3:34"
+        "duration": "3:34",
+        "is_hd": true
       },
       {
         "id": "am11",
@@ -1501,7 +1638,8 @@
         "year": 2013,
         "youtube_id": "S-s3vuXopS4",
         "genre": "Americana",
-        "duration": "4:54"
+        "duration": "4:54",
+        "is_hd": true
       },
       {
         "id": "am12",
@@ -1511,7 +1649,8 @@
         "year": 2020,
         "youtube_id": "VWmgFwozjxo",
         "genre": "Blues Rock",
-        "duration": "2:57"
+        "duration": "2:57",
+        "is_hd": true
       },
       {
         "id": "am13",
@@ -1521,7 +1660,8 @@
         "year": 2020,
         "youtube_id": "gqZLlXI6fFg",
         "genre": "Blues Rock",
-        "duration": "4:49"
+        "duration": "4:49",
+        "is_hd": true
       }
     ]
   },
@@ -1540,7 +1680,8 @@
         "year": 2022,
         "youtube_id": "NmZO5MVsSOw",
         "genre": "Blues Rock",
-        "duration": "3:19"
+        "duration": "3:19",
+        "is_hd": true
       },
       {
         "id": "js3",
@@ -1550,7 +1691,8 @@
         "year": 2016,
         "youtube_id": "Q8n0ZmakqCg",
         "genre": "Blues Rock",
-        "duration": "6:34"
+        "duration": "6:34",
+        "is_hd": true
       },
       {
         "id": "js4",
@@ -1560,7 +1702,8 @@
         "year": 1971,
         "youtube_id": "w1V5XNLLwFU",
         "genre": "Southern Rock",
-        "duration": "4:06"
+        "duration": "4:06",
+        "is_hd": true
       },
       {
         "id": "js5",
@@ -1570,7 +1713,8 @@
         "year": 2002,
         "youtube_id": "DUn6kYSnt3E",
         "genre": "Blues Rock",
-        "duration": "7:48"
+        "duration": "7:48",
+        "is_hd": true
       },
       {
         "id": "js6",
@@ -1580,7 +1724,8 @@
         "year": 2021,
         "youtube_id": "lWXtPpmx8is",
         "genre": "Blues Rock",
-        "duration": "7:19"
+        "duration": "7:19",
+        "is_hd": true
       },
       {
         "id": "js7",
@@ -1590,7 +1735,8 @@
         "year": 2023,
         "youtube_id": "O7h1sqatFPs",
         "genre": "Blues Rock",
-        "duration": "6:02"
+        "duration": "6:02",
+        "is_hd": true
       },
       {
         "id": "js8",
@@ -1600,7 +1746,8 @@
         "year": 2023,
         "youtube_id": "yFHw13KnFJc",
         "genre": "Blues Rock",
-        "duration": "4:55"
+        "duration": "4:55",
+        "is_hd": true
       },
       {
         "id": "js9",
@@ -1610,7 +1757,8 @@
         "year": 2001,
         "youtube_id": "MiIlZRCatY4",
         "genre": "Blues Rock",
-        "duration": "5:57"
+        "duration": "5:57",
+        "is_hd": true
       },
       {
         "id": "js10",
@@ -1620,7 +1768,8 @@
         "year": 2014,
         "youtube_id": "n7AKexwEWIo",
         "genre": "Country Blues",
-        "duration": "4:02"
+        "duration": "4:02",
+        "is_hd": true
       },
       {
         "id": "js11",
@@ -1630,7 +1779,2269 @@
         "year": 2021,
         "youtube_id": "e5nOxc-p-eM",
         "genre": "Country Blues",
-        "duration": "4:32"
+        "duration": "4:32",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "rock-essentials",
+    "name": "Rock Essentials",
+    "description": "The definitive rock anthems that defined generations. From riff-driven classics to arena-shaking power chords, these essential tracks form the backbone of rock music history.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "re01",
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "album": "Back in Black",
+        "year": 1980,
+        "duration": "4:14",
+        "youtube_id": "pAgnJDJN4VA",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re02",
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "album": "Led Zeppelin IV",
+        "year": 1971,
+        "duration": "8:03",
+        "youtube_id": "QkF3oxziUI4",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re03",
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "year": 1975,
+        "duration": "5:55",
+        "youtube_id": "fJ9rUzIMcZQ",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re04",
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "year": 1991,
+        "duration": "5:01",
+        "youtube_id": "hTWKbfoikeg",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re05",
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "year": 1976,
+        "duration": "6:30",
+        "youtube_id": "lrpXArn3hII",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re06",
+        "title": "Purple Haze",
+        "artist": "Jimi Hendrix",
+        "album": "Are You Experienced",
+        "year": 1967,
+        "duration": "2:52",
+        "youtube_id": "WGoDaYjdfSg",
+        "genre": "Rock",
+        "is_hd": false
+      },
+      {
+        "id": "re07",
+        "title": "Paint It Black",
+        "artist": "The Rolling Stones",
+        "album": "Aftermath",
+        "year": 1966,
+        "duration": "3:22",
+        "youtube_id": "O4irXQhgMqg",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re08",
+        "title": "Dream On",
+        "artist": "Aerosmith",
+        "album": "Aerosmith",
+        "year": 1973,
+        "duration": "4:28",
+        "youtube_id": "89dGC8de0CA",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re09",
+        "title": "Born to Run",
+        "artist": "Bruce Springsteen",
+        "album": "Born to Run",
+        "year": 1975,
+        "duration": "4:30",
+        "youtube_id": "IxuThNgl3YA",
+        "genre": "Rock",
+        "is_hd": true
+      },
+      {
+        "id": "re10",
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "year": 1987,
+        "duration": "5:56",
+        "youtube_id": "1w7OgIMMRc4",
+        "genre": "Rock",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "jazz-standards",
+    "name": "Jazz Standards",
+    "description": "Timeless jazz masterpieces that shaped the genre. From smoky ballads to blazing bebop, these essential recordings capture the artistry and innovation of jazz's greatest performers.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "js01",
+        "title": "So What",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "year": 1959,
+        "duration": "9:22",
+        "youtube_id": "ylXk1LBvIqU",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js02",
+        "title": "Take Five",
+        "artist": "Dave Brubeck",
+        "album": "Time Out",
+        "year": 1959,
+        "duration": "5:24",
+        "youtube_id": "vmDDOFXSgAs",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js03",
+        "title": "My Favorite Things",
+        "artist": "John Coltrane",
+        "album": "My Favorite Things",
+        "year": 1961,
+        "duration": "13:46",
+        "youtube_id": "JQvc-Gkwhow",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js04",
+        "title": "Feeling Good",
+        "artist": "Nina Simone",
+        "album": "I Put a Spell on You",
+        "year": 1965,
+        "duration": "3:03",
+        "youtube_id": "oHRNrgDIJfo",
+        "genre": "Jazz",
+        "is_hd": false
+      },
+      {
+        "id": "js05",
+        "title": "Autumn Leaves",
+        "artist": "Bill Evans",
+        "album": "Portrait in Jazz",
+        "year": 1959,
+        "duration": "6:01",
+        "youtube_id": "C1mMsz2I1c8",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js06",
+        "title": "A Love Supreme (Part I)",
+        "artist": "John Coltrane",
+        "album": "A Love Supreme",
+        "year": 1965,
+        "duration": "7:44",
+        "youtube_id": "Dmx2WuUPVcs",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js07",
+        "title": "Round Midnight",
+        "artist": "Thelonious Monk",
+        "album": "Thelonious Himself",
+        "year": 1957,
+        "duration": "17:43",
+        "youtube_id": "IKayR1oqC7w",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js08",
+        "title": "Summertime",
+        "artist": "Ella Fitzgerald & Louis Armstrong",
+        "album": "Porgy and Bess",
+        "year": 1958,
+        "duration": "4:56",
+        "youtube_id": "2HJCN3upMHE",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js09",
+        "title": "Moanin'",
+        "artist": "Art Blakey & The Jazz Messengers",
+        "album": "Moanin'",
+        "year": 1958,
+        "duration": "9:31",
+        "youtube_id": "fsJ3JjpZyoA",
+        "genre": "Jazz",
+        "is_hd": true
+      },
+      {
+        "id": "js10",
+        "title": "God Bless the Child",
+        "artist": "Billie Holiday",
+        "album": "Lady in Satin",
+        "year": 1958,
+        "duration": "4:00",
+        "youtube_id": "mp349H8G0XQ",
+        "genre": "Jazz",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "soul-classics",
+    "name": "Soul Classics",
+    "description": "The sound of soul music at its finest. From Motown's golden era to the deep soul of Stax and Atlantic Records, these timeless tracks are the heartbeat of American music.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "sc01",
+        "title": "(Sittin' On) The Dock of the Bay",
+        "artist": "Otis Redding",
+        "album": "The Dock of the Bay",
+        "year": 1968,
+        "duration": "2:44",
+        "youtube_id": "7C-VscEQugk",
+        "genre": "Soul",
+        "is_hd": true
+      },
+      {
+        "id": "sc02",
+        "title": "Respect",
+        "artist": "Aretha Franklin",
+        "album": "I Never Loved a Man the Way I Love You",
+        "year": 1967,
+        "duration": "2:27",
+        "youtube_id": "6FOUqQt3Kg0",
+        "genre": "Soul",
+        "is_hd": false
+      },
+      {
+        "id": "sc03",
+        "title": "Superstition",
+        "artist": "Stevie Wonder",
+        "album": "Talking Book",
+        "year": 1972,
+        "duration": "4:26",
+        "youtube_id": "aNAPi_KwDPE",
+        "genre": "Soul",
+        "is_hd": true
+      },
+      {
+        "id": "sc04",
+        "title": "A Change Is Gonna Come",
+        "artist": "Sam Cooke",
+        "album": "Ain't That Good News",
+        "year": 1964,
+        "duration": "3:11",
+        "youtube_id": "wEBlaMOmKV4",
+        "genre": "Soul",
+        "is_hd": false
+      },
+      {
+        "id": "sc05",
+        "title": "Try a Little Tenderness",
+        "artist": "Otis Redding",
+        "album": "Complete & Unbelievable: The Otis Redding Dictionary of Soul",
+        "year": 1966,
+        "duration": "3:21",
+        "youtube_id": "pli44utBOwo",
+        "genre": "Soul",
+        "is_hd": true
+      },
+      {
+        "id": "sc06",
+        "title": "I Heard It Through the Grapevine",
+        "artist": "Marvin Gaye",
+        "album": "In the Groove",
+        "year": 1968,
+        "duration": "3:17",
+        "youtube_id": "cXWHpbpNdHE",
+        "genre": "Soul",
+        "is_hd": false
+      },
+      {
+        "id": "sc07",
+        "title": "What's Going On",
+        "artist": "Marvin Gaye",
+        "album": "What's Going On",
+        "year": 1971,
+        "duration": "3:56",
+        "youtube_id": "KDK7TiEiMOI",
+        "genre": "Soul",
+        "is_hd": true
+      },
+      {
+        "id": "sc08",
+        "title": "In the Midnight Hour",
+        "artist": "Wilson Pickett",
+        "album": "The Exciting Wilson Pickett",
+        "year": 1965,
+        "duration": "2:40",
+        "youtube_id": "Il-usrZxGns",
+        "genre": "Soul",
+        "is_hd": false
+      },
+      {
+        "id": "sc09",
+        "title": "Let's Stay Together",
+        "artist": "Al Green",
+        "album": "Let's Stay Together",
+        "year": 1972,
+        "duration": "3:20",
+        "youtube_id": "XXx6RDzR6eM",
+        "genre": "Soul",
+        "is_hd": true
+      },
+      {
+        "id": "sc10",
+        "title": "I Feel Good",
+        "artist": "James Brown",
+        "album": "I Got You (I Feel Good)",
+        "year": 1965,
+        "duration": "2:46",
+        "youtube_id": "pTdihu-mp90",
+        "genre": "Soul",
+        "is_hd": false
+      }
+    ]
+  },
+  {
+    "id": "funk-grooves",
+    "name": "Funk Grooves",
+    "description": "Get down with the funkiest grooves ever laid down. Bootsy-approved basslines, tight horns, and rhythms that make you move — this is the essential funk playlist.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "fg01",
+        "title": "Flash Light",
+        "artist": "Parliament",
+        "album": "Funkentelechy vs. the Placebo Syndrome",
+        "year": 1977,
+        "duration": "5:48",
+        "youtube_id": "0wBqWb43y6I",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg02",
+        "title": "Super Freak",
+        "artist": "Rick James",
+        "album": "Street Songs",
+        "year": 1981,
+        "duration": "3:25",
+        "youtube_id": "QYHxGBH6o4M",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg03",
+        "title": "Brick House",
+        "artist": "Commodores",
+        "album": "Commodores",
+        "year": 1977,
+        "duration": "3:32",
+        "youtube_id": "ZdJmXeod0RE",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg04",
+        "title": "Thank You (Falettinme Be Mice Elf Agin)",
+        "artist": "Sly & The Family Stone",
+        "album": "Greatest Hits",
+        "year": 1970,
+        "duration": "6:01",
+        "youtube_id": "-T9vmaTI2LE",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg05",
+        "title": "Good Times",
+        "artist": "Chic",
+        "album": "Risqué",
+        "year": 1979,
+        "duration": "3:46",
+        "youtube_id": "iGKQapswGaY",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg06",
+        "title": "Get Up (I Feel Like Being a) Sex Machine",
+        "artist": "James Brown",
+        "album": "Sex Machine",
+        "year": 1970,
+        "duration": "5:16",
+        "youtube_id": "ow4ecyCQeRM",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg07",
+        "title": "Jungle Boogie",
+        "artist": "Kool & The Gang",
+        "album": "Wild and Peaceful",
+        "year": 1973,
+        "duration": "3:07",
+        "youtube_id": "QGKiC2suCHQ",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg08",
+        "title": "Word Up",
+        "artist": "Cameo",
+        "album": "Word Up",
+        "year": 1986,
+        "duration": "4:20",
+        "youtube_id": "lYOSdI_91WM",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg09",
+        "title": "Papa's Got a Brand New Bag",
+        "artist": "James Brown",
+        "album": "Papa's Got a Brand New Bag",
+        "year": 1965,
+        "duration": "4:17",
+        "youtube_id": "M7DNkovC2Tk",
+        "genre": "Funk",
+        "is_hd": true
+      },
+      {
+        "id": "fg10",
+        "title": "Hollywood Swinging",
+        "artist": "Kool & The Gang",
+        "album": "Wild and Peaceful",
+        "year": 1973,
+        "duration": "4:40",
+        "youtube_id": "Uxc9KSPLMxY",
+        "genre": "Funk",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "rnb-hits",
+    "name": "R&B Hits",
+    "description": "Modern R&B at its smoothest and most soulful. From 90s slow jams to contemporary hits, these tracks showcase the evolution of rhythm and blues.",
+    "cover": "assets/images/blues-classics.svg",
+    "color": "#E95420",
+    "songs": [
+      {
+        "id": "rh01",
+        "title": "Ordinary People",
+        "artist": "John Legend",
+        "album": "Get Lifted",
+        "year": 2004,
+        "duration": "4:56",
+        "youtube_id": "PIh07c_P4hc",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh02",
+        "title": "No Diggity",
+        "artist": "Blackstreet feat. Dr. Dre",
+        "album": "Another Level",
+        "year": 1996,
+        "duration": "5:06",
+        "youtube_id": "3KL9mRus19o",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh03",
+        "title": "Untitled (How Does It Feel)",
+        "artist": "D'Angelo",
+        "album": "Voodoo",
+        "year": 2000,
+        "duration": "4:23",
+        "youtube_id": "SxVNOnPyvIU",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh04",
+        "title": "Adorn",
+        "artist": "Miguel",
+        "album": "Kaleidoscope Dream",
+        "year": 2012,
+        "duration": "3:40",
+        "youtube_id": "8dM5QYdTo08",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh05",
+        "title": "On & On",
+        "artist": "Erykah Badu",
+        "album": "Baduizm",
+        "year": 1997,
+        "duration": "4:41",
+        "youtube_id": "-CPCs7vVz6s",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh06",
+        "title": "Pony",
+        "artist": "Ginuwine",
+        "album": "Ginuwine... the Bachelor",
+        "year": 1996,
+        "duration": "4:12",
+        "youtube_id": "aScuEoqJ36c",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh07",
+        "title": "You Don't Know My Name",
+        "artist": "Alicia Keys",
+        "album": "The Diary of Alicia Keys",
+        "year": 2003,
+        "duration": "6:07",
+        "youtube_id": "_ST6ZRbhGiA",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh08",
+        "title": "Say My Name",
+        "artist": "Destiny's Child",
+        "album": "The Writing's on the Wall",
+        "year": 1999,
+        "duration": "3:59",
+        "youtube_id": "sQgd6MccwZc",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh09",
+        "title": "Cranes in the Sky",
+        "artist": "Solange",
+        "album": "A Seat at the Table",
+        "year": 2016,
+        "duration": "4:32",
+        "youtube_id": "S0qrinhNnOM",
+        "genre": "R&B",
+        "is_hd": true
+      },
+      {
+        "id": "rh10",
+        "title": "Blame It",
+        "artist": "Jamie Foxx feat. T-Pain",
+        "album": "Intuition",
+        "year": 2009,
+        "duration": "5:11",
+        "youtube_id": "rfjtpp90lu8",
+        "genre": "R&B",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "classic-rock",
+    "name": "Classic Rock",
+    "description": "The anthemic, guitar-driven rock of the 60s and 70s — timeless riffs, soaring solos, and singalong choruses that defined a generation.",
+    "cover": "assets/images/classic-rock.svg",
+    "color": "#EF4444",
+    "songs": [
+      {
+        "id": "cr1",
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "album": "Led Zeppelin IV",
+        "year": 1971,
+        "youtube_id": "QkF3oxziUI4",
+        "genre": "Classic Rock",
+        "duration": "8:03",
+        "is_hd": true
+      },
+      {
+        "id": "cr2",
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "year": 1975,
+        "youtube_id": "fJ9rUzIMcZQ",
+        "genre": "Classic Rock",
+        "duration": "5:59",
+        "is_hd": true
+      },
+      {
+        "id": "cr3",
+        "title": "Another Brick in the Wall, Pt. 2",
+        "artist": "Pink Floyd",
+        "album": "The Wall",
+        "year": 1979,
+        "youtube_id": "HrxX9TBj2zY",
+        "genre": "Classic Rock",
+        "duration": "3:19",
+        "is_hd": true
+      },
+      {
+        "id": "cr4",
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "year": 1976,
+        "youtube_id": "09839DpTctU",
+        "genre": "Classic Rock",
+        "duration": "6:45",
+        "is_hd": true
+      },
+      {
+        "id": "cr5",
+        "title": "(I Can't Get No) Satisfaction",
+        "artist": "The Rolling Stones",
+        "album": "Out of Our Heads",
+        "year": 1965,
+        "youtube_id": "g5W4k6vD2WY",
+        "genre": "Classic Rock",
+        "duration": "8:15",
+        "is_hd": true
+      },
+      {
+        "id": "cr6",
+        "title": "Hey Jude",
+        "artist": "The Beatles",
+        "album": "Hey Jude (single)",
+        "year": 1968,
+        "youtube_id": "A_MjCqQoLLA",
+        "genre": "Classic Rock",
+        "duration": "8:10",
+        "is_hd": true
+      },
+      {
+        "id": "cr7",
+        "title": "Don't Stop Believin'",
+        "artist": "Journey",
+        "album": "Escape",
+        "year": 1981,
+        "youtube_id": "1k8craCGpgs",
+        "genre": "Classic Rock",
+        "duration": "4:10",
+        "is_hd": true
+      },
+      {
+        "id": "cr8",
+        "title": "Go Your Own Way",
+        "artist": "Fleetwood Mac",
+        "album": "Rumours",
+        "year": 1977,
+        "youtube_id": "ozl3L9fhKtE",
+        "genre": "Classic Rock",
+        "duration": "3:33",
+        "is_hd": true
+      },
+      {
+        "id": "cr9",
+        "title": "Baba O'Riley",
+        "artist": "The Who",
+        "album": "Who's Next",
+        "year": 1971,
+        "youtube_id": "QRTNm6GLJYI",
+        "genre": "Classic Rock",
+        "duration": "5:01",
+        "is_hd": true
+      },
+      {
+        "id": "cr10",
+        "title": "Free Bird",
+        "artist": "Lynyrd Skynyrd",
+        "album": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+        "year": 1973,
+        "youtube_id": "0LwcvjNJTuM",
+        "genre": "Classic Rock",
+        "duration": "9:10",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "hard-rock",
+    "name": "Hard Rock",
+    "description": "Loud, riff-heavy and radio-ready — the powerful, no-frills rock that cranked the amps to 11 through the 70s and 80s.",
+    "cover": "assets/images/hard-rock.svg",
+    "color": "#F97316",
+    "songs": [
+      {
+        "id": "hr1",
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "album": "Back in Black",
+        "year": 1980,
+        "youtube_id": "pAgnJDJN4VA",
+        "genre": "Hard Rock",
+        "duration": "4:14",
+        "is_hd": true
+      },
+      {
+        "id": "hr2",
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "year": 1987,
+        "youtube_id": "1w7OgIMMRc4",
+        "genre": "Hard Rock",
+        "duration": "5:03",
+        "is_hd": true
+      },
+      {
+        "id": "hr3",
+        "title": "Jump",
+        "artist": "Van Halen",
+        "album": "1984",
+        "year": 1984,
+        "youtube_id": "SwYN7mTi6HM",
+        "genre": "Hard Rock",
+        "duration": "4:02",
+        "is_hd": true
+      },
+      {
+        "id": "hr4",
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "album": "Slippery When Wet",
+        "year": 1986,
+        "youtube_id": "lDK9QqIzhwk",
+        "genre": "Hard Rock",
+        "duration": "4:09",
+        "is_hd": true
+      },
+      {
+        "id": "hr5",
+        "title": "Walk This Way",
+        "artist": "Aerosmith",
+        "album": "Toys in the Attic",
+        "year": 1975,
+        "youtube_id": "4c8O2n1Gfto",
+        "genre": "Hard Rock",
+        "duration": "3:41",
+        "is_hd": true
+      },
+      {
+        "id": "hr6",
+        "title": "Pour Some Sugar on Me",
+        "artist": "Def Leppard",
+        "album": "Hysteria",
+        "year": 1987,
+        "youtube_id": "0UIB9Y4OFPs",
+        "genre": "Hard Rock",
+        "duration": "4:56",
+        "is_hd": true
+      },
+      {
+        "id": "hr7",
+        "title": "I Was Made for Lovin' You",
+        "artist": "KISS",
+        "album": "Dynasty",
+        "year": 1979,
+        "youtube_id": "ZhIsAZO5gl0",
+        "genre": "Hard Rock",
+        "duration": "3:58",
+        "is_hd": true
+      },
+      {
+        "id": "hr8",
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "album": "Machine Head",
+        "year": 1972,
+        "youtube_id": "Q2FzZSBD5LE",
+        "genre": "Hard Rock",
+        "duration": "6:15",
+        "is_hd": true
+      },
+      {
+        "id": "hr9",
+        "title": "Rock You Like a Hurricane",
+        "artist": "Scorpions",
+        "album": "Love at First Sting",
+        "year": 1984,
+        "youtube_id": "6yP1tcy9a10",
+        "genre": "Hard Rock",
+        "duration": "4:13",
+        "is_hd": true
+      },
+      {
+        "id": "hr10",
+        "title": "The Boys Are Back in Town",
+        "artist": "Thin Lizzy",
+        "album": "Jailbreak",
+        "year": 1976,
+        "youtube_id": "5_xqb416S7o",
+        "genre": "Hard Rock",
+        "duration": "2:22",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "heavy-metal",
+    "name": "Heavy Metal",
+    "description": "Dark, fast and heavy — thunderous riffs, blazing solos, and iconic vocals that forged the definitive sound of metal.",
+    "cover": "assets/images/heavy-metal.svg",
+    "color": "#8B5CF6",
+    "songs": [
+      {
+        "id": "hm1",
+        "title": "Paranoid",
+        "artist": "Black Sabbath",
+        "album": "Paranoid",
+        "year": 1970,
+        "youtube_id": "0qanF-91aJo",
+        "genre": "Heavy Metal",
+        "duration": "2:51",
+        "is_hd": true
+      },
+      {
+        "id": "hm2",
+        "title": "The Number of the Beast",
+        "artist": "Iron Maiden",
+        "album": "The Number of the Beast",
+        "year": 1982,
+        "youtube_id": "WxnN05vOuSM",
+        "genre": "Heavy Metal",
+        "duration": "4:51",
+        "is_hd": true
+      },
+      {
+        "id": "hm3",
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "album": "Metallica (The Black Album)",
+        "year": 1991,
+        "youtube_id": "CD-E-LDc384",
+        "genre": "Heavy Metal",
+        "duration": "5:31",
+        "is_hd": true
+      },
+      {
+        "id": "hm4",
+        "title": "Breaking the Law",
+        "artist": "Judas Priest",
+        "album": "British Steel",
+        "year": 1980,
+        "youtube_id": "L397TWLwrUU",
+        "genre": "Heavy Metal",
+        "duration": "2:38",
+        "is_hd": true
+      },
+      {
+        "id": "hm5",
+        "title": "Ace of Spades",
+        "artist": "Motörhead",
+        "album": "Ace of Spades",
+        "year": 1980,
+        "youtube_id": "3mbvWn1EY6g",
+        "genre": "Heavy Metal",
+        "duration": "2:45",
+        "is_hd": true
+      },
+      {
+        "id": "hm6",
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "album": "Blizzard of Ozz",
+        "year": 1980,
+        "youtube_id": "FVovq9TGBw0",
+        "genre": "Heavy Metal",
+        "duration": "4:10",
+        "is_hd": true
+      },
+      {
+        "id": "hm7",
+        "title": "Raining Blood",
+        "artist": "Slayer",
+        "album": "Reign in Blood",
+        "year": 1986,
+        "youtube_id": "cbyswHABG3Q",
+        "genre": "Heavy Metal",
+        "duration": "3:57",
+        "is_hd": true
+      },
+      {
+        "id": "hm8",
+        "title": "Symphony of Destruction",
+        "artist": "Megadeth",
+        "album": "Countdown to Extinction",
+        "year": 1992,
+        "youtube_id": "vfpgpf6QVnI",
+        "genre": "Heavy Metal",
+        "duration": "4:11",
+        "is_hd": true
+      },
+      {
+        "id": "hm9",
+        "title": "Walk",
+        "artist": "Pantera",
+        "album": "Vulgar Display of Power",
+        "year": 1992,
+        "youtube_id": "AkFqg5wAuFk",
+        "genre": "Heavy Metal",
+        "duration": "5:16",
+        "is_hd": true
+      },
+      {
+        "id": "hm10",
+        "title": "Holy Diver",
+        "artist": "Dio",
+        "album": "Holy Diver",
+        "year": 1983,
+        "youtube_id": "2lvs2FzF64o",
+        "genre": "Heavy Metal",
+        "duration": "4:39",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "psychedelic-rock",
+    "name": "Psychedelic Rock",
+    "description": "Trippy, experimental 60s rock built on fuzz guitars, sitars, and surreal lyrics — the soundtrack of the acid-fueled counterculture.",
+    "cover": "assets/images/psychedelic-rock.svg",
+    "color": "#EF4444",
+    "songs": [
+      {
+        "id": "pr1",
+        "title": "Purple Haze",
+        "artist": "Jimi Hendrix",
+        "album": "Are You Experienced",
+        "year": 1967,
+        "youtube_id": "WGoDaYjdfSg",
+        "genre": "Psychedelic Rock",
+        "duration": "2:52",
+        "is_hd": true
+      },
+      {
+        "id": "pr2",
+        "title": "Light My Fire",
+        "artist": "The Doors",
+        "album": "The Doors",
+        "year": 1967,
+        "youtube_id": "edq9egDwPQI",
+        "genre": "Psychedelic Rock",
+        "duration": "9:25",
+        "is_hd": true
+      },
+      {
+        "id": "pr3",
+        "title": "Strawberry Fields Forever",
+        "artist": "The Beatles",
+        "album": "Magical Mystery Tour",
+        "year": 1967,
+        "youtube_id": "HtUH9z_Oey8",
+        "genre": "Psychedelic Rock",
+        "duration": "4:23",
+        "is_hd": true
+      },
+      {
+        "id": "pr4",
+        "title": "White Rabbit",
+        "artist": "Jefferson Airplane",
+        "album": "Surrealistic Pillow",
+        "year": 1967,
+        "youtube_id": "pnJM_jC7j_4",
+        "genre": "Psychedelic Rock",
+        "duration": "2:34",
+        "is_hd": false
+      },
+      {
+        "id": "pr5",
+        "title": "See Emily Play",
+        "artist": "Pink Floyd",
+        "album": "Relics",
+        "year": 1967,
+        "youtube_id": "7c0EDM-Yu9o",
+        "genre": "Psychedelic Rock",
+        "duration": "2:49",
+        "is_hd": true
+      },
+      {
+        "id": "pr6",
+        "title": "Sunshine of Your Love",
+        "artist": "Cream",
+        "album": "Disraeli Gears",
+        "year": 1967,
+        "youtube_id": "yymQaMrb2VA",
+        "genre": "Psychedelic Rock",
+        "duration": "8:52",
+        "is_hd": true
+      },
+      {
+        "id": "pr7",
+        "title": "All Along the Watchtower",
+        "artist": "Jimi Hendrix",
+        "album": "Electric Ladyland",
+        "year": 1968,
+        "youtube_id": "TLV4_xaYynY",
+        "genre": "Psychedelic Rock",
+        "duration": "4:01",
+        "is_hd": true
+      },
+      {
+        "id": "pr8",
+        "title": "Eight Miles High",
+        "artist": "The Byrds",
+        "album": "Fifth Dimension",
+        "year": 1966,
+        "youtube_id": "NxyOhFBoxSY",
+        "genre": "Psychedelic Rock",
+        "duration": "3:36",
+        "is_hd": false
+      },
+      {
+        "id": "pr9",
+        "title": "In-A-Gadda-Da-Vida",
+        "artist": "Iron Butterfly",
+        "album": "In-A-Gadda-Da-Vida",
+        "year": 1968,
+        "youtube_id": "Tfpn3wHoNGA",
+        "genre": "Psychedelic Rock",
+        "duration": "17:04",
+        "is_hd": true
+      },
+      {
+        "id": "pr10",
+        "title": "Season of the Witch",
+        "artist": "Donovan",
+        "album": "Sunshine Superman",
+        "year": 1966,
+        "youtube_id": "GU35oCHGhJ0",
+        "genre": "Psychedelic Rock",
+        "duration": "4:58",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "progressive-rock",
+    "name": "Progressive Rock",
+    "description": "Ambitious, virtuosic rock stretching songcraft with odd time signatures, concept albums, and sprawling instrumental journeys.",
+    "cover": "assets/images/progressive-rock.svg",
+    "color": "#8B5CF6",
+    "songs": [
+      {
+        "id": "pg1",
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "album": "The Wall",
+        "year": 1979,
+        "youtube_id": "7kWl-ZGMwkQ",
+        "genre": "Progressive Rock",
+        "duration": "9:36",
+        "is_hd": true
+      },
+      {
+        "id": "pg2",
+        "title": "Tom Sawyer",
+        "artist": "Rush",
+        "album": "Moving Pictures",
+        "year": 1981,
+        "youtube_id": "auLBLk4ibAk",
+        "genre": "Progressive Rock",
+        "duration": "4:33",
+        "is_hd": true
+      },
+      {
+        "id": "pg3",
+        "title": "Roundabout",
+        "artist": "Yes",
+        "album": "Fragile",
+        "year": 1971,
+        "youtube_id": "kmZoQFYYx8U",
+        "genre": "Progressive Rock",
+        "duration": "8:38",
+        "is_hd": true
+      },
+      {
+        "id": "pg4",
+        "title": "21st Century Schizoid Man",
+        "artist": "King Crimson",
+        "album": "In the Court of the Crimson King",
+        "year": 1969,
+        "youtube_id": "7OvW8Z7kiws",
+        "genre": "Progressive Rock",
+        "duration": "7:23",
+        "is_hd": true
+      },
+      {
+        "id": "pg5",
+        "title": "Land of Confusion",
+        "artist": "Genesis",
+        "album": "Invisible Touch",
+        "year": 1986,
+        "youtube_id": "TlBIa8z_Mts",
+        "genre": "Progressive Rock",
+        "duration": "5:28",
+        "is_hd": true
+      },
+      {
+        "id": "pg6",
+        "title": "Aqualung",
+        "artist": "Jethro Tull",
+        "album": "Aqualung",
+        "year": 1971,
+        "youtube_id": "N4zPu3ISCGs",
+        "genre": "Progressive Rock",
+        "duration": "6:46",
+        "is_hd": true
+      },
+      {
+        "id": "pg7",
+        "title": "Nights in White Satin",
+        "artist": "The Moody Blues",
+        "album": "Days of Future Passed",
+        "year": 1967,
+        "youtube_id": "qbqxbGm9hBI",
+        "genre": "Progressive Rock",
+        "duration": "4:30",
+        "is_hd": true
+      },
+      {
+        "id": "pg8",
+        "title": "Lucky Man",
+        "artist": "Emerson, Lake & Palmer",
+        "album": "Emerson, Lake & Palmer",
+        "year": 1970,
+        "youtube_id": "yRvljAT4O6Q",
+        "genre": "Progressive Rock",
+        "duration": "4:37",
+        "is_hd": true
+      },
+      {
+        "id": "pg9",
+        "title": "Schism",
+        "artist": "Tool",
+        "album": "Lateralus",
+        "year": 2001,
+        "youtube_id": "MM62wjLrgmA",
+        "genre": "Progressive Rock",
+        "duration": "7:26",
+        "is_hd": true
+      },
+      {
+        "id": "pg10",
+        "title": "Pull Me Under",
+        "artist": "Dream Theater",
+        "album": "Images and Words",
+        "year": 1992,
+        "youtube_id": "mipc-JxrhRk",
+        "genre": "Progressive Rock",
+        "duration": "4:49",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "southern-rock",
+    "name": "Southern Rock",
+    "description": "Gritty blues-based rock from the American South, fueled by twin-guitar leads, boogie grooves, and honky-tonk swagger.",
+    "cover": "assets/images/southern-rock.svg",
+    "color": "#F59E0B",
+    "songs": [
+      {
+        "id": "sr1",
+        "title": "Free Bird",
+        "artist": "Lynyrd Skynyrd",
+        "album": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+        "year": 1973,
+        "youtube_id": "MQNRKX8GwPo",
+        "genre": "Southern Rock",
+        "duration": "9:08",
+        "is_hd": true
+      },
+      {
+        "id": "sr2",
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "album": "Second Helping",
+        "year": 1974,
+        "youtube_id": "-p8GXZcdrIk",
+        "genre": "Southern Rock",
+        "duration": "4:45",
+        "is_hd": true
+      },
+      {
+        "id": "sr3",
+        "title": "Midnight Rider",
+        "artist": "The Allman Brothers Band",
+        "album": "Idlewild South",
+        "year": 1970,
+        "youtube_id": "vg1Jx6f2ESA",
+        "genre": "Southern Rock",
+        "duration": "3:17",
+        "is_hd": true
+      },
+      {
+        "id": "sr4",
+        "title": "Jessica",
+        "artist": "The Allman Brothers Band",
+        "album": "Brothers and Sisters",
+        "year": 1973,
+        "youtube_id": "-i-J2Nec5d8",
+        "genre": "Southern Rock",
+        "duration": "12:42",
+        "is_hd": true
+      },
+      {
+        "id": "sr5",
+        "title": "Can't You See",
+        "artist": "The Marshall Tucker Band",
+        "album": "The Marshall Tucker Band",
+        "year": 1973,
+        "youtube_id": "5KaAOrjKVJI",
+        "genre": "Southern Rock",
+        "duration": "6:05",
+        "is_hd": true
+      },
+      {
+        "id": "sr6",
+        "title": "La Grange",
+        "artist": "ZZ Top",
+        "album": "Tres Hombres",
+        "year": 1973,
+        "youtube_id": "FIuPiX6rzZM",
+        "genre": "Southern Rock",
+        "duration": "4:42",
+        "is_hd": true
+      },
+      {
+        "id": "sr7",
+        "title": "Green Grass and High Tides",
+        "artist": "The Outlaws",
+        "album": "The Outlaws",
+        "year": 1975,
+        "youtube_id": "cz2CAtExXgQ",
+        "genre": "Southern Rock",
+        "duration": "9:52",
+        "is_hd": true
+      },
+      {
+        "id": "sr8",
+        "title": "Flirtin' with Disaster",
+        "artist": "Molly Hatchet",
+        "album": "Flirtin' with Disaster",
+        "year": 1979,
+        "youtube_id": "MOhGgRgRsmo",
+        "genre": "Southern Rock",
+        "duration": "5:32",
+        "is_hd": true
+      },
+      {
+        "id": "sr9",
+        "title": "The Devil Went Down to Georgia",
+        "artist": "The Charlie Daniels Band",
+        "album": "Million Mile Reflections",
+        "year": 1979,
+        "youtube_id": "wBjPAqmnvGA",
+        "genre": "Southern Rock",
+        "duration": "5:01",
+        "is_hd": true
+      },
+      {
+        "id": "sr10",
+        "title": "Hold On Loosely",
+        "artist": ".38 Special",
+        "album": "Wild-Eyed Southern Boys",
+        "year": 1981,
+        "youtube_id": "vJtf7R_oVaw",
+        "genre": "Southern Rock",
+        "duration": "4:36",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "glam-rock",
+    "name": "Glam Rock",
+    "description": "Flamboyant, glitter-soaked early-70s rock defined by theatrical glamour, stomping boogie riffs, and outsized androgynous personas.",
+    "cover": "assets/images/glam-rock.svg",
+    "color": "#EF4444",
+    "songs": [
+      {
+        "id": "gr1",
+        "title": "Rebel Rebel",
+        "artist": "David Bowie",
+        "album": "Diamond Dogs",
+        "year": 1974,
+        "youtube_id": "U9l23zncj08",
+        "genre": "Glam Rock",
+        "duration": "4:23",
+        "is_hd": true
+      },
+      {
+        "id": "gr2",
+        "title": "Virginia Plain",
+        "artist": "Roxy Music",
+        "album": "Roxy Music (single)",
+        "year": 1972,
+        "youtube_id": "_lIiviHjo0w",
+        "genre": "Glam Rock",
+        "duration": "3:01",
+        "is_hd": true
+      },
+      {
+        "id": "gr3",
+        "title": "This Town Ain't Big Enough for Both of Us",
+        "artist": "Sparks",
+        "album": "Kimono My House",
+        "year": 1974,
+        "youtube_id": "eUJ_ifjKopM",
+        "genre": "Glam Rock",
+        "duration": "3:04",
+        "is_hd": true
+      },
+      {
+        "id": "gr4",
+        "title": "Ballroom Blitz",
+        "artist": "Sweet",
+        "album": "Desolation Boulevard",
+        "year": 1973,
+        "youtube_id": "7lTwA5xMeTM",
+        "genre": "Glam Rock",
+        "duration": "4:11",
+        "is_hd": true
+      },
+      {
+        "id": "gr5",
+        "title": "Cum On Feel the Noize",
+        "artist": "Slade",
+        "album": "Sladest",
+        "year": 1973,
+        "youtube_id": "lm2iw9UzOck",
+        "genre": "Glam Rock",
+        "duration": "4:23",
+        "is_hd": true
+      },
+      {
+        "id": "gr6",
+        "title": "All the Young Dudes",
+        "artist": "Mott the Hoople",
+        "album": "All the Young Dudes",
+        "year": 1972,
+        "youtube_id": "yNHdPPJGowY",
+        "genre": "Glam Rock",
+        "duration": "3:34",
+        "is_hd": true
+      },
+      {
+        "id": "gr7",
+        "title": "School's Out",
+        "artist": "Alice Cooper",
+        "album": "School's Out",
+        "year": 1972,
+        "youtube_id": "rcEbSkaAqkg",
+        "genre": "Glam Rock",
+        "duration": "3:29",
+        "is_hd": true
+      },
+      {
+        "id": "gr8",
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "year": 1975,
+        "youtube_id": "fJ9rUzIMcZQ",
+        "genre": "Glam Rock",
+        "duration": "5:59",
+        "is_hd": true
+      },
+      {
+        "id": "gr9",
+        "title": "Personality Crisis",
+        "artist": "New York Dolls",
+        "album": "New York Dolls",
+        "year": 1973,
+        "youtube_id": "2aQTGqqXHw4",
+        "genre": "Glam Rock",
+        "duration": "3:55",
+        "is_hd": true
+      },
+      {
+        "id": "gr10",
+        "title": "Can the Can",
+        "artist": "Suzi Quatro",
+        "album": "Suzi Quatro",
+        "year": 1973,
+        "youtube_id": "xXk-SDViNtc",
+        "genre": "Glam Rock",
+        "duration": "3:40",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "punk-rock",
+    "name": "Punk Rock",
+    "description": "A raw, fast, and defiantly amateurist eruption of mid-70s rebellion that stripped rock down to three chords, sneers, and slam-dunk anthems.",
+    "cover": "assets/images/punk-rock.svg",
+    "color": "#F97316",
+    "songs": [
+      {
+        "id": "pk1",
+        "title": "Anarchy in the U.K.",
+        "artist": "Sex Pistols",
+        "album": "Never Mind the Bollocks, Here's the Sex Pistols",
+        "year": 1976,
+        "youtube_id": "q31WY0Aobro",
+        "genre": "Punk Rock",
+        "duration": "3:37",
+        "is_hd": true
+      },
+      {
+        "id": "pk2",
+        "title": "God Save the Queen",
+        "artist": "Sex Pistols",
+        "album": "Never Mind the Bollocks, Here's the Sex Pistols",
+        "year": 1977,
+        "youtube_id": "yqrAPOZxgzU",
+        "genre": "Punk Rock",
+        "duration": "3:24",
+        "is_hd": true
+      },
+      {
+        "id": "pk3",
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "album": "Ramones",
+        "year": 1976,
+        "youtube_id": "268C3N2dDYk",
+        "genre": "Punk Rock",
+        "duration": "1:56",
+        "is_hd": true
+      },
+      {
+        "id": "pk4",
+        "title": "I Wanna Be Sedated",
+        "artist": "Ramones",
+        "album": "Road to Ruin",
+        "year": 1978,
+        "youtube_id": "bm51ihfi1p4",
+        "genre": "Punk Rock",
+        "duration": "2:32",
+        "is_hd": true
+      },
+      {
+        "id": "pk5",
+        "title": "London Calling",
+        "artist": "The Clash",
+        "album": "London Calling",
+        "year": 1979,
+        "youtube_id": "EfK-WX2pa8c",
+        "genre": "Punk Rock",
+        "duration": "3:22",
+        "is_hd": true
+      },
+      {
+        "id": "pk6",
+        "title": "New Rose",
+        "artist": "The Damned",
+        "album": "Damned Damned Damned",
+        "year": 1976,
+        "youtube_id": "OKKz4H4Pe8U",
+        "genre": "Punk Rock",
+        "duration": "3:04",
+        "is_hd": true
+      },
+      {
+        "id": "pk7",
+        "title": "Ever Fallen in Love (With Someone You Shouldn't've)",
+        "artist": "Buzzcocks",
+        "album": "Love Bites",
+        "year": 1978,
+        "youtube_id": "iZDTJ8zlVuQ",
+        "genre": "Punk Rock",
+        "duration": "2:54",
+        "is_hd": true
+      },
+      {
+        "id": "pk8",
+        "title": "Holiday in Cambodia",
+        "artist": "Dead Kennedys",
+        "album": "Fresh Fruit for Rotting Vegetables",
+        "year": 1980,
+        "youtube_id": "v0Uc6ZWDF3c",
+        "genre": "Punk Rock",
+        "duration": "3:45",
+        "is_hd": true
+      },
+      {
+        "id": "pk9",
+        "title": "Gloria",
+        "artist": "Patti Smith",
+        "album": "Horses",
+        "year": 1975,
+        "youtube_id": "bPO0bTaWcFQ",
+        "genre": "Punk Rock",
+        "duration": "5:56",
+        "is_hd": true
+      },
+      {
+        "id": "pk10",
+        "title": "Lust for Life",
+        "artist": "Iggy Pop",
+        "album": "Lust for Life",
+        "year": 1977,
+        "youtube_id": "jQvUBf5l7Vw",
+        "genre": "Punk Rock",
+        "duration": "3:12",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "new-wave",
+    "name": "New Wave / Post-Punk",
+    "description": "A sleek, cerebral aftermath of punk that fused angular guitars, synths, and brooding cool into danceable, artful, and emotionally charged pop.",
+    "cover": "assets/images/new-wave.svg",
+    "color": "#3B82F6",
+    "songs": [
+      {
+        "id": "nw1",
+        "title": "Heart of Glass",
+        "artist": "Blondie",
+        "album": "Parallel Lines",
+        "year": 1978,
+        "youtube_id": "WGU_4-5RaxU",
+        "genre": "New Wave",
+        "duration": "3:42",
+        "is_hd": true
+      },
+      {
+        "id": "nw2",
+        "title": "Roxanne",
+        "artist": "The Police",
+        "album": "Outlandos d'Amour",
+        "year": 1978,
+        "youtube_id": "3T1c7GkzRQQ",
+        "genre": "New Wave",
+        "duration": "3:10",
+        "is_hd": true
+      },
+      {
+        "id": "nw3",
+        "title": "Once in a Lifetime",
+        "artist": "Talking Heads",
+        "album": "Remain in Light",
+        "year": 1980,
+        "youtube_id": "5IsSpAOD6K8",
+        "genre": "New Wave",
+        "duration": "3:45",
+        "is_hd": true
+      },
+      {
+        "id": "nw4",
+        "title": "Love Will Tear Us Apart",
+        "artist": "Joy Division",
+        "album": "Substance",
+        "year": 1980,
+        "youtube_id": "zuuObGsB0No",
+        "genre": "Post-Punk",
+        "duration": "3:30",
+        "is_hd": true
+      },
+      {
+        "id": "nw5",
+        "title": "Just Like Heaven",
+        "artist": "The Cure",
+        "album": "Kiss Me, Kiss Me, Kiss Me",
+        "year": 1987,
+        "youtube_id": "n3nPiBai66M",
+        "genre": "New Wave",
+        "duration": "3:27",
+        "is_hd": true
+      },
+      {
+        "id": "nw6",
+        "title": "How Soon Is Now?",
+        "artist": "The Smiths",
+        "album": "Hatful of Hollow",
+        "year": 1984,
+        "youtube_id": "hnpILIIo9ek",
+        "genre": "Post-Punk",
+        "duration": "3:36",
+        "is_hd": true
+      },
+      {
+        "id": "nw7",
+        "title": "Just Can't Get Enough",
+        "artist": "Depeche Mode",
+        "album": "Speak & Spell",
+        "year": 1981,
+        "youtube_id": "_6FBfAQ-NDE",
+        "genre": "New Wave",
+        "duration": "3:38",
+        "is_hd": true
+      },
+      {
+        "id": "nw8",
+        "title": "Brass in Pocket",
+        "artist": "The Pretenders",
+        "album": "Pretenders",
+        "year": 1979,
+        "youtube_id": "0H6re3PCP3E",
+        "genre": "New Wave",
+        "duration": "3:01",
+        "is_hd": true
+      },
+      {
+        "id": "nw9",
+        "title": "Rock Lobster",
+        "artist": "The B-52's",
+        "album": "The B-52's",
+        "year": 1979,
+        "youtube_id": "GUbjA1KH-rg",
+        "genre": "New Wave",
+        "duration": "4:56",
+        "is_hd": true
+      },
+      {
+        "id": "nw10",
+        "title": "Just What I Needed",
+        "artist": "The Cars",
+        "album": "The Cars",
+        "year": 1978,
+        "youtube_id": "F9l0rawxFsE",
+        "genre": "New Wave",
+        "duration": "3:44",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "grunge",
+    "name": "Grunge",
+    "description": "The raw, sludge-soaked Seattle sound of the early 90s — heavy riffs, angsty howls, and the alt-rock revolution that changed everything.",
+    "cover": "assets/images/grunge.svg",
+    "color": "#EF4444",
+    "songs": [
+      {
+        "id": "gn1",
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "year": 1991,
+        "youtube_id": "hTWKbfoikeg",
+        "genre": "Grunge",
+        "duration": "4:38",
+        "is_hd": true
+      },
+      {
+        "id": "gn2",
+        "title": "Come As You Are",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "year": 1991,
+        "youtube_id": "vabnZ9-ex7o",
+        "genre": "Grunge",
+        "duration": "3:44",
+        "is_hd": true
+      },
+      {
+        "id": "gn3",
+        "title": "Alive",
+        "artist": "Pearl Jam",
+        "album": "Ten",
+        "year": 1991,
+        "youtube_id": "qM0zINtulhM",
+        "genre": "Grunge",
+        "duration": "4:55",
+        "is_hd": true
+      },
+      {
+        "id": "gn4",
+        "title": "Jeremy",
+        "artist": "Pearl Jam",
+        "album": "Ten",
+        "year": 1991,
+        "youtube_id": "3g1Tu2Ulrk0",
+        "genre": "Grunge",
+        "duration": "5:21",
+        "is_hd": true
+      },
+      {
+        "id": "gn5",
+        "title": "Black Hole Sun",
+        "artist": "Soundgarden",
+        "album": "Superunknown",
+        "year": 1994,
+        "youtube_id": "3mbBbFH9fAg",
+        "genre": "Grunge",
+        "duration": "5:20",
+        "is_hd": true
+      },
+      {
+        "id": "gn6",
+        "title": "Spoonman",
+        "artist": "Soundgarden",
+        "album": "Superunknown",
+        "year": 1994,
+        "youtube_id": "T0_zzCLLRvE",
+        "genre": "Grunge",
+        "duration": "4:25",
+        "is_hd": true
+      },
+      {
+        "id": "gn7",
+        "title": "Man in the Box",
+        "artist": "Alice in Chains",
+        "album": "Facelift",
+        "year": 1990,
+        "youtube_id": "TAqZb52sgpU",
+        "genre": "Grunge",
+        "duration": "4:32",
+        "is_hd": true
+      },
+      {
+        "id": "gn8",
+        "title": "Would?",
+        "artist": "Alice in Chains",
+        "album": "Dirt",
+        "year": 1992,
+        "youtube_id": "Nco_kh8xJDs",
+        "genre": "Grunge",
+        "duration": "3:28",
+        "is_hd": true
+      },
+      {
+        "id": "gn9",
+        "title": "Plush",
+        "artist": "Stone Temple Pilots",
+        "album": "Core",
+        "year": 1992,
+        "youtube_id": "V5UOC0C0x8Q",
+        "genre": "Grunge",
+        "duration": "4:21",
+        "is_hd": true
+      },
+      {
+        "id": "gn10",
+        "title": "Hunger Strike",
+        "artist": "Temple of the Dog",
+        "album": "Temple of the Dog",
+        "year": 1991,
+        "youtube_id": "VUb450Alpps",
+        "genre": "Grunge",
+        "duration": "4:04",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "alternative-rock",
+    "name": "Alternative Rock",
+    "description": "The 90s mainstreaming of college-radio cool — quirky, hooky, and proudly weird rock that ruled MTV and the charts.",
+    "cover": "assets/images/alternative-rock.svg",
+    "color": "#8B5CF6",
+    "songs": [
+      {
+        "id": "ar1",
+        "title": "Creep",
+        "artist": "Radiohead",
+        "album": "Pablo Honey",
+        "year": 1992,
+        "youtube_id": "XFkzRNyygfk",
+        "genre": "Alternative Rock",
+        "duration": "3:57",
+        "is_hd": true
+      },
+      {
+        "id": "ar2",
+        "title": "Losing My Religion",
+        "artist": "R.E.M.",
+        "album": "Out of Time",
+        "year": 1991,
+        "youtube_id": "xwtdhWltSIg",
+        "genre": "Alternative Rock",
+        "duration": "4:54",
+        "is_hd": true
+      },
+      {
+        "id": "ar3",
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "album": "Blood Sugar Sex Magik",
+        "year": 1991,
+        "youtube_id": "GLvohMXgcBo",
+        "genre": "Alternative Rock",
+        "duration": "4:27",
+        "is_hd": true
+      },
+      {
+        "id": "ar4",
+        "title": "1979",
+        "artist": "The Smashing Pumpkins",
+        "album": "Mellon Collie and the Infinite Sadness",
+        "year": 1995,
+        "youtube_id": "4aeETEoNfOg",
+        "genre": "Alternative Rock",
+        "duration": "4:21",
+        "is_hd": true
+      },
+      {
+        "id": "ar5",
+        "title": "Loser",
+        "artist": "Beck",
+        "album": "Mellow Gold",
+        "year": 1994,
+        "youtube_id": "YgSPaXgAdzE",
+        "genre": "Alternative Rock",
+        "duration": "3:52",
+        "is_hd": true
+      },
+      {
+        "id": "ar6",
+        "title": "Zombie",
+        "artist": "The Cranberries",
+        "album": "No Need to Argue",
+        "year": 1994,
+        "youtube_id": "6Ejga4kJUts",
+        "genre": "Alternative Rock",
+        "duration": "5:07",
+        "is_hd": true
+      },
+      {
+        "id": "ar7",
+        "title": "Buddy Holly",
+        "artist": "Weezer",
+        "album": "Weezer (Blue Album)",
+        "year": 1994,
+        "youtube_id": "kemivUKb4f4",
+        "genre": "Alternative Rock",
+        "duration": "4:01",
+        "is_hd": true
+      },
+      {
+        "id": "ar8",
+        "title": "Friday I'm in Love",
+        "artist": "The Cure",
+        "album": "Wish",
+        "year": 1992,
+        "youtube_id": "mGgMZpGYiy8",
+        "genre": "Alternative Rock",
+        "duration": "3:35",
+        "is_hd": true
+      },
+      {
+        "id": "ar9",
+        "title": "Where Is My Mind?",
+        "artist": "Pixies",
+        "album": "Surfer Rosa",
+        "year": 1988,
+        "youtube_id": "OJ62RzJkYUo",
+        "genre": "Alternative Rock",
+        "duration": "3:50",
+        "is_hd": true
+      },
+      {
+        "id": "ar10",
+        "title": "Basket Case",
+        "artist": "Green Day",
+        "album": "Dookie",
+        "year": 1994,
+        "youtube_id": "NUTGr5t3MoY",
+        "genre": "Alternative Rock",
+        "duration": "3:14",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "britpop",
+    "name": "Britpop",
+    "description": "The mid-90s British invasion — laddish anthems, mod-tight suits, and guitar pop that made the UK cool again.",
+    "cover": "assets/images/britpop.svg",
+    "color": "#3B82F6",
+    "songs": [
+      {
+        "id": "bp1",
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "album": "(What's the Story) Morning Glory?",
+        "year": 1995,
+        "youtube_id": "bx1Bh8ZvH84",
+        "genre": "Britpop",
+        "duration": "4:38",
+        "is_hd": true
+      },
+      {
+        "id": "bp2",
+        "title": "Don't Look Back in Anger",
+        "artist": "Oasis",
+        "album": "(What's the Story) Morning Glory?",
+        "year": 1995,
+        "youtube_id": "r8OipmKFDeM",
+        "genre": "Britpop",
+        "duration": "4:47",
+        "is_hd": true
+      },
+      {
+        "id": "bp3",
+        "title": "Bitter Sweet Symphony",
+        "artist": "The Verve",
+        "album": "Urban Hymns",
+        "year": 1997,
+        "youtube_id": "1lyu1KKwC74",
+        "genre": "Britpop",
+        "duration": "4:35",
+        "is_hd": true
+      },
+      {
+        "id": "bp4",
+        "title": "Song 2",
+        "artist": "Blur",
+        "album": "Blur",
+        "year": 1997,
+        "youtube_id": "SSbBvKaM6sk",
+        "genre": "Britpop",
+        "duration": "2:03",
+        "is_hd": true
+      },
+      {
+        "id": "bp5",
+        "title": "Parklife",
+        "artist": "Blur",
+        "album": "Parklife",
+        "year": 1994,
+        "youtube_id": "YSuHrTfcikU",
+        "genre": "Britpop",
+        "duration": "3:14",
+        "is_hd": true
+      },
+      {
+        "id": "bp6",
+        "title": "Animal Nitrate",
+        "artist": "Suede",
+        "album": "Suede",
+        "year": 1993,
+        "youtube_id": "i7mEB2wnDLQ",
+        "genre": "Britpop",
+        "duration": "3:27",
+        "is_hd": true
+      },
+      {
+        "id": "bp7",
+        "title": "Common People",
+        "artist": "Pulp",
+        "album": "Different Class",
+        "year": 1995,
+        "youtube_id": "dxhQiiNJG74",
+        "genre": "Britpop",
+        "duration": "4:05",
+        "is_hd": true
+      },
+      {
+        "id": "bp8",
+        "title": "Connection",
+        "artist": "Elastica",
+        "album": "Elastica",
+        "year": 1995,
+        "youtube_id": "ilKcXIFi-Rc",
+        "genre": "Britpop",
+        "duration": "2:16",
+        "is_hd": true
+      },
+      {
+        "id": "bp9",
+        "title": "Alright",
+        "artist": "Supergrass",
+        "album": "I Should Coco",
+        "year": 1995,
+        "youtube_id": "qUE4oDunYkc",
+        "genre": "Britpop",
+        "duration": "3:19",
+        "is_hd": true
+      },
+      {
+        "id": "bp10",
+        "title": "A Design for Life",
+        "artist": "Manic Street Preachers",
+        "album": "Everything Must Go",
+        "year": 1996,
+        "youtube_id": "TfEoVxy7VDQ",
+        "genre": "Britpop",
+        "duration": "4:22",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "nu-metal",
+    "name": "Nu Metal",
+    "description": "Aggressive, downtuned fusion of heavy-metal riffing and hip-hop beats that defined the rock of the turn of the millennium.",
+    "cover": "assets/images/nu-metal.svg",
+    "color": "#EF4444",
+    "songs": [
+      {
+        "id": "nm1",
+        "title": "In the End",
+        "artist": "Linkin Park",
+        "album": "Hybrid Theory",
+        "year": 2000,
+        "youtube_id": "eVTXPUF4Oz4",
+        "genre": "Nu Metal",
+        "duration": "3:38",
+        "is_hd": true
+      },
+      {
+        "id": "nm2",
+        "title": "Freak on a Leash",
+        "artist": "Korn",
+        "album": "Follow the Leader",
+        "year": 1998,
+        "youtube_id": "jRGrNDV2mKc",
+        "genre": "Nu Metal",
+        "duration": "4:27",
+        "is_hd": true
+      },
+      {
+        "id": "nm3",
+        "title": "Break Stuff",
+        "artist": "Limp Bizkit",
+        "album": "Significant Other",
+        "year": 1999,
+        "youtube_id": "ZpUYjpKg9KY",
+        "genre": "Nu Metal",
+        "duration": "2:47",
+        "is_hd": true
+      },
+      {
+        "id": "nm4",
+        "title": "Duality",
+        "artist": "Slipknot",
+        "album": "Vol. 3: (The Subliminal Verses)",
+        "year": 2004,
+        "youtube_id": "6fVE8kSM43I",
+        "genre": "Nu Metal",
+        "duration": "3:35",
+        "is_hd": true
+      },
+      {
+        "id": "nm5",
+        "title": "Chop Suey!",
+        "artist": "System of a Down",
+        "album": "Toxicity",
+        "year": 2001,
+        "youtube_id": "CSvFpBOe8eY",
+        "genre": "Nu Metal",
+        "duration": "3:29",
+        "is_hd": true
+      },
+      {
+        "id": "nm6",
+        "title": "Down with the Sickness",
+        "artist": "Disturbed",
+        "album": "The Sickness",
+        "year": 2000,
+        "youtube_id": "09LTT0xwdfw",
+        "genre": "Nu Metal",
+        "duration": "3:38",
+        "is_hd": true
+      },
+      {
+        "id": "nm7",
+        "title": "Last Resort",
+        "artist": "Papa Roach",
+        "album": "Infest",
+        "year": 2000,
+        "youtube_id": "j0lSpNtjPM8",
+        "genre": "Nu Metal",
+        "duration": "3:19",
+        "is_hd": true
+      },
+      {
+        "id": "nm8",
+        "title": "My Own Summer (Shove It)",
+        "artist": "Deftones",
+        "album": "Around the Fur",
+        "year": 1997,
+        "youtube_id": "XOzs1FehYOA",
+        "genre": "Nu Metal",
+        "duration": "3:45",
+        "is_hd": true
+      },
+      {
+        "id": "nm9",
+        "title": "Youth of the Nation",
+        "artist": "P.O.D.",
+        "album": "Satellite",
+        "year": 2001,
+        "youtube_id": "EDKwCvD56kw",
+        "genre": "Nu Metal",
+        "duration": "4:05",
+        "is_hd": true
+      },
+      {
+        "id": "nm10",
+        "title": "Dig",
+        "artist": "Mudvayne",
+        "album": "L.D. 50",
+        "year": 2000,
+        "youtube_id": "YIqbdnaPcT8",
+        "genre": "Nu Metal",
+        "duration": "3:19",
+        "is_hd": true
+      }
+    ]
+  },
+  {
+    "id": "garage-rock",
+    "name": "Garage Rock",
+    "description": "Raw, lo-fi rock 'n' roll stripped to guitar, bass, drums and attitude — from 60s garage punk to the garage revival of the 2000s.",
+    "cover": "assets/images/garage-rock.svg",
+    "color": "#F59E0B",
+    "songs": [
+      {
+        "id": "ga1",
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "album": "Elephant",
+        "year": 2003,
+        "youtube_id": "0J2QdDbelmY",
+        "genre": "Garage Rock",
+        "duration": "3:58",
+        "is_hd": true
+      },
+      {
+        "id": "ga2",
+        "title": "Last Nite",
+        "artist": "The Strokes",
+        "album": "Is This It",
+        "year": 2001,
+        "youtube_id": "TOypSnKFHrE",
+        "genre": "Garage Rock",
+        "duration": "3:22",
+        "is_hd": true
+      },
+      {
+        "id": "ga3",
+        "title": "Lonely Boy",
+        "artist": "The Black Keys",
+        "album": "El Camino",
+        "year": 2011,
+        "youtube_id": "a_426RiwST8",
+        "genre": "Garage Rock",
+        "duration": "3:15",
+        "is_hd": true
+      },
+      {
+        "id": "ga4",
+        "title": "Hate to Say I Told You So",
+        "artist": "The Hives",
+        "album": "Veni Vidi Vicious",
+        "year": 2000,
+        "youtube_id": "Uz1Jwyxd4tE",
+        "genre": "Garage Rock",
+        "duration": "3:20",
+        "is_hd": true
+      },
+      {
+        "id": "ga5",
+        "title": "Get Free",
+        "artist": "The Vines",
+        "album": "Highly Evolved",
+        "year": 2002,
+        "youtube_id": "asOvnGHwtDU",
+        "genre": "Garage Rock",
+        "duration": "2:11",
+        "is_hd": true
+      },
+      {
+        "id": "ga6",
+        "title": "You Really Got Me",
+        "artist": "The Kinks",
+        "album": "Kinda Kinks",
+        "year": 1964,
+        "youtube_id": "fTTsY-oz6Go",
+        "genre": "Garage Rock",
+        "duration": "2:15",
+        "is_hd": false
+      },
+      {
+        "id": "ga7",
+        "title": "Are You Gonna Be My Girl",
+        "artist": "Jet",
+        "album": "Get Born",
+        "year": 2003,
+        "youtube_id": "tuK6n2Lkza0",
+        "genre": "Garage Rock",
+        "duration": "3:35",
+        "is_hd": true
+      },
+      {
+        "id": "ga8",
+        "title": "Maps",
+        "artist": "Yeah Yeah Yeahs",
+        "album": "Fever to Tell",
+        "year": 2003,
+        "youtube_id": "oIIxlgcuQRU",
+        "genre": "Garage Rock",
+        "duration": "4:20",
+        "is_hd": true
+      },
+      {
+        "id": "ga9",
+        "title": "Take Me Out",
+        "artist": "Franz Ferdinand",
+        "album": "Franz Ferdinand",
+        "year": 2004,
+        "youtube_id": "Ijk4j-r7qPA",
+        "genre": "Garage Rock",
+        "duration": "4:00",
+        "is_hd": true
+      },
+      {
+        "id": "ga10",
+        "title": "Fell in Love with a Girl",
+        "artist": "The White Stripes",
+        "album": "White Blood Cells",
+        "year": 2001,
+        "youtube_id": "fTH71AAxXmM",
+        "genre": "Garage Rock",
+        "duration": "2:00",
+        "is_hd": true
       }
     ]
   }

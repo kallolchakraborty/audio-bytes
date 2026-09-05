@@ -1,8 +1,8 @@
 import { $, html, getYouTubeThumbnail, debounce } from '../js/utils.js';
 import { store } from '../js/store.js';
-import { render, errorState, setPageTitle, animateEntrance } from '../js/ui.js';
+import { render, errorState, setPageTitle, staggerOnView } from '../js/ui.js';
 
-let _scrollPos = 0;
+let _clickHandler = null;
 
 export function renderPlaylist(playlistId) {
   const container = $('#page-view');
@@ -24,6 +24,8 @@ export function renderPlaylist(playlistId) {
   const seconds = totalDuration % 60;
 
   const viewMode = store.get('viewMode');
+  const myPlaylists = store.get('myPlaylists') || [];
+  const isUserPlaylist = myPlaylists.some(p => p.id === playlistId);
 
   render(container, html`
     <div class="playlist-header-gradient relative overflow-hidden">
@@ -31,6 +33,12 @@ export function renderPlaylist(playlistId) {
       <div class="grid-bg absolute inset-0 pointer-events-none"></div>
 
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-6 lg:pb-0">
+        <div class="mb-4">
+          <button class="btn-ghost text-xs back-to-previous" aria-label="Go back">
+            <span class="material-symbols-outlined text-sm">arrow_back</span>
+            Back
+          </button>
+        </div>
         <div class="flex flex-col lg:flex-row items-start gap-6 lg:gap-10">
           <div class="w-full lg:w-72 flex-shrink-0 lg:sticky lg:top-24">
             <div class="w-36 h-36 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-2xl overflow-hidden shadow-2xl shadow-brand-500/10 cover-art-glow mx-auto lg:mx-0">
@@ -63,6 +71,14 @@ export function renderPlaylist(playlistId) {
                 <button class="btn-icon playlist-share-btn" aria-label="Share playlist" data-playlist-id="${playlist.id}">
                   <span class="material-symbols-outlined text-sm">share</span>
                 </button>
+                ${isUserPlaylist ? `
+                  <button class="btn-icon playlist-rename-btn text-slate-400 hover:text-white" aria-label="Rename playlist" data-playlist-id="${playlist.id}">
+                    <span class="material-symbols-outlined text-sm">edit</span>
+                  </button>
+                  <button class="btn-icon playlist-delete-btn text-slate-400 hover:text-red-400" aria-label="Delete playlist" data-playlist-id="${playlist.id}">
+                    <span class="material-symbols-outlined text-sm">delete</span>
+                  </button>
+                ` : ''}
               </div>
             </div>
           </div>
@@ -95,7 +111,18 @@ export function renderPlaylist(playlistId) {
     renderSongs(songsContainer, playlist.songs, playlist.id, playlist.name, playlist.cover, viewMode);
   }
 
-  container.addEventListener('click', (e) => {
+  if (_clickHandler) container.removeEventListener('click', _clickHandler);
+  _clickHandler = (e) => {
+    const backBtn = e.target.closest('.back-to-previous');
+    if (backBtn) {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        import('../js/router.js').then(r => r.router.navigate('/explore'));
+      }
+      return;
+    }
+
     const playAll = e.target.closest('.playlist-play-all');
     if (playAll) {
       store.playPlaylist(playAll.dataset.playlistId, 0);
@@ -129,22 +156,35 @@ export function renderPlaylist(playlistId) {
       return;
     }
 
+    const renameBtn = e.target.closest('.playlist-rename-btn');
+    if (renameBtn) {
+      showRenameModal(playlist.id, playlist.name);
+      return;
+    }
+
+    const deleteBtn = e.target.closest('.playlist-delete-btn');
+    if (deleteBtn) {
+      showDeleteModal(playlist.id, playlist.name);
+      return;
+    }
+
     const viewToggle = e.target.closest('.view-toggle');
     if (viewToggle) {
       const newMode = viewToggle.dataset.mode;
       store.setState('viewMode', newMode);
-      _scrollPos = window.scrollY;
+      container.dataset.scrollPos = window.scrollY;
       renderPlaylist(playlistId);
       return;
     }
 
     const sortBtn = e.target.closest('.sort-btn');
     if (sortBtn) {
-      _scrollPos = window.scrollY;
+      container.dataset.scrollPos = window.scrollY;
       sortSongs(playlist, songsContainer, viewMode);
       return;
     }
-  });
+  };
+  container.addEventListener('click', _clickHandler);
 
   const searchInput = $('.playlist-search');
   if (searchInput) {
@@ -162,12 +202,12 @@ export function renderPlaylist(playlistId) {
     }, 150));
   }
 
-  if (_scrollPos > 0) {
-    requestAnimationFrame(() => window.scrollTo(0, _scrollPos));
-    _scrollPos = 0;
+  const savedScroll = parseInt(container.dataset.scrollPos);
+  if (savedScroll > 0) {
+    requestAnimationFrame(() => { window.scrollTo(0, savedScroll); delete container.dataset.scrollPos; });
   }
 
-  setTimeout(() => animateEntrance(container, '.animate-in', 80), 50);
+  requestAnimationFrame(() => staggerOnView(container, '.animate-in', 60));
 }
 
 function renderSongs(container, songs, playlistId, playlistName, playlistCover, viewMode) {
@@ -183,10 +223,16 @@ function renderSongs(container, songs, playlistId, playlistName, playlistCover, 
 
   if (viewMode === 'grid') {
     container.className = 'song-grid';
-    import('./song-card.js').then(m => m.renderSongCards(container, songs, playlistId, playlistName, playlistCover));
+    import('./song-card.js').then(m => {
+      m.renderSongCards(container, songs, playlistId, playlistName, playlistCover);
+      staggerOnView(container, '.animate-in', 60);
+    });
   } else {
     container.className = 'flex flex-col';
-    import('./song-card.js').then(m => m.renderSongRows(container, songs, playlistId, playlistName, playlistCover));
+    import('./song-card.js').then(m => {
+      m.renderSongRows(container, songs, playlistId, playlistName, playlistCover);
+      staggerOnView(container, '.animate-in', 60);
+    });
   }
 }
 
@@ -214,4 +260,64 @@ function parseDuration(d) {
   const parts = d.split(':');
   if (parts.length === 2) return parseInt(parts[0]) * 60 + parseInt(parts[1]);
   return 0;
+}
+
+function showRenameModal(playlistId, currentName) {
+  const overlay = document.createElement('div');
+  overlay.className = 'fixed inset-0 z-[70] flex items-center justify-center bg-black/60';
+  overlay.innerHTML = `
+    <div class="bg-surface border border-white/10 rounded-2xl p-6 w-full max-w-sm mx-4 shadow-2xl" role="dialog" aria-modal="true" aria-label="Rename playlist">
+      <h2 class="text-lg font-bold text-white mb-4">Rename Playlist</h2>
+      <input type="text" class="rename-pl-input w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-brand" value="${currentName}" maxlength="60" autofocus>
+      <div class="flex justify-end gap-2 mt-4">
+        <button class="rename-pl-cancel px-4 py-2 rounded-lg text-sm text-slate-400 hover:text-white transition-colors">Cancel</button>
+        <button class="rename-pl-submit px-4 py-2 rounded-lg text-sm bg-brand text-white hover:bg-brand-hover transition-colors">Rename</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const input = overlay.querySelector('.rename-pl-input');
+  const submit = overlay.querySelector('.rename-pl-submit');
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') submit.click();
+    if (e.key === 'Escape') overlay.remove();
+  });
+
+  submit.addEventListener('click', () => {
+    const name = input.value.trim();
+    if (!name) return;
+    store.renamePlaylist(playlistId, name);
+    overlay.remove();
+    renderPlaylist(playlistId);
+  });
+
+  overlay.querySelector('.rename-pl-cancel').addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+  setTimeout(() => input.select(), 50);
+}
+
+function showDeleteModal(playlistId, name) {
+  const overlay = document.createElement('div');
+  overlay.className = 'fixed inset-0 z-[70] flex items-center justify-center bg-black/60';
+  overlay.innerHTML = `
+    <div class="bg-surface border border-white/10 rounded-2xl p-6 w-full max-w-sm mx-4 shadow-2xl" role="dialog" aria-modal="true" aria-label="Delete playlist">
+      <h2 class="text-lg font-bold text-white mb-2">Delete Playlist</h2>
+      <p class="text-sm text-slate-400 mb-4">Are you sure you want to delete <strong class="text-white">${name}</strong>? This cannot be undone.</p>
+      <div class="flex justify-end gap-2">
+        <button class="delete-pl-cancel px-4 py-2 rounded-lg text-sm text-slate-400 hover:text-white transition-colors">Cancel</button>
+        <button class="delete-pl-confirm px-4 py-2 rounded-lg text-sm bg-red-500 text-white hover:bg-red-600 transition-colors">Delete</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  overlay.querySelector('.delete-pl-cancel').addEventListener('click', () => overlay.remove());
+  overlay.querySelector('.delete-pl-confirm').addEventListener('click', () => {
+    store.deletePlaylist(playlistId);
+    overlay.remove();
+    import('../js/router.js').then(r => r.router.navigate('/library'));
+  });
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
 }

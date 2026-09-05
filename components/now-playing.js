@@ -6,7 +6,6 @@ import { trapFocus } from '../js/ui.js';
 let _lastFocus = null;
 let _cleanupTrap = null;
 let _onKeyDown = null;
-let _progressInterval = null;
 
 export function openNowPlaying() {
   let overlay = $('#now-playing');
@@ -21,7 +20,6 @@ export function openNowPlaying() {
   _cleanupTrap = trapFocus(overlay);
   _onKeyDown = (e) => { if (e.key === 'Escape') closeNowPlaying(); };
   document.addEventListener('keydown', _onKeyDown);
-  _startProgressTracking();
 }
 
 export function closeNowPlaying() {
@@ -30,7 +28,6 @@ export function closeNowPlaying() {
     _onKeyDown = null;
   }
   if (_cleanupTrap) { _cleanupTrap(); _cleanupTrap = null; }
-  if (_progressInterval) { clearInterval(_progressInterval); _progressInterval = null; }
   const overlay = $('#now-playing');
   if (overlay) {
     overlay.classList.add('fade-out');
@@ -51,13 +48,15 @@ function renderNowPlaying(overlay) {
   const shuffle = store.get('shuffle');
   const repeat = store.get('repeat');
   const speed = store.get('playbackSpeed');
-  const isFav = (store.get('favorites') || []).includes(song.id);
+  const isFav = store.getLikedIds().includes(song.id);
+  const isDisliked = store.getDislikedIds().includes(song.id);
 
   const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
 
   overlay.innerHTML = `
     <div class="fixed inset-0 z-[60] flex flex-col bg-surface overflow-hidden" role="dialog" aria-modal="true" aria-label="Now Playing" style="--np-bg: #0F1115;">
       <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand/5 via-transparent to-surface"></div>
         <img src="${thumb}" alt="" class="w-full h-full object-cover opacity-20 blur-3xl" id="np-blur-bg" crossorigin="anonymous">
       </div>
 
@@ -91,7 +90,7 @@ function renderNowPlaying(overlay) {
     if (path === 'volume' || path === 'isMuted') updateNpVolume();
     if (path === 'shuffle') updateNpShuffle();
     if (path === 'repeat') updateNpRepeat();
-    if (path === 'favorites') updateNpLikeButton();
+    if (path === 'ratings') updateNpRatingButtons();
     if (path === 'currentSong') {
       store.off('change', handler);
       closeNowPlaying();
@@ -111,7 +110,8 @@ function renderNowPlayingView() {
   const shuffle = store.get('shuffle');
   const repeat = store.get('repeat');
   const speed = store.get('playbackSpeed');
-  const isFav = (store.get('favorites') || []).includes(song.id);
+  const isFav = store.getLikedIds().includes(song.id);
+  const isDisliked = store.getDislikedIds().includes(song.id);
   const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
 
   main.innerHTML = `
@@ -121,13 +121,22 @@ function renderNowPlayingView() {
     </div>
 
     <div class="text-center max-w-md">
-      <h2 class="text-2xl font-bold text-white truncate">${song.title}</h2>
+      <div class="flex items-center justify-center gap-2">
+        <h2 class="text-2xl font-bold text-white truncate">${song.title}</h2>
+        ${song.is_hd ? `<span class="text-[10px] px-2 py-0.5 rounded bg-brand/20 text-brand font-bold uppercase tracking-wider shadow-sm flex-shrink-0">HD</span>` : ''}
+      </div>
       <p class="text-base text-slate-400 mt-1 truncate">${song.artist}</p>
       <p class="text-sm text-slate-500 mt-0.5 truncate">${song.album || ''}</p>
-      <button class="np-like-btn inline-flex items-center gap-1.5 mt-3 px-4 py-1.5 rounded-full text-sm transition-all ${isFav ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
-        <span class="material-symbols-outlined text-sm">${isFav ? 'favorite' : 'favorite_border'}</span>
-        ${isFav ? 'Liked' : 'Like'}
-      </button>
+      <div class="flex items-center justify-center gap-2 mt-3">
+        <button class="np-like-btn inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm transition-all ${isFav ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
+          <span class="material-symbols-outlined text-sm">${isFav ? 'favorite' : 'favorite_border'}</span>
+          ${isFav ? 'Liked' : 'Like'}
+        </button>
+        <button class="np-dislike-btn inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm transition-all ${isDisliked ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}" aria-label="${isDisliked ? 'Remove dislike' : 'Dislike'}">
+          <span class="material-symbols-outlined text-sm">${isDisliked ? 'thumb_down' : 'thumb_down_off_alt'}</span>
+          ${isDisliked ? 'Disliked' : 'Dislike'}
+        </button>
+      </div>
     </div>
 
     <div class="w-full max-w-lg">
@@ -196,17 +205,29 @@ function renderLyricsView() {
   `;
 }
 
-function updateNpLikeButton() {
-  const btn = $('.np-like-btn');
-  if (!btn) return;
+function updateNpRatingButtons() {
+  const likeBtn = $('.np-like-btn');
+  const dislikeBtn = $('.np-dislike-btn');
   const song = store.get('currentSong');
-  const isFav = song && (store.get('favorites') || []).includes(song.id);
-  btn.className = `np-like-btn inline-flex items-center gap-1.5 mt-3 px-4 py-1.5 rounded-full text-sm transition-all ${isFav ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}`;
-  btn.setAttribute('aria-label', isFav ? 'Remove from favorites' : 'Add to favorites');
-  const icon = btn.querySelector('.material-symbols-outlined');
-  if (icon) icon.textContent = isFav ? 'favorite' : 'favorite_border';
-  const text = btn.childNodes[2];
-  if (text) text.textContent = isFav ? 'Liked' : 'Like';
+  if (!song) return;
+  const isFav = store.getLikedIds().includes(song.id);
+  const isDisliked = store.getDislikedIds().includes(song.id);
+  if (likeBtn) {
+    likeBtn.className = `np-like-btn inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm transition-all ${isFav ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}`;
+    likeBtn.setAttribute('aria-label', isFav ? 'Remove from favorites' : 'Add to favorites');
+    const icon = likeBtn.querySelector('.material-symbols-outlined');
+    if (icon) icon.textContent = isFav ? 'favorite' : 'favorite_border';
+    const text = likeBtn.childNodes[2];
+    if (text) text.textContent = isFav ? 'Liked' : 'Like';
+  }
+  if (dislikeBtn) {
+    dislikeBtn.className = `np-dislike-btn inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm transition-all ${isDisliked ? 'bg-blue-500/20 text-blue-400' : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'}`;
+    dislikeBtn.setAttribute('aria-label', isDisliked ? 'Remove dislike' : 'Dislike');
+    const icon = dislikeBtn.querySelector('.material-symbols-outlined');
+    if (icon) icon.textContent = isDisliked ? 'thumb_down' : 'thumb_down_off_alt';
+    const text = dislikeBtn.childNodes[2];
+    if (text) text.textContent = isDisliked ? 'Disliked' : 'Dislike';
+  }
 }
 
 function bindNowPlayingEvents(overlay) {
@@ -227,11 +248,13 @@ function bindNowPlayingEvents(overlay) {
     if (e.target.closest('.np-like-btn')) {
       const song = store.get('currentSong');
       if (!song) return;
-      const favs = [...(store.get('favorites') || [])];
-      const idx = favs.indexOf(song.id);
-      if (idx > -1) { favs.splice(idx, 1); }
-      else { favs.push(song.id); }
-      store.setState('favorites', favs);
+      store.toggleFavorite(song.id);
+      return;
+    }
+    if (e.target.closest('.np-dislike-btn')) {
+      const song = store.get('currentSong');
+      if (!song) return;
+      store.toggleDislike(song.id);
       return;
     }
     if (e.target.closest('.np-view-toggle')) {
@@ -265,20 +288,43 @@ function bindNowPlayingEvents(overlay) {
       player.setVolume(parseFloat(volume.value));
     });
   }
-}
 
-function _startProgressTracking() {
-  if (_progressInterval) clearInterval(_progressInterval);
-  _progressInterval = setInterval(() => {
-    const bar = $('#np-progress-bar');
-    const ct = $('#np-current-time');
-    if (bar && ct) {
-      const dur = store.get('duration');
-      const cur = store.get('currentTime');
-      if (dur > 0) bar.value = (cur / dur) * 100;
-      ct.textContent = formatTime(cur);
-    }
-  }, 250);
+  let startY = 0;
+  let startTranslate = 0;
+  let isDragging = false;
+  const dragContainer = overlay.querySelector('.fixed.inset-0');
+  if (dragContainer) {
+    dragContainer.addEventListener('touchstart', (e) => {
+      if (e.target.closest('input, button, .np-view-toggle')) return;
+      startY = e.touches[0].clientY;
+      startTranslate = 0;
+      isDragging = true;
+      dragContainer.style.transition = 'none';
+    }, { passive: true });
+
+    dragContainer.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const dy = e.touches[0].clientY - startY;
+      if (dy < 0) return;
+      const translate = Math.min(dy * 0.5, 120);
+      const opacity = 1 - (translate / 120);
+      dragContainer.style.transform = `translateY(${translate}px)`;
+      dragContainer.style.opacity = opacity;
+    }, { passive: true });
+
+    dragContainer.addEventListener('touchend', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      dragContainer.style.transition = 'transform 0.3s var(--easing), opacity 0.3s var(--easing)';
+      const computed = parseFloat(dragContainer.style.transform?.replace('translateY(', '') || '0');
+      if (computed > 80) {
+        closeNowPlaying();
+      } else {
+        dragContainer.style.transform = 'translateY(0)';
+        dragContainer.style.opacity = '1';
+      }
+    }, { passive: true });
+  }
 }
 
 function updateNpPlayState() {
@@ -290,7 +336,11 @@ function updateNpPlayState() {
 
 function updateNpProgress() {
   const ct = $('#np-current-time');
-  if (ct) ct.textContent = formatTime(store.get('currentTime'));
+  const bar = $('#np-progress-bar');
+  const cur = store.get('currentTime');
+  const dur = store.get('duration');
+  if (ct) ct.textContent = formatTime(cur);
+  if (bar && dur > 0) bar.value = (cur / dur) * 100;
 }
 
 function updateNpDuration() {

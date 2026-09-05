@@ -49,7 +49,7 @@ export function renderSongCards(container, songs, playlistId, playlistName, play
                       store.get('currentSong')?.playlistId === playlistId;
 
     const card = create('div', {
-      className: `song-card glass-card rounded-xl overflow-hidden cursor-pointer group transition-all duration-300 ${isPlaying ? 'ring-1 ring-brand-500/50' : ''}`,
+      className: `song-card glass-card rounded-xl overflow-hidden cursor-pointer group transition-all duration-300 animate-in ${isPlaying ? 'ring-1 ring-brand-500/50' : ''}`,
       tabindex: '0',
       role: 'button',
       'aria-label': `Play ${song.title} by ${song.artist}`
@@ -82,7 +82,8 @@ export function renderSongCards(container, songs, playlistId, playlistName, play
         </div>
         <div class="flex items-center gap-2 mt-1">
           <span class="text-[10px] text-slate-600">${song.year || ''}</span>
-          ${song.genre ? `<span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-500/10 text-brand-400/80 font-medium truncate">${song.genre}</span>` : ''}
+          ${song.genre ? `<span class="text-[9px] px-1.5 py-0.5 rounded bg-brand/10 text-brand font-medium truncate">${song.genre}</span>` : ''}
+          ${song.is_hd ? `<span class="text-[9px] px-1.5 py-0.5 rounded bg-brand/20 text-brand font-bold uppercase tracking-wider ml-auto">HD</span>` : ''}
         </div>
       </div>
     `;
@@ -126,7 +127,7 @@ export function renderSongRows(container, songs, playlistId, playlistName, playl
     const isCurrent = currentSong?.id === song.id && currentSong?.playlistId === playlistId;
 
     const row = create('div', {
-      className: `song-row group ${isCurrent ? 'playing' : ''}`,
+      className: `song-row group animate-in ${isCurrent ? 'playing' : ''}`,
       tabindex: '0',
       role: 'button',
       'aria-label': `Play ${song.title} by ${song.artist}`
@@ -135,18 +136,18 @@ export function renderSongRows(container, songs, playlistId, playlistName, playl
     row.innerHTML = `
       <span class="text-sm text-slate-500 w-6 text-right song-number">
         ${isCurrent && isPlaying
-          ? `<div class="flex items-end gap-[2px] h-3 justify-center">${'<div class="equalizer-bar w-[3px] rounded-full bg-brand-500"></div>'.repeat(4)}</div>`
+          ? `<div class="flex items-end gap-[2px] h-3 justify-center">${'<div class="equalizer-bar w-[3px] rounded-full bg-brand"></div>'.repeat(4)}</div>`
           : `<span class="text-xs text-slate-600 group-hover:hidden">${index + 1}</span>
              <span class="hidden group-hover:flex items-center justify-center w-6 h-6">
                <span class="material-symbols-outlined text-white text-sm">play_arrow</span>
              </span>`}
       </span>
       <div class="flex items-center gap-3 min-w-0">
-        <img src="${getYouTubeThumbnail(song.youtube_id, 'default')}" alt=""
+        <img src="${getYouTubeThumbnail(song.youtube_id, 'default')}" alt="${song.title || ''}"
              class="w-10 h-10 rounded object-cover flex-shrink-0"
              loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
         <div class="min-w-0">
-          <span class="song-title text-sm font-medium text-white truncate block group-hover:text-brand-500 transition-colors">${song.title}</span>
+          <span class="song-title text-sm font-medium text-white truncate block group-hover:text-brand transition-colors">${song.title}</span>
           <span class="text-xs text-slate-400 truncate block">${song.artist}</span>
         </div>
       </div>
@@ -154,10 +155,10 @@ export function renderSongRows(container, songs, playlistId, playlistName, playl
       <span class="text-xs text-slate-500 song-genre hidden lg:block truncate">${song.genre || ''}</span>
       <span class="text-xs text-slate-500 song-year hidden md:block">${song.year || ''}</span>
       <span class="text-xs text-slate-500 song-duration">${song.duration}</span>
-      <span class="text-[10px] px-1.5 py-0.5 rounded bg-brand-500/10 text-brand-400 font-medium song-quality">HD</span>
-      <button class="btn-icon w-8 h-8 text-sm fav-btn ${store.get('favorites')?.includes(song.id) ? 'active' : ''}"
+      ${song.is_hd ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-brand/20 text-brand font-bold uppercase tracking-wider song-quality">HD</span>` : `<span class="w-6 inline-block"></span>`}
+      <button class="btn-icon w-8 h-8 text-sm fav-btn ${store.getLikedIds().includes(song.id) ? 'active' : ''}"
               aria-label="Toggle favorite" data-song-id="${song.id}">
-        <span class="material-symbols-outlined text-sm">${store.get('favorites')?.includes(song.id) ? 'favorite' : 'favorite_border'}</span>
+        <span class="material-symbols-outlined text-sm">${store.getLikedIds().includes(song.id) ? 'favorite' : 'favorite_border'}</span>
       </button>
     `;
 
@@ -193,10 +194,6 @@ export function renderSongRows(container, songs, playlistId, playlistName, playl
 }
 
 function toggleFavorite(songId) {
-  const favs = store.get('favorites') || [];
-  const idx = favs.indexOf(songId);
-  if (idx > -1) favs.splice(idx, 1);
-  else favs.push(songId);
-  store.setState('favorites', favs);
-  import('./toast.js').then(m => m.showToast(idx > -1 ? 'Removed from favorites' : 'Added to favorites'));
+  const prev = store.toggleFavorite(songId);
+  import('./toast.js').then(m => m.showToast(prev === 'removed' ? 'Removed from favorites' : 'Added to favorites'));
 }

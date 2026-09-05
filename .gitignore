@@ -1,3 +1,5 @@
 node_modules/
 css/tailwind.src.css
 package-lock.json
+stream-cache.json
+__pycache__/

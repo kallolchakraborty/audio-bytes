@@ -14,13 +14,15 @@ export const APP_CONFIG = {
     shuffle: false,
     repeat: 'off',
     viewMode: 'list',
-    sortBy: 'default'
+    sortBy: 'default',
+    crossfadeDuration: 2000
   },
 
   storage: {
     keys: {
       recentlyPlayed: 'audiobytes_recently_played',
-      preferences: 'audiobytes_preferences'
+      preferences: 'audiobytes_preferences',
+      myPlaylists: 'audiobytes_my_playlists'
     }
   },
 

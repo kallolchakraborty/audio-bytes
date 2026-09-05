@@ -17,23 +17,8 @@ async function init() {
   const { renderPlayerBar } = await import('../components/player-bar.js');
   renderPlayerBar();
 
-  const { initEqualizer } = await import('../components/equalizer.js');
-  initEqualizer();
-
-  const { initEqualizerPanel } = await import('../components/equalizer-panel.js');
-  initEqualizerPanel();
-
   const { initSearchModal } = await import('../components/search-modal.js');
   initSearchModal();
-
-  const { renderSidebar, openSidebar } = await import('../components/sidebar.js');
-  renderSidebar();
-
-  if (window.innerWidth >= 768) {
-    openSidebar();
-    const toggle = $('.sidebar-toggle');
-    if (toggle) toggle.setAttribute('aria-expanded', 'true');
-  }
 
   setupKeyboardShortcuts();
   setupRouter();
@@ -78,14 +63,19 @@ function setupRouter() {
     renderAlbum(params.name);
   });
 
+  router.route('/explore', async () => {
+    const { renderExplore } = await import('../components/explore-view.js');
+    renderExplore();
+  });
+
+  router.route('/explore/:id', async () => {
+    const { renderExplore } = await import('../components/explore-view.js');
+    renderExplore();
+  });
+
   router.route('/genres', async () => {
     const { renderGenres } = await import('../components/genre-view.js');
     renderGenres();
-  });
-
-  router.route('/genre-group/:slug', async (params) => {
-    const { renderGenreGroup } = await import('../components/genre-view.js');
-    renderGenreGroup(params.slug);
   });
 }
 
@@ -227,7 +217,9 @@ function setupBackToTop() {
 function setupServiceWorker() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker.register('sw.js').then((reg) => {
+        setTimeout(() => { reg.update().catch(() => {}); }, 1000);
+      }).catch(() => {});
     });
   }
 }

@@ -4,12 +4,15 @@ export function startRadioPlaylist(playlistId) {
   const pl = store.getPlaylist(playlistId);
   if (!pl) return;
 
-  const songs = pl.songs.map((s, i) => ({
-    ...s,
-    playlistId,
-    playlistName: pl.name,
-    playlistCover: pl.cover
-  }));
+  const disliked = store.getDislikedIds();
+  const songs = pl.songs
+    .filter(s => !disliked.includes(s.id))
+    .map((s, i) => ({
+      ...s,
+      playlistId,
+      playlistName: pl.name,
+      playlistCover: pl.cover
+    }));
 
   const shuffled = [...songs].sort(() => Math.random() - 0.5);
   store.playFromQueue(shuffled, 0);
@@ -21,8 +24,10 @@ export function startRadioSong(songId, playlistId) {
   const pl = store.getPlaylist(playlistId);
   if (!pl) return;
 
+  const disliked = store.getDislikedIds();
   const similar = pl.songs.filter(s => {
     if (s.id === songId) return false;
+    if (disliked.includes(s.id)) return false;
     const target = pl.songs.find(x => x.id === songId);
     if (!target) return false;
     return s.genre === target.genre || s.artist === target.artist;

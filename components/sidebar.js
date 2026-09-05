@@ -1,8 +1,6 @@
 import { $ } from '../js/utils.js';
 import { store } from '../js/store.js';
-import { GENRE_GROUPS } from '../config/genres.js';
 
-let _expandedGroups = new Set();
 let _unsub = null;
 
 export function renderSidebar() {
@@ -13,12 +11,13 @@ export function renderSidebar() {
   bindEvents(container);
 
   _unsub = store.on('change', ({ path }) => {
-    if (path === 'playlists') renderContent(container);
+    if (path === 'playlists' || path === 'myPlaylists') renderContent(container);
   });
 }
 
 function renderContent(container) {
   const playlists = store.get('playlists') || [];
+  const myPlaylists = store.get('myPlaylists') || [];
   const hash = window.location.hash;
 
   container.innerHTML = `
@@ -44,37 +43,29 @@ function renderContent(container) {
         <div class="pt-3 pb-1">
           <a href="#/genres" class="sidebar-nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${hash === '#/genres' ? 'active' : ''}" data-route="/genres">
             <span class="material-symbols-outlined text-lg">explore</span>
-            Genres
+            Browse All
           </a>
-
-          <div class="mt-1 ml-3 space-y-0.5">
-            ${GENRE_GROUPS.map(g => `
-              <div class="sidebar-group">
-                <button class="sidebar-group-toggle flex items-center gap-2 w-full px-3 py-1.5 rounded-lg text-xs text-slate-400 hover:text-white hover:bg-white/5 transition-colors text-left" data-group="${g.id}">
-                  <span class="material-symbols-outlined text-sm sidebar-group-chevron transition-transform ${_expandedGroups.has(g.id) ? 'rotate-90' : ''}">chevron_right</span>
-                  <span class="material-symbols-outlined text-sm">${g.icon}</span>
-                  ${g.name}
-                </button>
-                <div class="sidebar-subgenres ml-3 space-y-0.5 ${_expandedGroups.has(g.id) ? '' : 'hidden'}">
-                  ${g.playlists.map(plId => {
-                    const pl = playlists.find(p => p.id === plId);
-                    if (!pl) return '';
-                    const isActive = hash === `#/playlist/${plId}`;
-                    return `<a href="#/playlist/${plId}" class="sidebar-sub-item flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-white hover:bg-white/5 transition-colors ${isActive ? 'text-white bg-white/5' : ''}">${pl.name}</a>`;
-                  }).join('')}
-                </div>
-              </div>
-            `).join('')}
-          </div>
         </div>
 
         <div class="pt-3">
           <p class="px-3 text-[10px] text-slate-600 uppercase tracking-wider font-semibold mb-1">Playlists</p>
-          ${playlists.slice(0, 10).map(pl => {
+          ${playlists.map(pl => {
             const isActive = hash === `#/playlist/${pl.id}`;
             return `<a href="#/playlist/${pl.id}" class="sidebar-nav-item flex items-center gap-3 px-3 py-1.5 rounded-lg text-xs text-slate-400 hover:text-white hover:bg-white/5 transition-colors ${isActive ? 'active' : ''}"><span class="material-symbols-outlined text-sm">playlist_play</span>${pl.name}</a>`;
           }).join('')}
-          ${playlists.length > 10 ? `<a href="#/genres" class="sidebar-nav-item flex items-center gap-3 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-white hover:bg-white/5 transition-colors">+${playlists.length - 10} more</a>` : ''}
+        </div>
+
+        <div class="pt-2">
+          <p class="px-3 text-[10px] text-slate-600 uppercase tracking-wider font-semibold mb-1">My Playlists</p>
+          ${myPlaylists.length === 0 ? '<p class="px-3 text-[10px] text-slate-600 italic">No custom playlists yet</p>' : ''}
+          ${myPlaylists.map(pl => {
+            const isActive = hash === `#/playlist/${pl.id}`;
+            return `<a href="#/playlist/${pl.id}" class="sidebar-nav-item flex items-center gap-3 px-3 py-1.5 rounded-lg text-xs text-slate-400 hover:text-white hover:bg-white/5 transition-colors ${isActive ? 'active' : ''}"><span class="material-symbols-outlined text-sm">playlist_play</span>${pl.name}</a>`;
+          }).join('')}
+          <button class="sidebar-create-pl flex items-center gap-3 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-white hover:bg-white/5 transition-colors w-full text-left mt-1">
+            <span class="material-symbols-outlined text-sm">add</span>
+            Create Playlist
+          </button>
         </div>
       </nav>
 
@@ -130,26 +121,16 @@ export function openSidebar() {
 
 function bindEvents(container) {
   container.addEventListener('click', (e) => {
-    const groupToggle = e.target.closest('.sidebar-group-toggle');
-    if (groupToggle) {
-      const groupId = groupToggle.dataset.group;
-      if (_expandedGroups.has(groupId)) _expandedGroups.delete(groupId);
-      else _expandedGroups.add(groupId);
-      const sub = groupToggle.nextElementSibling;
-      if (sub) sub.classList.toggle('hidden');
-      const chevron = groupToggle.querySelector('.sidebar-group-chevron');
-      if (chevron) chevron.classList.toggle('rotate-90');
+    const createBtn = e.target.closest('.sidebar-create-pl');
+    if (createBtn) {
+      showCreatePlaylistModal();
+      closeSidebarOnMobile();
       return;
     }
 
-    const navLink = e.target.closest('.sidebar-nav-item[data-route], .sidebar-sub-item');
+    const navLink = e.target.closest('.sidebar-nav-item');
     if (navLink) {
-      const route = navLink.dataset.route;
-      if (route === '/genres') {
-        closeSidebarOnMobile();
-      } else {
-        closeSidebarOnMobile();
-      }
+      closeSidebarOnMobile();
       return;
     }
 
@@ -179,4 +160,42 @@ function bindEvents(container) {
 
 function closeSidebarOnMobile() {
   if (window.innerWidth < 768) closeSidebar();
+}
+
+function showCreatePlaylistModal() {
+  const overlay = document.createElement('div');
+  overlay.className = 'fixed inset-0 z-[70] flex items-center justify-center bg-black/60';
+  overlay.innerHTML = `
+    <div class="bg-surface border border-white/10 rounded-2xl p-6 w-full max-w-sm mx-4 shadow-2xl" role="dialog" aria-modal="true" aria-label="Create playlist">
+      <h2 class="text-lg font-bold text-white mb-4">Create Playlist</h2>
+      <input type="text" class="create-pl-input w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-brand" placeholder="Playlist name" maxlength="60" autofocus>
+      <div class="flex justify-end gap-2 mt-4">
+        <button class="create-pl-cancel px-4 py-2 rounded-lg text-sm text-slate-400 hover:text-white transition-colors">Cancel</button>
+        <button class="create-pl-submit px-4 py-2 rounded-lg text-sm bg-brand text-white hover:bg-brand-hover transition-colors disabled:opacity-40" disabled>Create</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const input = overlay.querySelector('.create-pl-input');
+  const submit = overlay.querySelector('.create-pl-submit');
+
+  input.addEventListener('input', () => {
+    submit.disabled = !input.value.trim();
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !submit.disabled) submit.click();
+    if (e.key === 'Escape') overlay.remove();
+  });
+
+  submit.addEventListener('click', () => {
+    const name = input.value.trim();
+    if (!name) return;
+    store.createPlaylist(name);
+    overlay.remove();
+  });
+
+  overlay.querySelector('.create-pl-cancel').addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
 }

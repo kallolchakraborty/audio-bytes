@@ -47,6 +47,23 @@ export function animateEntrance(container, selector = '.animate-in', stagger = 5
   });
 }
 
+export function staggerOnView(container, selector = '.animate-in', stagger = 60) {
+  if (!container || !window.IntersectionObserver) {
+    animateEntrance(container, selector, stagger);
+    return () => {};
+  }
+  let activated = false;
+  const observer = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting && !activated) {
+      activated = true;
+      animateEntrance(container, selector, stagger);
+      observer.disconnect();
+    }
+  }, { threshold: 0.1 });
+  observer.observe(container);
+  return () => observer.disconnect();
+}
+
 export function createRipple(e) {
   const el = e.currentTarget;
   const rect = el.getBoundingClientRect();

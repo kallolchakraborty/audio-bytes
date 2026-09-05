@@ -6,7 +6,13 @@ class Router {
   constructor() {
     this._routes = new Map();
     this._currentRoute = null;
+    this._beforeHandlers = [];
     window.addEventListener('hashchange', () => this._handleRoute());
+  }
+
+  beforeRoute(handler) {
+    this._beforeHandlers.push(handler);
+    return this;
   }
 
   route(pattern, handler) {
@@ -29,10 +35,12 @@ class Router {
   _handleRoute() {
     const hash = window.location.hash.slice(1) || '/';
     const matched = this._match(hash);
+    this._beforeHandlers.forEach(fn => fn(hash));
+    this._resetPageView();
     if (matched) {
       this._currentRoute = matched;
       store.setState('error', null);
-      matched.handler(matched.params);
+      this._transition(() => matched.handler(matched.params));
     } else if (hash !== '/') {
       const container = $('#page-view');
       setPageTitle('Not Found');
@@ -49,6 +57,13 @@ class Router {
           </div>
         `);
       }
+    }
+  }
+
+  _resetPageView() {
+    const view = $('#page-view');
+    if (view && view.parentNode) {
+      view.parentNode.replaceChild(view.cloneNode(false), view);
     }
   }
 
@@ -79,6 +94,24 @@ class Router {
 
   getCurrentRoute() {
     return this._currentRoute;
+  }
+
+  _transition(callback) {
+    const view = $('#page-view');
+    if (!view || document.documentElement.classList.contains('reduce-motion')) {
+      callback();
+      return;
+    }
+    view.style.opacity = '0';
+    view.style.transform = 'translateY(4px)';
+    view.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+    requestAnimationFrame(() => {
+      callback();
+      requestAnimationFrame(() => {
+        view.style.opacity = '1';
+        view.style.transform = 'translateY(0)';
+      });
+    });
   }
 }
 

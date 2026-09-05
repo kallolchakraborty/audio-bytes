@@ -6,6 +6,7 @@ class Store {
     this._listeners = new Map();
     this._state = {
       playlists: [],
+      myPlaylists: [],
       currentPlaylist: null,
       currentSong: null,
       queue: [],
@@ -24,13 +25,8 @@ class Store {
       isBuffering: false,
       loading: true,
       error: null,
-      favorites: [],
-      eq: {
-        enabled: true,
-        preset: 'Normal',
-        gains: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        bypassed: false
-      }
+      ratings: {},
+      crossfade: true
     };
     this._loadPersistedState();
   }
@@ -50,9 +46,13 @@ class Store {
     if (handlers) this._listeners.set(event, handlers.filter(h => h !== fn));
   }
 
-  _emit(event, data) {
+  emit(event, data) {
     const handlers = this._listeners.get(event);
     if (handlers) handlers.forEach(fn => fn(data));
+  }
+
+  _emit(event, data) {
+    this.emit(event, data);
   }
 
   _emitChange(path) {
@@ -72,7 +72,7 @@ class Store {
   }
 
   _persist(key) {
-    const persistKeys = ['volume', 'shuffle', 'repeat', 'viewMode', 'sortBy', 'playbackSpeed', 'recentlyPlayed', 'isMuted', 'favorites', 'eq'];
+    const persistKeys = ['volume', 'shuffle', 'repeat', 'viewMode', 'sortBy', 'playbackSpeed', 'recentlyPlayed', 'isMuted', 'ratings', 'crossfade'];
     if (!persistKeys.includes(key)) return;
     try {
       localStorage.setItem(APP_CONFIG.storage.keys.preferences, JSON.stringify({
@@ -83,8 +83,8 @@ class Store {
         sortBy: this._state.sortBy,
         playbackSpeed: this._state.playbackSpeed,
         isMuted: this._state.isMuted,
-        favorites: this._state.favorites,
-        eq: this._state.eq
+        ratings: this._state.ratings,
+        crossfade: this._state.crossfade
       }));
       if (key === 'recentlyPlayed') {
         localStorage.setItem(APP_CONFIG.storage.keys.recentlyPlayed, JSON.stringify(this._state.recentlyPlayed));
@@ -102,10 +102,14 @@ class Store {
       if (prefs.sortBy !== undefined) this._state.sortBy = prefs.sortBy;
       if (prefs.playbackSpeed !== undefined) this._state.playbackSpeed = prefs.playbackSpeed;
       if (prefs.isMuted !== undefined) this._state.isMuted = prefs.isMuted;
-      if (prefs.favorites !== undefined) this._state.favorites = prefs.favorites;
-      if (prefs.eq !== undefined) this._state.eq = prefs.eq;
+      if (prefs.ratings !== undefined) this._state.ratings = prefs.ratings;
+      else if (prefs.favorites !== undefined) {
+        prefs.favorites.forEach(id => this._state.ratings[id] = 'like');
+      }
+      if (prefs.crossfade !== undefined) this._state.crossfade = prefs.crossfade;
       const recent = safeJSON(localStorage.getItem(APP_CONFIG.storage.keys.recentlyPlayed), []);
       if (recent.length) this._state.recentlyPlayed = recent;
+      this._state.myPlaylists = safeJSON(localStorage.getItem(APP_CONFIG.storage.keys.myPlaylists), []);
     } catch {}
   }
 
@@ -126,7 +130,7 @@ class Store {
   }
 
   getPlaylist(id) {
-    return this._state.playlists.find(p => p.id === id) || null;
+    return this._state.playlists.find(p => p.id === id) || this._state.myPlaylists.find(p => p.id === id) || null;
   }
 
   getSong(playlistId, songId) {
@@ -249,8 +253,105 @@ class Store {
     this._emit('play', this._state.currentSong);
   }
 
+  getRating(songId) {
+    return this._state.ratings[songId] || null;
+  }
+
+  getLikedIds() {
+    return Object.entries(this._state.ratings).filter(([, r]) => r === 'like').map(([id]) => id);
+  }
+
+  getDislikedIds() {
+    return Object.entries(this._state.ratings).filter(([, r]) => r === 'dislike').map(([id]) => id);
+  }
+
+  toggleFavorite(songId) {
+    const current = this._state.ratings[songId];
+    if (current === 'like') {
+      delete this._state.ratings[songId];
+      this._emitChange('ratings');
+      this._persist('ratings');
+      return 'removed';
+    } else {
+      this._state.ratings[songId] = 'like';
+      this._emitChange('ratings');
+      this._persist('ratings');
+      return 'added';
+    }
+  }
+
+  toggleDislike(songId) {
+    const current = this._state.ratings[songId];
+    if (current === 'dislike') {
+      delete this._state.ratings[songId];
+    } else {
+      this._state.ratings[songId] = 'dislike';
+    }
+    this._emitChange('ratings');
+    this._persist('ratings');
+    return current === 'dislike' ? 'removed' : 'added';
+  }
+
   togglePlay() {
     this.setState('isPlaying', !this._state.isPlaying);
+  }
+
+  createPlaylist(name) {
+    const pl = {
+      id: `pl_${Date.now()}`,
+      name,
+      cover: 'assets/images/fallback-playlist.svg',
+      songs: []
+    };
+    this._state.myPlaylists.push(pl);
+    this._persistMyPlaylists();
+    return pl;
+  }
+
+  renamePlaylist(id, name) {
+    const pl = this._state.myPlaylists.find(p => p.id === id);
+    if (!pl) return;
+    pl.name = name;
+    this._persistMyPlaylists();
+    this._emitChange('myPlaylists');
+  }
+
+  deletePlaylist(id) {
+    this._state.myPlaylists = this._state.myPlaylists.filter(p => p.id !== id);
+    this._persistMyPlaylists();
+    this._emitChange('myPlaylists');
+  }
+
+  addSongToPlaylist(playlistId, song) {
+    const pl = this._state.myPlaylists.find(p => p.id === playlistId);
+    if (!pl) return;
+    if (pl.songs.some(s => s.id === song.id && s.playlistId === song.playlistId)) return;
+    pl.songs.push(song);
+    this._persistMyPlaylists();
+    this._emitChange('myPlaylists');
+  }
+
+  removeSongFromPlaylist(playlistId, songId) {
+    const pl = this._state.myPlaylists.find(p => p.id === playlistId);
+    if (!pl) return;
+    pl.songs = pl.songs.filter(s => s.id !== songId);
+    this._persistMyPlaylists();
+    this._emitChange('myPlaylists');
+  }
+
+  moveSongInPlaylist(playlistId, fromIdx, toIdx) {
+    const pl = this._state.myPlaylists.find(p => p.id === playlistId);
+    if (!pl || fromIdx === toIdx) return;
+    const [moved] = pl.songs.splice(fromIdx, 1);
+    pl.songs.splice(toIdx, 0, moved);
+    this._persistMyPlaylists();
+    this._emitChange('myPlaylists');
+  }
+
+  _persistMyPlaylists() {
+    try {
+      localStorage.setItem(APP_CONFIG.storage.keys.myPlaylists, JSON.stringify(this._state.myPlaylists));
+    } catch {}
   }
 
   _addToRecent(song) {

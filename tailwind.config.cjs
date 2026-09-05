@@ -24,8 +24,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-        mono: ['"SF Mono"', '"Fira Code"', '"Fira Mono"', '"Roboto Mono"', 'monospace']
+        sans: ['Ubuntu', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Oxygen', 'Cantarell', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        mono: ['"Ubuntu Mono"', '"SF Mono"', '"Fira Code"', '"Fira Mono"', '"Roboto Mono"', 'monospace']
       },
       backdropBlur: {
         xs: '2px'

@@ -1,4 +1,4 @@
-const CACHE = 'audiobytes-v4';
+const CACHE = 'audiobytes-v23';
 const STATIC = [
   '/',
   '/index.html',
@@ -8,10 +8,9 @@ const STATIC = [
   '/js/store.js',
   '/js/router.js',
   '/js/player.js',
-  '/js/audio-engine.js',
   '/js/ui.js',
   '/js/utils.js',
-  '/js/equalizer.js',
+
   '/config/app.js',
   '/config/genres.js',
   '/data/playlists.json',
@@ -71,24 +70,24 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
+  if (url.pathname.startsWith('/api/')) {
+    e.respondWith(fetch(e.request).catch(() => new Response('Offline', { status: 503 })));
+    return;
+  }
+
   if (e.request.method === 'GET') {
     e.respondWith(
-      caches.match(e.request).then((cached) => {
-        const fetched = fetch(e.request).then((res) => {
-          if (res.ok) {
-            const clone = res.clone();
-            caches.open(CACHE).then((cache) => cache.put(e.request, clone));
-          }
-          return res;
-        }).catch(() => {
-          if (cached) return cached;
-          if (e.request.mode === 'navigate') {
-            return caches.match('/index.html');
-          }
-          return new Response('Offline', { status: 503 });
-        });
-        return cached || fetched;
-      })
+      fetch(e.request).then((res) => {
+        if (res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE).then((cache) => cache.put(e.request, clone));
+        }
+        return res;
+      }).catch(() => caches.match(e.request).then((cached) => {
+        if (cached) return cached;
+        if (e.request.mode === 'navigate') return caches.match('/index.html');
+        return new Response('Offline', { status: 503 });
+      }))
     );
   }
 });

@@ -44,9 +44,15 @@ function detailView(name, icon, songs, subtitle) {
   const thumb = firstSong?.youtube_id ? getYouTubeThumbnail(firstSong.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
   return `
     <div class="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto">
+      <div class="mb-6">
+        <button class="btn-ghost text-xs back-to-previous" aria-label="Go back">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          Back
+        </button>
+      </div>
       <div class="flex items-end gap-5 mb-8">
         <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden shadow-xl shadow-black/40 flex-shrink-0">
-          <img src="${thumb}" alt="" class="w-full h-full object-cover" onerror="this.src='assets/images/fallback-album.svg'">
+          <img src="${thumb}" alt="${name || ''}" class="w-full h-full object-cover" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
         </div>
         <div class="min-w-0 pb-1">
           <div class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-wider mb-1">
@@ -72,11 +78,11 @@ function detailView(name, icon, songs, subtitle) {
 
 function songRow(song, index) {
   const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'default') : 'assets/images/fallback-album.svg';
-  const isFav = (store.get('favorites') || []).includes(song.id);
+  const isFav = store.getLikedIds().includes(song.id);
   return `
     <div class="detail-row flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors cursor-pointer group" data-song-idx="${index}">
       <span class="text-xs text-slate-500 w-6 text-right flex-shrink-0 tabular-nums">${index + 1}</span>
-      <img src="${thumb}" alt="" class="w-10 h-10 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
+      <img src="${thumb}" alt="${song.title || ''}" class="w-10 h-10 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
       <div class="flex-1 min-w-0">
         <p class="text-sm font-medium text-white truncate">${song.title}</p>
         <p class="text-xs text-slate-400 truncate">${song.artist}${song.album ? ` · ${song.album}` : ''}</p>
@@ -94,6 +100,16 @@ function bindDetailEvents(songs) {
   if (!container) return;
 
   container.addEventListener('click', (e) => {
+    const backBtn = e.target.closest('.back-to-previous');
+    if (backBtn) {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        import('../js/router.js').then(r => r.router.navigate('/'));
+      }
+      return;
+    }
+
     const row = e.target.closest('.detail-row');
     if (row && !e.target.closest('.detail-fav-btn')) {
       const idx = parseInt(row.dataset.songIdx);
@@ -109,20 +125,15 @@ function bindDetailEvents(songs) {
     const favBtn = e.target.closest('.detail-fav-btn');
     if (favBtn) {
       const songId = favBtn.dataset.songId;
-      const favs = store.get('favorites') || [];
-      const idx = favs.indexOf(songId);
-      if (idx > -1) { favs.splice(idx, 1); }
-      else { favs.push(songId); }
-      store.setState('favorites', favs);
+      store.toggleFavorite(songId);
       const icon = favBtn.querySelector('.material-symbols-outlined');
       if (icon) {
-        const now = favs.includes(songId);
+        const now = store.getLikedIds().includes(songId);
         icon.textContent = now ? 'favorite' : 'favorite_border';
         favBtn.classList.toggle('text-red-400', now);
         favBtn.classList.toggle('text-slate-500', !now);
         favBtn.setAttribute('aria-label', now ? 'Remove from favorites' : 'Add to favorites');
       }
-      import('./toast.js').then(m => m.showToast(idx > -1 ? 'Removed from favorites' : 'Added to favorites'));
       return;
     }
 

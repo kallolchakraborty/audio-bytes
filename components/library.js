@@ -4,6 +4,7 @@ import { render } from '../js/ui.js';
 
 const TABS = [
   { id: 'liked', label: 'Liked Songs', icon: 'favorite' },
+  { id: 'disliked', label: 'Disliked', icon: 'thumb_down' },
   { id: 'recent', label: 'Recently Played', icon: 'schedule' },
   { id: 'history', label: 'History', icon: 'history' }
 ];
@@ -22,6 +23,12 @@ export function renderLibrary() {
 function layoutView() {
   return `
     <div class="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto">
+      <div class="mb-6">
+        <button class="btn-ghost text-xs back-to-previous" aria-label="Go back">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          Back
+        </button>
+      </div>
       <div class="flex items-center gap-3 mb-6">
         <span class="material-symbols-outlined text-2xl text-slate-400">library_music</span>
         <h1 class="text-2xl font-bold text-white">Library</h1>
@@ -47,7 +54,7 @@ function renderTab(tabId) {
   const content = $('#lib-content');
   if (!content) return;
 
-  const favIds = store.get('favorites') || [];
+  const favIds = store.getLikedIds();
   const recent = store.get('recentlyPlayed') || [];
 
   let items = [];
@@ -55,8 +62,12 @@ function renderTab(tabId) {
 
   switch (tabId) {
     case 'liked':
-      items = tabId === 'liked' ? resolveFavorites(favIds) : [];
+      items = resolveFavorites(favIds);
       if (!items.length) emptyMsg = 'No liked songs yet. Click the heart icon on any song to add it.';
+      break;
+    case 'disliked':
+      items = resolveFavorites(store.getDislikedIds());
+      if (!items.length) emptyMsg = 'No disliked songs.';
       break;
     case 'recent':
       items = recent.slice(0, 20);
@@ -95,10 +106,10 @@ function resolveFavorites(favIds) {
 
 function songRow(song, index, tabId) {
   const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'default') : 'assets/images/fallback-album.svg';
-  const isFav = (store.get('favorites') || []).includes(song.id);
+  const isFav = store.getLikedIds().includes(song.id);
   return `
     <div class="lib-row flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors cursor-pointer group" data-song-idx="${index}" data-tab="${tabId}">
-      <img src="${thumb}" alt="" class="w-10 h-10 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
+      <img src="${thumb}" alt="${song.title || ''}" class="w-10 h-10 rounded object-cover flex-shrink-0" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
       <div class="flex-1 min-w-0">
         <p class="text-sm font-medium text-white truncate">${song.title}</p>
         <p class="text-xs text-slate-400 truncate">${song.artist}${song.album ? ` · ${song.album}` : ''}</p>
@@ -116,6 +127,16 @@ function bindLibraryEvents() {
   if (!container) return;
 
   container.addEventListener('click', (e) => {
+    const backBtn = e.target.closest('.back-to-previous');
+    if (backBtn) {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        import('../js/router.js').then(r => r.router.navigate('/'));
+      }
+      return;
+    }
+
     const tab = e.target.closest('.lib-tab');
     if (tab) {
       currentTab = tab.dataset.tab;
@@ -144,27 +165,21 @@ function bindLibraryEvents() {
 
     const favBtn = e.target.closest('.lib-fav-btn');
     if (favBtn) {
-      const songId = favBtn.dataset.songId;
-      const favs = store.get('favorites') || [];
-      const idx = favs.indexOf(songId);
-      if (idx > -1) { favs.splice(idx, 1); }
-      else { favs.push(songId); }
-      store.setState('favorites', favs);
+      store.toggleFavorite(favBtn.dataset.songId);
       renderTab(currentTab);
-      import('./toast.js').then(m => m.showToast(idx > -1 ? 'Removed from favorites' : 'Added to favorites'));
       return;
     }
 
     const playAll = e.target.closest('.lib-play-all');
     if (playAll) {
-      const songs = resolveFavorites(store.get('favorites') || []);
+      const songs = resolveFavorites(store.getLikedIds());
       if (songs.length) store.playFromQueue(songs, 0);
       return;
     }
   });
 
   const unsub = store.on('change', ({ path }) => {
-    if (['favorites', 'recentlyPlayed'].includes(path)) {
+    if (['ratings', 'recentlyPlayed'].includes(path)) {
       const tab = document.querySelector('.lib-tab[aria-selected="true"]');
       if (tab) renderTab(tab.dataset.tab);
     }
@@ -173,7 +188,7 @@ function bindLibraryEvents() {
 }
 
 function getSongsForTab(tabId) {
-  const favIds = store.get('favorites') || [];
+  const favIds = store.getLikedIds();
   const recent = store.get('recentlyPlayed') || [];
   switch (tabId) {
     case 'liked': return resolveFavorites(favIds);

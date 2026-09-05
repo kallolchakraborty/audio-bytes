@@ -64,10 +64,37 @@ function createPanel() {
   document.body.appendChild(panel);
 
   panel.addEventListener('click', (e) => {
-    if (e.target.closest('.settings-backdrop') || e.target.closest('.settings-close')) closeSettings();
-    if (e.target.closest('.settings-eq-toggle')) {
+    if (e.target.closest('.settings-backdrop') || e.target.closest('.settings-close')) {
       closeSettings();
-      import('./equalizer-panel.js').then(m => m.openEqualizerPanel());
+      return;
+    }
+    const speedBtn = e.target.closest('.speed-up');
+    if (speedBtn) {
+      setSpeed(Math.min(2, store.get('playbackSpeed') + 0.25));
+      return;
+    }
+    const speedDown = e.target.closest('.speed-down');
+    if (speedDown) {
+      setSpeed(Math.max(0.25, store.get('playbackSpeed') - 0.25));
+      return;
+    }
+    const preset = e.target.closest('.speed-preset');
+    if (preset) {
+      setSpeed(parseFloat(preset.dataset.speed));
+      return;
+    }
+    const sleepPreset = e.target.closest('.sleep-preset');
+    if (sleepPreset) {
+      const minutes = sleepPreset.dataset.minutes;
+      const end = sleepPreset.dataset.end;
+      if (minutes) startSleepTimer(parseInt(minutes) * 60 * 1000);
+      else if (end === 'song') startSleepEndOfSong();
+      else if (end === 'playlist') startSleepEndOfPlaylist();
+      return;
+    }
+    const sleepCancel = e.target.closest('.sleep-cancel-btn');
+    if (sleepCancel) {
+      cancelSleepTimer();
     }
   });
 
@@ -79,7 +106,6 @@ function renderContent() {
   if (!container) return;
 
   const speed = store.get('playbackSpeed');
-  const eqEnabled = store.get('eq')?.enabled !== false;
 
   container.innerHTML = `
     <div>
@@ -97,19 +123,6 @@ function renderContent() {
           ${[0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2].map(s => `
             <button class="speed-preset text-xs px-2 py-1 rounded ${s === speed ? 'bg-brand text-white' : 'text-slate-400 hover:text-white hover:bg-white/5'} transition-all flex-1" data-speed="${s}">${s}x</button>
           `).join('')}
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <label class="text-xs text-slate-400 uppercase tracking-wider font-semibold block mb-3">Audio</label>
-      <div class="bg-white/5 rounded-xl p-4 space-y-2">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm text-white">Equalizer</p>
-            <p class="text-xs text-slate-500">10-band graphic equalizer</p>
-          </div>
-          <button class="settings-eq-toggle btn-secondary text-xs">Open Equalizer</button>
         </div>
       </div>
     </div>
@@ -143,40 +156,6 @@ function renderContent() {
       </div>
     </div>
   `;
-
-  container.addEventListener('click', (e) => {
-    const speedBtn = e.target.closest('.speed-up');
-    if (speedBtn) {
-      const s = Math.min(2, store.get('playbackSpeed') + 0.25);
-      setSpeed(s);
-      return;
-    }
-    const speedDown = e.target.closest('.speed-down');
-    if (speedDown) {
-      const s = Math.max(0.25, store.get('playbackSpeed') - 0.25);
-      setSpeed(s);
-      return;
-    }
-    const preset = e.target.closest('.speed-preset');
-    if (preset) {
-      setSpeed(parseFloat(preset.dataset.speed));
-      return;
-    }
-    const sleepPreset = e.target.closest('.sleep-preset');
-    if (sleepPreset) {
-      const minutes = sleepPreset.dataset.minutes;
-      const end = sleepPreset.dataset.end;
-      if (minutes) startSleepTimer(parseInt(minutes) * 60 * 1000);
-      else if (end === 'song') startSleepEndOfSong();
-      else if (end === 'playlist') startSleepEndOfPlaylist();
-      return;
-    }
-    const sleepCancel = e.target.closest('.sleep-cancel-btn');
-    if (sleepCancel) {
-      cancelSleepTimer();
-      return;
-    }
-  });
 }
 
 function setSpeed(speed) {
@@ -212,13 +191,11 @@ function startSleepTimer(durationMs) {
 
 function startSleepEndOfSong() {
   cancelSleepTimer();
-  _sleepTimerId = store.on('change', function handler({ path }) {
-    if (path === 'currentSong') {
-      player.pause();
-      import('./toast.js').then(m => m.showToast('Sleep timer ended (end of song)', 'success'));
-      store.off('change', handler);
-      cancelSleepTimer();
-    }
+  _sleepTimerId = store.on('songEnded', function handler() {
+    player.pause();
+    import('./toast.js').then(m => m.showToast('Sleep timer ended (end of song)', 'success'));
+    store.off('songEnded', handler);
+    cancelSleepTimer();
   });
   renderContent();
   import('./toast.js').then(m => m.showToast('Sleep timer: end of song'));
@@ -226,16 +203,14 @@ function startSleepEndOfSong() {
 
 function startSleepEndOfPlaylist() {
   cancelSleepTimer();
-  _sleepTimerId = store.on('change', function handler({ path }) {
-    if (path === 'currentSong') {
-      const qi = store.get('queueIndex');
-      const q = store.get('queue');
-      if (q.length > 0 && qi >= q.length - 1) {
-        player.pause();
-        import('./toast.js').then(m => m.showToast('Sleep timer ended (end of playlist)', 'success'));
-        store.off('change', handler);
-        cancelSleepTimer();
-      }
+  _sleepTimerId = store.on('songEnded', function handler() {
+    const qi = store.get('queueIndex');
+    const q = store.get('queue');
+    if (q.length > 0 && qi >= q.length - 1) {
+      player.pause();
+      import('./toast.js').then(m => m.showToast('Sleep timer ended (end of playlist)', 'success'));
+      store.off('songEnded', handler);
+      cancelSleepTimer();
     }
   });
   renderContent();
