@@ -7,19 +7,19 @@ const GENRES = [
   {
     name: 'Blues',
     subgenres: [
-      { name: 'Delta Blues', playlist: 'delta-blues' },
-      { name: 'Chicago Blues', playlist: 'chicago-blues' },
-      { name: 'Texas Blues', playlist: 'texas-blues' },
-      { name: 'Electric Blues', playlist: 'electric-blues' },
-      { name: 'Acoustic Blues', playlist: 'acoustic-blues' },
-      { name: 'British Blues', playlist: 'british-blues' },
-      { name: 'Blues Rock', playlist: 'blues-rock' },
-      { name: 'Soul Blues', playlist: 'soul-blues' },
-      { name: 'Contemporary Blues', playlist: 'contemporary-blues' },
-      { name: 'Blues Ballad', playlist: 'blues-ballads' },
-      { name: 'Blues Guitar Legends', playlist: 'blues-guitar-legends' },
-      { name: 'Country Blues', playlist: 'americana-blues' },
-      { name: 'Americana', playlist: 'americana-blues' }
+      { name: 'Delta Blues', playlist: 'delta-blues', icon: 'water' },
+      { name: 'Chicago Blues', playlist: 'chicago-blues', icon: 'location_city' },
+      { name: 'Texas Blues', playlist: 'texas-blues', icon: 'whatshot' },
+      { name: 'Electric Blues', playlist: 'electric-blues', icon: 'bolt' },
+      { name: 'Acoustic Blues', playlist: 'acoustic-blues', icon: 'styler' },
+      { name: 'British Blues', playlist: 'british-blues', icon: 'public' },
+      { name: 'Blues Rock', playlist: 'blues-rock', icon: 'electric_bolt' },
+      { name: 'Soul Blues', playlist: 'soul-blues', icon: 'favorite' },
+      { name: 'Contemporary Blues', playlist: 'contemporary-blues', icon: 'schedule' },
+      { name: 'Blues Ballad', playlist: 'blues-ballads', icon: 'nightlight' },
+      { name: 'Blues Guitar Legends', playlist: 'blues-guitar-legends', icon: 'star' },
+      { name: 'Country Blues', playlist: 'americana-blues', icon: 'agriculture' },
+      { name: 'Americana', playlist: 'americana-blues', icon: 'landscape' }
     ],
     timeline: {
       slug: 'Blues',
@@ -30,21 +30,21 @@ const GENRES = [
   {
     name: 'Rock',
     subgenres: [
-      { name: 'Classic Rock', playlist: 'classic-rock' },
-      { name: 'Hard Rock', playlist: 'hard-rock' },
-      { name: 'Heavy Metal', playlist: 'heavy-metal' },
-      { name: 'Psychedelic Rock', playlist: 'psychedelic-rock' },
-      { name: 'Progressive Rock', playlist: 'progressive-rock' },
-      { name: 'Blues Rock', playlist: 'blues-rock' },
-      { name: 'Southern Rock', playlist: 'southern-rock' },
-      { name: 'Glam Rock', playlist: 'glam-rock' },
-      { name: 'Punk Rock', playlist: 'punk-rock' },
-      { name: 'New Wave / Post-Punk', playlist: 'new-wave' },
-      { name: 'Grunge', playlist: 'grunge' },
-      { name: 'Alternative Rock', playlist: 'alternative-rock' },
-      { name: 'Britpop', playlist: 'britpop' },
-      { name: 'Nu Metal', playlist: 'nu-metal' },
-      { name: 'Garage Rock', playlist: 'garage-rock' }
+      { name: 'Classic Rock', playlist: 'classic-rock', icon: 'history' },
+      { name: 'Hard Rock', playlist: 'hard-rock', icon: 'whatshot' },
+      { name: 'Heavy Metal', playlist: 'heavy-metal', icon: 'warning' },
+      { name: 'Psychedelic Rock', playlist: 'psychedelic-rock', icon: 'flare' },
+      { name: 'Progressive Rock', playlist: 'progressive-rock', icon: 'account_tree' },
+      { name: 'Blues Rock', playlist: 'blues-rock', icon: 'water_drop' },
+      { name: 'Southern Rock', playlist: 'southern-rock', icon: 'explore' },
+      { name: 'Glam Rock', playlist: 'glam-rock', icon: 'auto_awesome' },
+      { name: 'Punk Rock', playlist: 'punk-rock', icon: 'flash_on' },
+      { name: 'New Wave / Post-Punk', playlist: 'new-wave', icon: 'waves' },
+      { name: 'Grunge', playlist: 'grunge', icon: 'blur_on' },
+      { name: 'Alternative Rock', playlist: 'alternative-rock', icon: 'alt_route' },
+      { name: 'Britpop', playlist: 'britpop', icon: 'public' },
+      { name: 'Nu Metal', playlist: 'nu-metal', icon: 'settings_input_component' },
+      { name: 'Garage Rock', playlist: 'garage-rock', icon: 'garage' }
     ],
     timeline: {
       slug: 'Rock',
@@ -275,7 +275,7 @@ export function renderExplore() {
 
   // Explore Overview Page — stunning hero design
   const accent = '#E95420';
-  const genreIcons = { Blues: 'music_note', Rock: 'graphic_eq' };
+  const genreIcons = { Blues: 'water_drop', Rock: 'electric_bolt' };
 
   render(container, `
     <div class="relative min-h-screen pb-24 overflow-hidden" style="font-family: 'Ubuntu', sans-serif;">
@@ -284,10 +284,10 @@ export function renderExplore() {
       <div style="position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse at center,rgba(233,84,32,0.06) 0%,transparent 70%);pointer-events:none;z-index:0;"></div>
 
       <!-- Page header -->
-      <div style="max-width:72rem;margin:0 auto;padding:3rem 1.5rem 2rem;position:relative;z-index:10;">
-        <p style="font-family:'Ubuntu',sans-serif !important;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.25em;color:${accent};margin:0 0 10px;">Illustrated Musicology</p>
-        <h1 style="font-family:'Ubuntu',sans-serif !important;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:1;color:#fff;margin:0 0 12px;">Explore <span style="font-family:'Ubuntu',sans-serif !important;color:${accent};">Genre</span> Timelines</h1>
-        <p style="font-family:'Ubuntu',sans-serif !important;font-size:14px;color:#64748b;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Dive into the complete history of a genre — every era, every pivotal moment, every subgenre curated for your ears.</p>
+      <div style="max-width:72rem;margin:0 auto;padding:2rem 1.5rem 1rem;position:relative;z-index:10;">
+        <p style="font-family:'Ubuntu',sans-serif !important;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.25em;color:${accent};margin:0 0 6px;">Illustrated Musicology</p>
+        <h1 style="font-family:'Ubuntu',sans-serif !important;font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:1;color:#fff;margin:0 0 8px;">Explore <span style="font-family:'Ubuntu',sans-serif !important;color:${accent};">Genre</span> Timelines</h1>
+        <p style="font-family:'Ubuntu',sans-serif !important;font-size:12px;color:#64748b;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Dive into the complete history of a genre — every era, every pivotal moment, every subgenre curated for your ears.</p>
       </div>
 
       <!-- Genre list / accordion -->
@@ -300,12 +300,17 @@ export function renderExplore() {
           return `
           <div style="border-radius:16px;background:rgba(18,21,28,0.9);border:1px solid rgba(255,255,255,0.08);overflow:hidden;transition:all 0.3s cubic-bezier(0.16,1,0.3,1);" id="genre-accordion-${gi}">
             
-            <!-- Accordion Header Row -->
-            <div style="padding:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;cursor:pointer;background:linear-gradient(90deg, rgba(233,84,32,0.04) 0%, transparent 100%);"
+            <div style="padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;cursor:pointer;background:linear-gradient(90deg, rgba(233,84,32,0.04) 0%, transparent 100%);"
                  onclick="
+                   const allContents = document.querySelectorAll('[id^=accordion-content-]');
+                   const allIcons = document.querySelectorAll('[id^=accordion-icon-]');
                    const content = document.getElementById('accordion-content-${gi}');
                    const icon = document.getElementById('accordion-icon-${gi}');
                    const isOpen = content.style.display !== 'none';
+                   
+                   allContents.forEach(c => c.style.display = 'none');
+                   allIcons.forEach(i => i.style.transform = 'rotate(0deg)');
+                   
                    content.style.display = isOpen ? 'none' : 'block';
                    icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
                  "
@@ -313,45 +318,45 @@ export function renderExplore() {
                  onmouseout="this.parentElement.style.borderColor='rgba(255,255,255,0.08)';">
               
               <!-- Left info -->
-              <div style="flex:1;min-width:0;display:flex;align-items:center;gap:1.25rem;">
-                <div style="width:48px;height:48px;border-radius:12px;background:rgba(233,84,32,0.12);border:1px solid rgba(233,84,32,0.25);display:flex;align-items:center;justify-content:center;color:${accent};flex-shrink:0;">
-                  <span class="material-symbols-outlined" style="font-size:24px;">${genreIcons[g.name] || 'queue_music'}</span>
+              <div style="flex:1;min-width:0;display:flex;align-items:center;gap:1rem;">
+                <div style="width:36px;height:36px;border-radius:10px;background:rgba(233,84,32,0.12);border:1px solid rgba(233,84,32,0.25);display:flex;align-items:center;justify-content:center;color:${accent};flex-shrink:0;">
+                  <span class="material-symbols-outlined" style="font-size:18px;">${genreIcons[g.name] || 'queue_music'}</span>
                 </div>
 
                 <div style="flex:1;min-width:0;">
-                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-                    <h2 style="font-size:1.35rem;font-weight:800;color:#f1f5f9;margin:0;letter-spacing:-0.02em;">${g.name}</h2>
-                    <span style="padding:2px 8px;border-radius:9999px;background:rgba(255,255,255,0.06);color:#94a3b8;font-size:11px;font-weight:600;">${g.timeline.title}</span>
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+                    <h2 style="font-size:1.15rem;font-weight:800;color:#f1f5f9;margin:0;letter-spacing:-0.02em;">${g.name}</h2>
+                    <span style="padding:2px 8px;border-radius:9999px;background:rgba(255,255,255,0.06);color:#94a3b8;font-size:10px;font-weight:600;">${g.timeline.title}</span>
                   </div>
-                  <p style="font-size:13px;color:#64748b;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${g.timeline.subtitle}</p>
+                  <p style="font-size:11px;color:#64748b;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${g.timeline.subtitle}</p>
                 </div>
               </div>
 
               <!-- Right stats & controls -->
-              <div style="display:flex;align-items:center;gap:1.5rem;flex-shrink:0;">
-                <div style="display:flex;gap:1.25rem;text-align:right;">
+              <div style="display:flex;align-items:center;gap:1rem;flex-shrink:0;">
+                <div style="display:flex;gap:1rem;text-align:right;">
                   <div>
-                    <div style="font-size:1.15rem;font-weight:800;color:#fff;line-height:1;">${eraCount}</div>
-                    <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#475569;margin-top:2px;">Eras</div>
+                    <div style="font-size:1rem;font-weight:800;color:#fff;line-height:1;">${eraCount}</div>
+                    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#475569;margin-top:2px;">Eras</div>
                   </div>
                   <div style="width:1px;background:rgba(255,255,255,0.07);"></div>
                   <div>
-                    <div style="font-size:1.15rem;font-weight:800;color:#fff;line-height:1;">${totalSubgenres}</div>
-                    <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#475569;margin-top:2px;">Subgenres</div>
+                    <div style="font-size:1rem;font-weight:800;color:#fff;line-height:1;">${totalSubgenres}</div>
+                    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#475569;margin-top:2px;">Subgenres</div>
                   </div>
                 </div>
 
                 <a href="#/explore/${g.timeline.slug}" 
                    onclick="event.stopPropagation();"
-                   style="padding:10px 18px;border-radius:10px;background:${accent};color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;"
+                   style="padding:8px 14px;border-radius:8px;background:${accent};color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;"
                    onmouseover="this.style.background='#d04416';this.style.transform='translateY(-1px)';"
                    onmouseout="this.style.background='${accent}';this.style.transform='translateY(0)';">
                   <span>Explore Timeline</span>
-                  <span class="material-symbols-outlined" style="font-size:16px;">timeline</span>
+                  <span class="material-symbols-outlined" style="font-size:14px;">timeline</span>
                 </a>
 
-                <div style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;color:#94a3b8;transition:transform 0.3s ease;" id="accordion-icon-${gi}">
-                  <span class="material-symbols-outlined" style="font-size:20px;">expand_more</span>
+                <div style="width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;color:#94a3b8;transition:transform 0.3s ease;" id="accordion-icon-${gi}">
+                  <span class="material-symbols-outlined" style="font-size:16px;">expand_more</span>
                 </div>
               </div>
 
@@ -369,21 +374,21 @@ export function renderExplore() {
                   const pl = playlists.find(p => p.id === playlistId);
                   const trackCount = pl && pl.tracks ? pl.tracks.length : (sg.tracks || 10);
                   return `
-                  <a href="#/playlist/${playlistId}" style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);color:#cbd5e1;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);"
+                  <a href="#/playlist/${playlistId}" style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);color:#cbd5e1;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);"
                      onmouseover="this.style.background='rgba(233,84,32,0.1)';this.style.borderColor='rgba(233,84,32,0.3)';this.style.color='#fff';this.style.transform='translateX(4px)';"
                      onmouseout="this.style.background='rgba(255,255,255,0.02)';this.style.borderColor='rgba(255,255,255,0.05)';this.style.color='#cbd5e1';this.style.transform='translateX(0)';">
-                    <div style="display:flex;align-items:center;gap:12px;min-width:0;">
-                      <div style="width:32px;height:32px;border-radius:8px;background:rgba(233,84,32,0.12);display:flex;align-items:center;justify-content:center;color:${accent};flex-shrink:0;">
-                        <span class="material-symbols-outlined" style="font-size:18px;">graphic_eq</span>
+                    <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+                      <div style="width:24px;height:24px;border-radius:6px;background:rgba(233,84,32,0.12);display:flex;align-items:center;justify-content:center;color:${accent};flex-shrink:0;">
+                        <span class="material-symbols-outlined" style="font-size:14px;">${sg.icon || 'graphic_eq'}</span>
                       </div>
                       <div>
-                        <div style="font-size:13px;font-weight:700;color:#f1f5f9;line-height:1.2;">${sg.name}</div>
-                        <div style="font-size:11px;color:#64748b;margin-top:2px;">Playlist • #${playlistId}</div>
+                        <div style="font-size:12px;font-weight:700;color:#f1f5f9;line-height:1.2;">${sg.name}</div>
+                        <div style="font-size:10px;color:#64748b;margin-top:2px;">Playlist • #${playlistId}</div>
                       </div>
                     </div>
-                    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
-                      <span style="font-size:11px;font-weight:600;padding:3px 10px;border-radius:9999px;background:rgba(255,255,255,0.06);color:#94a3b8;">${trackCount} tracks</span>
-                      <span class="material-symbols-outlined" style="font-size:16px;color:${accent};">arrow_forward</span>
+                    <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+                      <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:9999px;background:rgba(255,255,255,0.06);color:#94a3b8;">${trackCount} tracks</span>
+                      <span class="material-symbols-outlined" style="font-size:14px;color:${accent};">arrow_forward</span>
                     </div>
                   </a>`;
                 }).join('')}
