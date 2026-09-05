@@ -51,7 +51,7 @@ function renderNowPlaying(overlay) {
   const isFav = store.getLikedIds().includes(song.id);
   const isDisliked = store.getDislikedIds().includes(song.id);
 
-  const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
+  const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'hqdefault') : 'assets/images/fallback-album.svg';
 
   overlay.innerHTML = `
     <div class="fixed inset-0 z-[60] flex flex-col bg-surface overflow-hidden" role="dialog" aria-modal="true" aria-label="Now Playing" style="--np-bg: #0F1115;">
@@ -112,7 +112,7 @@ function renderNowPlayingView() {
   const speed = store.get('playbackSpeed');
   const isFav = store.getLikedIds().includes(song.id);
   const isDisliked = store.getDislikedIds().includes(song.id);
-  const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
+  const thumb = song.youtube_id ? getYouTubeThumbnail(song.youtube_id, 'hqdefault') : 'assets/images/fallback-album.svg';
 
   main.innerHTML = `
     <div class="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl shadow-black/50 cover-art-glow flex-shrink-0 ${isPlaying ? 'playing' : ''}" id="np-art-container">

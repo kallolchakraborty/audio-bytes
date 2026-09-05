@@ -72,7 +72,13 @@ export function getYouTubeID(url) {
 }
 
 export function getYouTubeThumbnail(id, quality = 'hqdefault') {
-  return `https://img.youtube.com/vi/${id}/${quality}.jpg`;
+  if (!id) return 'assets/images/fallback-album.svg';
+  return `https://i.ytimg.com/vi/${id}/${quality}.jpg`;
+}
+
+export function getTrackThumbnail(song, quality = 'mqdefault') {
+  if (song && song.artwork) return song.artwork;
+  return 'assets/images/fallback-album.svg';
 }
 
 export function shuffle(arr) {

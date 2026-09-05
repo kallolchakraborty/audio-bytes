@@ -41,7 +41,7 @@ function renderNotFound() {
 
 function detailView(name, icon, songs, subtitle) {
   const firstSong = songs[0];
-  const thumb = firstSong?.youtube_id ? getYouTubeThumbnail(firstSong.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
+  const thumb = firstSong?.youtube_id ? getYouTubeThumbnail(firstSong.youtube_id, 'hqdefault') : 'assets/images/fallback-album.svg';
   return `
     <div class="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto">
       <div class="mb-6">

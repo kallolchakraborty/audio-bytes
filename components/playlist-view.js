@@ -18,7 +18,7 @@ export function renderPlaylist(playlistId) {
   setPageTitle(playlist.name);
 
   const firstSong = playlist.songs[0];
-  const cover = firstSong ? getYouTubeThumbnail(firstSong.youtube_id, 'maxresdefault') : 'assets/images/fallback-album.svg';
+  const cover = firstSong ? getYouTubeThumbnail(firstSong.youtube_id, 'hqdefault') : 'assets/images/fallback-album.svg';
   const totalDuration = playlist.songs.reduce((acc, s) => acc + parseDuration(s.duration), 0);
   const minutes = Math.floor(totalDuration / 60);
   const seconds = totalDuration % 60;

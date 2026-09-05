@@ -369,6 +369,7 @@ body {
 .mini-player .progress-area { display: none; }
 .mini-player .volume-area { display: none; }
 
+
 .playlist-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
