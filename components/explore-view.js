@@ -278,7 +278,7 @@ export function renderExplore() {
   const genreIcons = { Blues: 'music_note', Rock: 'graphic_eq' };
 
   render(container, `
-    <div style="position:relative;min-height:calc(100vh - 136px);overflow:hidden;">
+    <div class="relative min-h-screen pb-24 overflow-hidden" style="font-family: 'Ubuntu', sans-serif;">
 
       <!-- Ambient top glow -->
       <div style="position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse at center,rgba(233,84,32,0.06) 0%,transparent 70%);pointer-events:none;z-index:0;"></div>
@@ -569,22 +569,22 @@ function renderTimelinePlaylist(pl) {
       onclick="window.location.hash='#/playlist/${pl.id}'"
       onmouseover="this.style.background='rgba(233,84,32,0.12)';this.style.borderColor='rgba(233,84,32,0.45)';"
       onmouseout="this.style.background='rgba(255,255,255,0.04)';this.style.borderColor='rgba(255,255,255,0.07)';">
-      <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;">
-        <img src="${thumb}" alt="${pl.name || ''}" style="width:38px;height:38px;border-radius:8px;object-fit:cover;flex-shrink:0;border:1px solid rgba(255,255,255,0.1);" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
+      <div style="display:flex;align-items:center;gap:8px;padding:6px 10px;">
+        <img src="${thumb}" alt="${pl.name || ''}" style="width:30px;height:30px;border-radius:6px;object-fit:cover;flex-shrink:0;border:1px solid rgba(255,255,255,0.1);" loading="lazy" onerror="this.src='assets/images/fallback-album.svg'">
         <div style="flex:1;min-width:0;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <span class="material-symbols-outlined" style="font-size:15px;color:#E95420;flex-shrink:0;">graphic_eq</span>
-            <a href="#/playlist/${pl.id}" onclick="event.stopPropagation()" style="display:block;font-size:13px;font-weight:800;color:#f1f5f9;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color 0.15s ease;"
+            <span class="material-symbols-outlined" style="font-size:14px;color:#E95420;flex-shrink:0;">graphic_eq</span>
+            <a href="#/playlist/${pl.id}" onclick="event.stopPropagation()" style="display:block;font-size:12px;font-weight:800;color:#f1f5f9;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color 0.15s ease;"
               onmouseover="this.style.color='#E95420'" onmouseout="this.style.color='#f1f5f9'">${pl.name}</a>
           </div>
           <span style="display:inline-flex;align-items:center;gap:4px;font-size:10px;color:#94a3b8;margin-top:2px;">
-            <span class="material-symbols-outlined" style="font-size:12px;color:#64748b;">audiotrack</span>
+            <span class="material-symbols-outlined" style="font-size:11px;color:#64748b;">audiotrack</span>
             ${pl.songs?.length || 0} tracks
           </span>
         </div>
         <button class="play-playlist-btn" data-playlist-id="${pl.id}" title="Play ${pl.name}"
           onclick="event.stopPropagation();"
-          style="width:32px;height:32px;border-radius:50%;background:#E95420;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(233,84,32,0.4);transition:transform 0.15s ease,box-shadow 0.15s ease;"
+          style="width:28px;height:28px;border-radius:50%;background:#E95420;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(233,84,32,0.4);transition:transform 0.15s ease,box-shadow 0.15s ease;"
           onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 18px rgba(233,84,32,0.6)'"
           onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(233,84,32,0.4)'">
           <span class="material-symbols-outlined" style="font-size:18px;">play_arrow</span>
